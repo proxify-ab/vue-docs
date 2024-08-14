@@ -29,7 +29,7 @@ const props = defineProps<{
       <h2 class="section-title">{{ props.featuredTitle }}</h2>
       <slot name="featured-list"></slot>
       <div class="browse-more">
-        <a class="button-accent" :href="props.browseLinkUrl">{{ props.browseLinkText }}</a>
+        <a class="accent-button" :href="props.browseLinkUrl">{{ props.browseLinkText }}</a>
       </div>
     </div>
 
@@ -83,8 +83,8 @@ const props = defineProps<{
   justify-content: center;
 }
 
-.button-accent,
-:deep(.button-accent) {
+.accent-button,
+:deep(.accent-button) {
   display: block;
   width: fit-content;
   min-width: 240px;
@@ -98,11 +98,13 @@ const props = defineProps<{
   transition: background-color 0.5s, color 0.5s;
 }
 
-.button-accent:hover {
+.accent-button:hover,
+:deep(.accent-button):hover {
   background-color: var(--vt-c-brand-dark);
 }
 
-.dark .button-accent:hover {
+.dark .accent-button:hover,
+.dark :deep(.accent-button):hover {
   background-color: var(--vt-c-gray-dark-3);
 }
 
