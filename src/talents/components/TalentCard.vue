@@ -48,6 +48,7 @@ const profileImage = computed(() => getProfileImage(image, id))
 
         <TalentProficiencies
           :proficiencies="proficiencies"
+          :title="hero? 'Main proficiencies': undefined"
           class="talent-card__section"
         />
       </div>
