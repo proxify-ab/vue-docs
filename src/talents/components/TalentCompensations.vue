@@ -12,22 +12,27 @@ defineProps<{
   <div>
     <h4 v-if="title">{{ title }}</h4>
     <div>
-      <div v-if="compensations && Object.keys(compensations).length" class="talent-page__compensations_list">
+      <div v-if="compensations && Object.keys(compensations).length" class="talent-compensations__list">
         <div v-for="(compensation, key) in compensations" :key="key">
           {{ compensation }}
         </div>
       </div>
-      <p v-if="showDetails">No other costs.</p>
-      <p v-if="showDetails">One month trial period, thereafter, one month notice period.</p></div>
+      <div v-if="showDetails" class="talent-compensations__details">
+        <p v-if="showDetails">No other costs.</p>
+        <p v-if="showDetails">One month trial period, thereafter, one month notice period.</p></div>
+    </div>
   </div>
 </template>
 
 
 <style scoped>
-.talent-page__compensations_list {
+.talent-compensations__list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 32px;
+}
+
+.talent-compensations__details {
+  margin-top: 32px;
 }
 
 h4 {

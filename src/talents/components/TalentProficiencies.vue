@@ -3,13 +3,14 @@
 defineProps<{
   proficiencies: string[]
   title?: string
+  titleTag?: string
 }>()
 
 </script>
 
 <template>
   <div>
-    <h4 v-if="title">{{ title }}</h4>
+    <Component v-if="title" :is="titleTag || 'h4'">{{ title }}</Component>
     <div class="talent-proficiencies">
       <span class="talent-proficiency" v-for="p in proficiencies" :key="p">{{ p }}</span>
     </div>
