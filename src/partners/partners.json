@@ -179,5 +179,33 @@
     "platinum": true,
     "contact": "hello@herodevs.com",
     "hiring": "https://www.herodevs.com/job-board"
+  },
+  {
+    "name": "Proxify",
+    "logo": "proxify.svg",
+    "flipLogo": true,
+    "intro": "Proxify.io is a platform that connects businesses with handpicked remote developers. They offer a fast hiring process, typically matching companies with developers in just two days. The platform emphasizes quality and cost-effectiveness, with vetted developers available at competitive hourly rates. Proxify’s service includes personalized matching by experts, making it easier for companies to find developers with the exact skill sets needed for their projects. The platform is trusted by many innovative companies for its efficiency and reliability.",
+    "description": [
+    ],
+    "proficiencies": [
+      "Vue",
+      "Ruby on Rails",
+      "Node.js",
+      "React Native",
+      "Flutter"
+    ],
+    "region": [
+      "Europe"
+    ],
+    "location": [
+      "Europe"
+    ],
+    "website": {
+      "text": "proxify.io",
+      "url": "https://proxify.io/"
+    },
+    "contactPage": "https://career.proxify.io",
+    "hiring": "https://career.proxify.io/apply",
+    "platinum": true
   }
 ]
