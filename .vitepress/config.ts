@@ -125,9 +125,12 @@ const nav: ThemeConfig['nav'] = [
     link: '/sponsor/'
   },
   {
-    text: 'Partners',
-    link: '/partners/',
-    activeMatch: `^/partners/`
+    text: 'Experts',
+    activeMatch: `^/(partners|talents)/`,
+    items: [
+      { text: 'Partners', link: '/partners/' },
+      { text: 'Talent', link: '/talents/' }
+    ]
   }
 ]
 
