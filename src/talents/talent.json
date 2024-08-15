@@ -32,7 +32,7 @@
       "Angular.js"
     ],
     "compensations": {
-      "partTime": "N/A",
+      "partTime": "3300 EUR / part-time (20 h per week)",
       "monthly": "6300 EUR / month"
     },
     "location": "Greece",
@@ -274,7 +274,8 @@
         "startDate": "2013",
         "endDate": "2017"
       }
-    ]
+    ],
+    "highlighted": true
   },
   {
     "id": 3,
@@ -661,7 +662,8 @@
         "startDate": "2010",
         "endDate": "2014"
       }
-    ]
+    ],
+    "highlighted": true
   },
   {
     "id": 5,
@@ -814,7 +816,8 @@
         "startDate": "2013",
         "endDate": "2017"
       }
-    ]
+    ],
+    "highlighted": true
   },
   {
     "id": 6,
