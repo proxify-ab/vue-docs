@@ -15,18 +15,16 @@ const selectedTimezone = ref<string | null>(null)
 const allTalents = ref<TalentProfiles>(data as TalentProfiles)
 const allTimezones = computed(() => [...new Set(allTalents.value.map(profile => profile.timezone))])
 
-// Compute highlighted profiles and select spotlighted profile
-const highlightedProfiles = computed(() => allTalents.value.filter(profile => profile.highlighted))
+// Randomly select any profile to be the spotlighted profile
 const spotlightedProfile = computed(() => {
-  const profiles = highlightedProfiles.value
-  return profiles.length ? profiles[Math.floor(Math.random() * profiles.length)] : null
+  return allTalents.value.length ? allTalents.value[Math.floor(Math.random() * allTalents.value.length)] : null
 })
 
 // Filtering cards logic
-const filterTalentByTimezoneAndHighlight = (talent: TalentProfile): boolean => {
+const filterTalentByTimezone = (talent: TalentProfile): boolean => {
   return selectedTimezone.value
     ? talent.timezone === selectedTimezone.value
-    : !!talent.highlighted
+    : true
 }
 </script>
 
@@ -34,8 +32,6 @@ const filterTalentByTimezoneAndHighlight = (talent: TalentProfile): boolean => {
   <PageShowcaseListLayout
     spotlightTitle="Spotlight"
     featuredTitle="Vue.js Certified individuals"
-    browseLinkText="Browse More Developers"
-    browseLinkUrl="./all.html"
   >
     <template #hero>
       <TalentHero />
@@ -57,11 +53,17 @@ const filterTalentByTimezoneAndHighlight = (talent: TalentProfile): boolean => {
     <template #featured-list>
       <CardList
         :items="allTalents"
-        :filter="filterTalentByTimezoneAndHighlight"
+        :filter="filterTalentByTimezone"
         :cardComponent="TalentCard"
         browseLinkText="Browse and Search all Talents"
         browseLinkUrl="./all.html"
       />
+    </template>
+
+    <template #featured-cta>
+      <div class="featured-cta">
+        <a class="accent-button" :href="partnerConfig.contactPage" target="_blank">Contact us for a tailored fit</a>
+      </div>
     </template>
 
     <template #join>
@@ -75,6 +77,15 @@ const filterTalentByTimezoneAndHighlight = (talent: TalentProfile): boolean => {
 :deep(.featured-actions) {
   min-height: 90px;
   align-items: flex-start;
+}
+
+/* Page cta */
+.featured-cta {
+  margin: 1.5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Media Queries */
