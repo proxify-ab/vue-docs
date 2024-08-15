@@ -5,10 +5,10 @@ import TalentCard from './TalentCard.vue'
 import TalentJoin from './TalentJoin.vue'
 import data from '../talent.json'
 import { TalentProfiles, TalentProfile } from './type'
-import { VTFlyout } from '@vue/theme'
 import PageShowcaseListLayout from '@theme/components/PageShowcaseListLayout.vue'
 import partnerConfig from '../partnerConfig'
 import CardList from '@theme/components/CardList.vue'
+import TalentTimezoneFilter from './TalentTimezoneFilter.vue'
 
 // Data initialization
 const selectedTimezone = ref<string | null>(null)
@@ -23,10 +23,6 @@ const spotlightedProfile = computed(() => {
 })
 
 // Filtering cards logic
-const selectTimezone = (timezone: string | null) => {
-  selectedTimezone.value = timezone
-}
-
 const filterTalentByTimezoneAndHighlight = (talent: TalentProfile): boolean => {
   return selectedTimezone.value
     ? talent.timezone === selectedTimezone.value
@@ -50,15 +46,11 @@ const filterTalentByTimezoneAndHighlight = (talent: TalentProfile): boolean => {
     </template>
 
     <template #actions>
-      <VTFlyout button="Timezones" label="Timezones">
-        <div class="vt-menu-items">
-          <template v-for="item in allTimezones" :key="item">
-            <span class="vt-menu-item" @click="selectTimezone(item)">{{ item }}</span>
-          </template>
-          <span class="vt-menu-item" @click="selectTimezone(null)">Reset</span>
-        </div>
-      </VTFlyout>
-
+      <TalentTimezoneFilter
+        :allTimezones="allTimezones"
+        :selectedTimezone="selectedTimezone"
+        @update:timezone="selectedTimezone = $event"
+      />
       <a class="accent-button" :href="partnerConfig.contactPage" target="_blank">Contact us for a tailored fit</a>
     </template>
 
@@ -79,24 +71,18 @@ const filterTalentByTimezoneAndHighlight = (talent: TalentProfile): boolean => {
 </template>
 
 <style scoped>
-.vt-menu-item {
-  display: block;
-  padding: 0 18px;
-  line-height: 28px;
-  font-size: 13px;
-  font-weight: 400;
-  color: var(--vt-c-text-1);
-  white-space: nowrap;
-  transition: color 0.25s;
+/* Timezone Selection Styles */
+:deep(.featured-actions) {
+  min-height: 90px;
+  align-items: flex-start;
 }
 
-.vt-menu-item:hover {
-  cursor: pointer;
-  color: var(--vt-c-brand);
-}
-
-:deep(.vt-flyout-menu) {
-  left: 0;
-  right: unset;
+/* Media Queries */
+@media (max-width: 769px) {
+  :deep(.featured-actions) {
+    min-height: 160px;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
 }
 </style>
