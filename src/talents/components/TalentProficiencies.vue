@@ -37,7 +37,7 @@ const toggleShowAll = (event: Event) => {
       <span class="talent-proficiency" v-for="p in visibleProficiencies" :key="p">{{ p }}</span>
       <button
         v-if="shouldShowButton"
-        @click="toggleShowAll"
+        @click.stop="toggleShowAll"
         class="show-all-button"
       >
         {{ showAll ? 'Show less' : 'Show all' }}
@@ -81,4 +81,3 @@ const toggleShowAll = (event: Event) => {
   color: var(--vt-c-gray-dark-3);
 }
 </style>
-
