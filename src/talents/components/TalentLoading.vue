@@ -67,7 +67,6 @@ const filterTalentByTimezoneAndHighlight = (talent: TalentProfile): boolean => {
         :items="allTalents"
         :filter="filterTalentByTimezoneAndHighlight"
         :cardComponent="TalentCard"
-        :showLinkToAll="true"
         browseLinkText="Browse and Search all Talents"
         browseLinkUrl="./all.html"
       />

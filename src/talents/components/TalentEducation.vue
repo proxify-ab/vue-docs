@@ -28,14 +28,7 @@ defineProps<{
   align-self: stretch;
 }
 
-h4 {
-  color: var(--vt-c-text-1);
-  font-size: 1.2em;
-  font-weight: 600;
-}
-
 h5 {
-  color: var(--vt-c-text-2);
-  font-weight: 700;
+  color: var(--vt-c-text-code);
 }
 </style>

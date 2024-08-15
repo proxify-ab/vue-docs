@@ -102,6 +102,7 @@ const profileImage = computed(() => getProfileImage(image, id))
 
 <style scoped>
 .talent-page {
+  color: var(--vt-c-text-2);
   width: 100%;
   max-width: 1080px;
   padding: 0 28px;
@@ -162,28 +163,36 @@ const profileImage = computed(() => getProfileImage(image, id))
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
-  padding: 40px 0;
+  padding: 24px 0;
+}
+
+.talent-page__text-section h4,
+.talent-page__text-section :deep(h4) {
+  color: var(--vt-c-text-1);
+  font-size: 18px;
+  font-weight: 600;
+
 }
 
 .talent-page__name {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   color: var(--vt-c-text-1);
-  font-size: 40px;
+  font-size: 32px;
   line-height: 100%;
 }
 
 .talent-page__location {
-  color: var(--vt-c-text-2);
   grid-column: 1 / 3;
   grid-row: 2 / 3;
   font-size: 14px;
+  margin-bottom: 14px;
 }
 
 .talent-page__description {
   grid-column: 1 / 3;
   grid-row: 3 / 4;
-  font-size: 14px;
+  font-size: 16px;
 
   p {
     margin-bottom: 16px;
@@ -219,7 +228,7 @@ const profileImage = computed(() => getProfileImage(image, id))
   text-align: center;
   background-color: var(--vt-c-brand);
   color: var(--vt-c-bg);
-  padding: 4px 14px;
+  padding: 12px 24px;
   font-size: 13.6px;
   line-height: 24px;
   font-weight: 600;
@@ -274,7 +283,11 @@ const profileImage = computed(() => getProfileImage(image, id))
   }
 
   .talent-page__text-section {
-    padding: 24px 0;
+    padding: 40px 0;
+  }
+
+  .divider {
+    margin-top: 40px;
   }
 }
 
@@ -282,11 +295,20 @@ const profileImage = computed(() => getProfileImage(image, id))
   .talent-page__content {
     grid-template-columns: 1fr 306px;
   }
+
+  .talent-page__name {
+    font-size: 40px;
+  }
 }
+
 
 @media (max-width: 768px) {
   .talent-page__main-action {
     display: none;
+  }
+
+  .back {
+    margin-bottom: 48px;
   }
 }
 </style>

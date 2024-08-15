@@ -49,6 +49,7 @@ const profileImage = computed(() => getProfileImage(image, id))
         <TalentProficiencies
           :proficiencies="proficiencies"
           :title="hero? 'Main proficiencies': undefined"
+          enable-show-all
           class="talent-card__section"
         />
       </div>
@@ -128,10 +129,18 @@ const profileImage = computed(() => getProfileImage(image, id))
   letter-spacing: -0.1px;
 }
 
+.talent-card--hero .talent-card__name {
+  font-size: 24px;
+}
+
 .talent-card__location {
   display: flex;
   align-items: center;
   gap: 4px;
+}
+
+.talent-card--hero .talent-card__location {
+  font-size: 14px;
 }
 
 .talent-card__icon {
@@ -150,10 +159,14 @@ const profileImage = computed(() => getProfileImage(image, id))
   display: flex;
   flex-direction: column;
   gap: 16px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.2px;
+}
+
+.talent-card--hero .talent-card__body {
+  font-size: 16px;
 }
 
 .talent-card__section {

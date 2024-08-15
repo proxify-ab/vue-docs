@@ -34,10 +34,4 @@ defineProps<{
 .talent-compensations__details {
   margin-top: 32px;
 }
-
-h4 {
-  color: var(--vt-c-text-1);
-  font-size: 1.2em;
-  font-weight: 600;
-}
 </style>

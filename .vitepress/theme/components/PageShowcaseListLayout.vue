@@ -96,6 +96,7 @@ const props = defineProps<{
   font-weight: 600;
   border-radius: 6px;
   transition: background-color 0.5s, color 0.5s;
+  text-decoration: none;
 }
 
 .accent-button:hover,
@@ -112,6 +113,10 @@ const props = defineProps<{
   .spotlight-content,
   .showcase-featured {
     padding: 36px 28px;
+  }
+
+  .featured-actions {
+    flex-direction: column-reverse;
   }
 }
 </style>
