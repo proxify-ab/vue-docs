@@ -28,7 +28,7 @@ const profileImage = computed(() => getProfileImage(image, id))
 <template>
   <div class="talent-page">
     <div class="back">
-      <a href="./all.html">
+      <a href="./index.html">
         <VTIconChevronLeft class="icon" />
         Back to all talents</a
       >
@@ -157,11 +157,7 @@ const profileImage = computed(() => getProfileImage(image, id))
   align-items: flex-start;
   gap: 24px;
   padding: 24px 0;
-  border-bottom: 1px solid var(--vt-c-divider-light);
-}
-
-.talent-page__text-section:last-child {
-  border-bottom: none;
+  border-top: 1px solid var(--vt-c-divider-light);
 }
 
 .talent-page__text-section h4,
@@ -169,7 +165,6 @@ const profileImage = computed(() => getProfileImage(image, id))
   color: var(--vt-c-text-1);
   font-size: 18px;
   font-weight: 600;
-
 }
 
 .talent-page__name {
@@ -191,6 +186,7 @@ const profileImage = computed(() => getProfileImage(image, id))
   grid-column: 1 / 3;
   grid-row: 3 / 4;
   font-size: 16px;
+  margin-bottom: 40px;
 
   p {
     margin-bottom: 16px;
@@ -299,6 +295,10 @@ const profileImage = computed(() => getProfileImage(image, id))
 @media (max-width: 768px) {
   .talent-page__main-action {
     display: none;
+  }
+
+  .talent-page__description {
+    margin-bottom: 24px;
   }
 
   .back {
