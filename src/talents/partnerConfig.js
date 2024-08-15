@@ -30,7 +30,11 @@ const partnerConfig = {
     phone: '+44 20 4525 4787',
     websiteVueLink: partner?.website?.url + 'vue',
     websiteVueLabel: partner?.website?.text + '/vue'
+  },
 
+  // Proficiency Section
+  proficiencies: {
+    skillsPerCard: 5
   }
 }
 
