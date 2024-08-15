@@ -53,8 +53,6 @@ const profileImage = computed(() => getProfileImage(image, id))
           </div>
         </div>
 
-        <div class="divider"></div>
-
         <TalentCompensations
           class="talent-page__text-section"
           title="Compensation"
@@ -152,11 +150,6 @@ const profileImage = computed(() => getProfileImage(image, id))
   align-items: center;
 }
 
-.divider {
-  width: 100%;
-  margin-top: 24px;
-  border-top: 1px solid var(--vt-c-divider-light);
-}
 
 .talent-page__text-section {
   display: flex;
@@ -164,6 +157,11 @@ const profileImage = computed(() => getProfileImage(image, id))
   align-items: flex-start;
   gap: 24px;
   padding: 24px 0;
+  border-bottom: 1px solid var(--vt-c-divider-light);
+}
+
+.talent-page__text-section:last-child {
+  border-bottom: none;
 }
 
 .talent-page__text-section h4,
@@ -284,10 +282,6 @@ const profileImage = computed(() => getProfileImage(image, id))
 
   .talent-page__text-section {
     padding: 40px 0;
-  }
-
-  .divider {
-    margin-top: 40px;
   }
 }
 
