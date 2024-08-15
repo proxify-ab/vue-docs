@@ -2,8 +2,8 @@
 const props = defineProps<{
   spotlightTitle: string;
   featuredTitle: string;
-  browseLinkText: string;
-  browseLinkUrl: string;
+  browseLinkText?: string;
+  browseLinkUrl?: string;
 }>()
 </script>
 
@@ -28,9 +28,11 @@ const props = defineProps<{
       </div>
       <h2 class="section-title">{{ props.featuredTitle }}</h2>
       <slot name="featured-list"></slot>
-      <div class="browse-more">
-        <a class="accent-button" :href="props.browseLinkUrl">{{ props.browseLinkText }}</a>
-      </div>
+      <slot name="featured-cta">
+        <div v-if="browseLinkUrl" class="browse-more">
+          <a class="accent-button" :href="props.browseLinkUrl">{{ props.browseLinkText }}</a>
+        </div>
+      </slot>
     </div>
 
     <!-- Join Section -->
