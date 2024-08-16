@@ -269,13 +269,13 @@ function openTalentPage() {
 }
 
 /* Responsive Styles */
-@media (max-width: 560px) {
+@media (max-width: 640px) {
   .talent-card {
     width: 100%;
   }
 }
 
-@media (min-width: 560px) and (max-width: 768px) {
+@media (min-width: 640px) and (max-width: 768px) {
   .talent-card__header {
     flex-direction: column;
     align-items: flex-start;
