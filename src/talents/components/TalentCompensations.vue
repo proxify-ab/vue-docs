@@ -18,8 +18,9 @@ defineProps<{
         </div>
       </div>
       <div v-if="showDetails" class="talent-compensations__details">
-        <p v-if="showDetails">No other costs.</p>
-        <p v-if="showDetails">One month trial period, thereafter, one month notice period.</p></div>
+        <p>No other costs.</p>
+        <p>One month trial period, thereafter, one month notice period.</p>
+      </div>
     </div>
   </div>
 </template>

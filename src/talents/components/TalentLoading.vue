@@ -89,7 +89,7 @@ const filterTalentByTimezone = (talent: TalentProfile): boolean => {
 }
 
 /* Media Queries */
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   :deep(.featured-actions) {
     min-height: 160px;
     align-items: flex-start;

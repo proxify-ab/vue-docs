@@ -35,8 +35,9 @@ const profileImage = computed(() => getProfileImage(image, id))
     </div>
 
     <div class="talent-page__content">
-      <img class="talent-page__profile-image" :src="profileImage" :alt="name" />
-
+      <div class="talent-page__profile-image">
+        <img :src="profileImage" :alt="name" />
+      </div>
       <div class="talent-page__main">
         <div class="talent-page__main-info">
           <h2 class="talent-page__name">{{ name }}</h2>
@@ -134,12 +135,20 @@ const profileImage = computed(() => getProfileImage(image, id))
 }
 
 .talent-page__profile-image {
+  grid-area: image;
   width: 100%;
-  max-width: 327px;
+  max-height: 400px;
+  overflow: hidden;
   margin-bottom: 24px;
-  align-self: stretch;
-  background: lightgray 50% / cover no-repeat;
 }
+
+.talent-page__profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
 
 .talent-page__main-info {
   width: 100%;
@@ -244,7 +253,6 @@ const profileImage = computed(() => getProfileImage(image, id))
 @media (min-width: 769px) {
   .talent-page {
     padding: 0 28px 64px;
-
   }
 
   .talent-page__content {

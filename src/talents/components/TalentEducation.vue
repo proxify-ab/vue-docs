@@ -30,5 +30,6 @@ defineProps<{
 
 h5 {
   color: var(--vt-c-text-code);
+  font-weight: 600;
 }
 </style>
