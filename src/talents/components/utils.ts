@@ -1,4 +1,4 @@
-export function getProfileImage(img: string | undefined, id: number) {
+export function getTalentProfileImage(img: string | undefined, id: number) {
   return `/images/talents/${img || `${id}.jpg`}`
 }
 
