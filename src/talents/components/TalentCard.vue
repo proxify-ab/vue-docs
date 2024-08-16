@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { TalentProfile } from './type'
-import { getProfileImage } from './utils'
+import { getTalentProfileImage } from './utils'
 import { VTIconMapPin } from '@vue/theme'
 import TalentProficiencies from './TalentProficiencies.vue'
 import TalentCompensations from './TalentCompensations.vue'
@@ -16,7 +16,7 @@ const props = defineProps<{
 
 const { id, name, image, intro, compensations, proficiencies, location } = props.data
 
-const profileImage = computed(() => getProfileImage(image, id))
+const profileImage = computed(() => getTalentProfileImage(image, id))
 
 function openTalentPage() {
   router.go(`./talents/${id}.html`)
