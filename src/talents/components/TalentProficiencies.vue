@@ -13,6 +13,10 @@ const showAll = ref(false)
 const maxVisibleProficiencies = partnerConfig.proficiencies.skillsPerCard
 
 const visibleProficiencies = computed(() => {
+  if (!props.enableShowAll) {
+    return props.proficiencies
+  }
+
   if (props.proficiencies.length <= maxVisibleProficiencies) {
     return props.proficiencies
   }
