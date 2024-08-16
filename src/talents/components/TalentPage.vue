@@ -3,13 +3,14 @@ import data from '../talent.json'
 import { TalentProfiles } from './type'
 import { VTIconChevronLeft, VTIconMapPin } from '@vue/theme'
 import { computed } from 'vue'
-import { getProfileImage } from './utils'
+import { getTalentProfileImage } from './utils'
 import TalentPageFooter from './TalentPageFooter.vue'
 import TalentExperiences from './TalentExperiences.vue'
 import TalentEducation from './TalentEducation.vue'
 import TalentProficiencies from './TalentProficiencies.vue'
 import partnerConfig from '../partnerConfig.js'
 import TalentCompensations from './TalentCompensations.vue'
+import TalentProfileDiagram from './TalentProfileDiagram.vue'
 
 const props = defineProps<{
   talent: number
@@ -21,7 +22,7 @@ const p = (data as TalentProfiles).find(
 
 const { id, name, image, location, description, compensations, proficiencies, experiences, education } = p
 
-const profileImage = computed(() => getProfileImage(image, id))
+const profileImage = computed(() => getTalentProfileImage(image, id))
 
 </script>
 
@@ -67,19 +68,23 @@ const profileImage = computed(() => getProfileImage(image, id))
           :proficiencies="proficiencies" />
 
 
-        <div class="talent-page__text-section">
-          <h4>Candidate profile</h4>
-          <img src="/images/talents/1-profile.png" :alt="name" />
-        </div>
+        <TalentProfileDiagram
+          :talentId="id"
+          :talentName="name"
+          diagramType="profile"
+          title="Candidate profile"
+          class="talent-page__text-section"
+        />
 
-        <div class="talent-page__text-section">
-          <h4>Candidate score</h4>
-          <p>The practical score range is 0 to 100. For all Vue.js developer who have been evaluationed, this is the
-            distribution of their scores across that range and here’s where your candidate scored.
-          </p>
-          <img src="/images/talents/1-score.png" :alt="name" />
-          <p>Data from 3,661 evaluated Vue.js developers and 38,008 applicants.</p>
-        </div>
+        <TalentProfileDiagram
+          :talentId="id"
+          :talentName="name"
+          diagramType="score"
+          title="Candidate score"
+          prependText="The practical score range is 0 to 100. For all Vue.js developers who have been evaluated, this is the distribution of their scores across that range, and here’s where your candidate scored."
+          appendText="Data from 3,661 evaluated Vue.js developers and 38,008 applicants."
+          class="talent-page__text-section"
+        />
 
         <TalentExperiences
           class="talent-page__text-section"
