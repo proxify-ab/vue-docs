@@ -5,6 +5,9 @@ import { getProfileImage } from './utils'
 import { VTIconMapPin } from '@vue/theme'
 import TalentProficiencies from './TalentProficiencies.vue'
 import TalentCompensations from './TalentCompensations.vue'
+import { useRouter } from 'vitepress'
+
+const router = useRouter()
 
 const props = defineProps<{
   data: TalentProfile
@@ -14,13 +17,17 @@ const props = defineProps<{
 const { id, name, image, intro, compensations, proficiencies, location } = props.data
 
 const profileImage = computed(() => getProfileImage(image, id))
+
+function openTalentPage() {
+  router.go(`./talents/${id}.html`)
+}
 </script>
 
 <template>
-  <a
+  <div
     class="talent-card"
     :class="{ 'talent-card--hero': hero }"
-    :href="'/talents/' + id + '.html'"
+    @click="openTalentPage"
   >
     <div class="talent-card__header">
       <div v-if="!hero" class="talent-card__avatar">
@@ -50,19 +57,22 @@ const profileImage = computed(() => getProfileImage(image, id))
       :title="hero ? 'Main proficiencies' : undefined"
       enable-show-all
       class="talent-card__section talent-card__proficiencies"
+      @click.stop
     />
 
 
     <div v-if="hero" class="talent-card__image">
       <img :src="profileImage" :alt="name" />
     </div>
-  </a>
+  </div>
 </template>
 
 <style scoped>
 /* General Styles */
 .talent-card {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 23px;
   width: 48.5%;
   margin-bottom: 36px;
@@ -75,6 +85,7 @@ const profileImage = computed(() => getProfileImage(image, id))
 }
 
 .talent-card:hover {
+  cursor: pointer;
   box-shadow: 0 12px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -181,6 +192,7 @@ const profileImage = computed(() => getProfileImage(image, id))
 
 .talent-card--hero .talent-card__proficiencies {
   grid-area: proficiencies;
+  cursor: default;
 }
 
 .talent-card--hero .talent-card__compensation {
@@ -201,18 +213,17 @@ const profileImage = computed(() => getProfileImage(image, id))
   object-position: top;
 }
 
-@media (min-width: 640px) and (max-width: 767px) {
+@media (min-width: 640px) and (max-width: 768px) {
   .talent-card--hero {
     grid-template-areas:
       "header image"
-      "compensation image"
-      "intro intro"
+      "intro image"
+      "compensation compensation"
       "proficiencies proficiencies";
     grid-template-rows: auto  1fr auto auto;
     grid-template-columns: 1fr 250px;
     align-items: start;
   }
-
 
   .talent-card--hero .talent-card__image {
     max-width: 250px;
@@ -221,12 +232,12 @@ const profileImage = computed(() => getProfileImage(image, id))
   }
 }
 
-@media (min-width: 768px) and (max-width: 959px) {
+@media (min-width: 769px) and (max-width: 959px) {
   .talent-card--hero {
     grid-template-areas:
       "header image"
-      "compensation image"
       "intro image"
+      "compensation image"
       "proficiencies proficiencies";
     grid-template-rows: auto auto 1fr auto;
     grid-template-columns: 1fr 288px;
@@ -245,6 +256,7 @@ const profileImage = computed(() => getProfileImage(image, id))
       "compensation image"
       "proficiencies image";
     grid-template-columns: 1fr 288px;
+    grid-template-rows: auto auto auto 1fr;
   }
 
   .talent-card--hero .talent-card__image {
@@ -257,12 +269,14 @@ const profileImage = computed(() => getProfileImage(image, id))
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 560px) {
   .talent-card {
     width: 100%;
   }
+}
 
-  .talent-card--hero .talent-card__header {
+@media (min-width: 560px) and (max-width: 768px) {
+  .talent-card__header {
     flex-direction: column;
     align-items: flex-start;
   }
