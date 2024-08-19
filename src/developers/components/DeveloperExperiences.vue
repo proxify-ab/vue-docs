@@ -20,7 +20,9 @@ defineProps<{
             {{ experience.company }} · {{ experience.startDate }} - {{ experience.endDate }} ({{ experience.period }})
           </i>
         </div>
-        <p class="description">{{ experience.description }}</p>
+        <div class="description">
+          <p v-for="desc in experience.description">{{ desc }}</p>
+        </div>
         <DeveloperProficiencies :proficiencies="experience.skills" />
       </div>
     </div>

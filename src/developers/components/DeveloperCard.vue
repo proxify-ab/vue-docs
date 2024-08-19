@@ -13,7 +13,7 @@ const props = defineProps<{
   hero?: boolean
 }>()
 
-const { id, name, image, intro, compensations, proficiencies, location } = props.data
+const { id, alias, image, description, compensations, proficiencies, location } = props.data
 
 const profileImage = computed(() => getDeveloperProfileImage(image, id))
 
@@ -30,10 +30,10 @@ function openDeveloperPage() {
   >
     <div class="developer-card__header">
       <div v-if="!hero" class="developer-card__avatar">
-        <img :src="profileImage" :alt="name" />
+        <img :src="profileImage" :alt="alias" />
       </div>
       <div class="developer-card__summary">
-        <h3 class="developer-card__name">{{ name }}</h3>
+        <h3 class="developer-card__name">{{ alias }}</h3>
         <p class="developer-card__location">
           <VTIconMapPin class="developer-card__icon" />
           {{ location }}
@@ -42,7 +42,7 @@ function openDeveloperPage() {
       </div>
     </div>
 
-    <p class="developer-card__intro">{{ intro }}</p>
+    <p class="developer-card__intro">{{ description[0] }}</p>
 
     <DeveloperCompensations
       v-if="hero"
@@ -61,7 +61,7 @@ function openDeveloperPage() {
 
 
     <div v-if="hero" class="developer-card__image">
-      <img :src="profileImage" :alt="name" />
+      <img :src="profileImage" :alt="alias" />
     </div>
   </div>
 </template>

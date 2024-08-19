@@ -21,7 +21,7 @@ const developer = (data as DeveloperProfiles).find(
   (developer) => developer.id === props.developerId
 )!
 
-const { id, name, image, location, description, compensations, proficiencies, experiences, education } = developer
+const { id, alias, image, location, description, compensations, proficiencies, experiences, education } = developer
 
 const profileImage = computed(() => getDeveloperProfileImage(image, id))
 
@@ -38,11 +38,11 @@ const profileImage = computed(() => getDeveloperProfileImage(image, id))
 
     <div class="developer-page__content">
       <div class="developer-page__profile-image">
-        <img :src="profileImage" :alt="name" />
+        <img :src="profileImage" :alt="alias" />
       </div>
       <div class="developer-page__main">
         <div class="developer-page__main-info">
-          <h2 class="developer-page__name">{{ name }}</h2>
+          <h2 class="developer-page__name">{{ alias }}</h2>
           <a class="accent-button developer-page__main-action" :href="partnerConfig.contactPage" target="_blank">Get in
             contact</a>
 
@@ -71,7 +71,7 @@ const profileImage = computed(() => getDeveloperProfileImage(image, id))
 
         <DeveloperProfileDiagram
           :developerId="id"
-          :developerName="name"
+          :developerAlias="alias"
           diagramType="profile"
           title="Candidate profile"
           class="developer-page__text-section"
@@ -79,7 +79,7 @@ const profileImage = computed(() => getDeveloperProfileImage(image, id))
 
         <DeveloperProfileDiagram
           :developerId="id"
-          :developerName="name"
+          :developerAlias="alias"
           diagramType="score"
           title="Candidate score"
           prependText="The practical score range is 0 to 100. For all Vue.js developers who have been evaluated, this is the distribution of their scores across that range, and here’s where your candidate scored."

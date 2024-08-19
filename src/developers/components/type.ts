@@ -5,7 +5,7 @@ export interface DeveloperExperience {
   startDate: string;
   endDate: string;
   period: string;
-  description: string;
+  description: string[];
   skills: string[];
 }
 
@@ -25,15 +25,13 @@ export interface DeveloperCompensations {
 
 export interface DeveloperProfile {
   id: number;
-  name: string;
+  alias: string;
   image?: string;
-  intro: string;
   description: string[];
   proficiencies: string[];
   compensations: DeveloperCompensations;
   location: string;
   timezone: string;
-  candidateProfile?: string;
   experiences?: DeveloperExperience[];
   education?: DeveloperEducation[];
   highlighted?: boolean;

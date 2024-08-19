@@ -4,7 +4,7 @@ import { ref, onMounted } from 'vue'
 const props = defineProps<{
   title?: string
   titleTag?: string
-  developerName: string
+  developerAlias: string
   developerId: number
   image?: string
   diagramType: 'profile' | 'score'
