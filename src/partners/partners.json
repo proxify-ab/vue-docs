@@ -184,8 +184,14 @@
     "name": "Proxify",
     "logo": "proxify.svg",
     "flipLogo": true,
-    "intro": "Proxify.io is a platform that connects businesses with handpicked remote developers. They offer a fast hiring process, typically matching companies with developers in just two days. The platform emphasizes quality and cost-effectiveness, with vetted developers available at competitive hourly rates. Proxify’s service includes personalized matching by experts, making it easier for companies to find developers with the exact skill sets needed for their projects. The platform is trusted by many innovative companies for its efficiency and reliability.",
+    "intro": "With Proxify, you can hire expert Vue.js developers, at a fair price and with zero risk, in just a few days. The quality and commitment of an in-house team, with the flexibility of contractors. Augment your existing team or build a new one, without the risks and admin of permanent employment.",
     "description": [
+      "Proxify is an end-to-end partner that connects businesses with thoroughly vetted developers, matching you with perfect-fit developers in just two days.",
+      "Our network includes over 4,000 developers with expertise in 500+ tech skills. We accept only 2% of applicants to ensure the highest quality standards. Thousands of businesses worldwide trust our rigorous selection process.",
+      "- <b>Time-to-hire</b>: Ideal candidates are presented within just two days.",
+      "- <b>A core team member, not just a freelancer</b>: Proxify developers deliver quality on business-critical code and fit seamlessly with your team’s culture. No different to your in-house staff.",
+      "- <b>Fair pricing</b>: Our model of working with top-tier talent remotely across the world is both cost-effective for our clients, and lucrative for our developers. Everybody wins.",
+      "- <b>Risk-free and adaptable</b>: Enjoy a team that can quickly adjust as your priorities shift, without the risks and limitations of permanent employment."
     ],
     "proficiencies": [
       "Vue",
