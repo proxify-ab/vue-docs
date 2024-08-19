@@ -16,6 +16,7 @@ import { useRoute } from 'vitepress'
 
 const props = defineProps<{
   developerId: number
+  developerSlug: string
 }>()
 
 const developer = (data as DeveloperProfiles).find(

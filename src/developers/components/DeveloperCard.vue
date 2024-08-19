@@ -18,7 +18,7 @@ const { id, alias, image, description, compensations, proficiencies, location } 
 const profileImage = computed(() => getDeveloperProfileImage(image, id))
 
 function openDeveloperPage() {
-  router.go(`./developers/${id}.html`)
+  router.go(`./developers/${id}-${alias.toLowerCase()}-freelance-developer.html`)
 }
 </script>
 

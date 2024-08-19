@@ -10,4 +10,4 @@ import Page from './components/DeveloperPage.vue'
 const { page } = useData()
 </script>
 
-<Page :developerId="page.params.developerId" />
+<Page :developerId="page.params.developerId" :developerSlug="page.params.developerSlug" />

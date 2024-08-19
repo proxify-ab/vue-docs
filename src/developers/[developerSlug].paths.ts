@@ -4,7 +4,8 @@ export default {
   paths: developers.map((developer) => {
     return {
       params: {
-        developerId: developer.id
+        developerId: developer.id,
+        developerSlug: `${developer.id}-${developer.alias.toLowerCase()}-freelance-developer`
       }
     }
   })
