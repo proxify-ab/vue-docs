@@ -1,3 +1,8 @@
+export interface DeveloperExperienceDescription {
+  type: 'p' | 'ul';
+  content: string | string[];
+}
+
 export interface DeveloperExperience {
   id: number;
   role: string;
@@ -5,7 +10,7 @@ export interface DeveloperExperience {
   startDate: string;
   endDate: string;
   period: string;
-  description: string[];
+  description: DeveloperExperienceDescription[];
   skills: string[];
 }
 
@@ -21,7 +26,6 @@ export interface DeveloperCompensations {
   partTime: string;
   monthly: string;
 }
-
 
 export interface DeveloperProfile {
   id: number;

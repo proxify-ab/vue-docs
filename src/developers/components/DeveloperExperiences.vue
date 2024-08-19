@@ -3,10 +3,9 @@ import { DeveloperExperience } from './type'
 import DeveloperProficiencies from './DeveloperProficiencies.vue'
 
 defineProps<{
-  experiences?: DeveloperExperience[]
-  title?: string
+  experiences?: DeveloperExperience[];
+  title?: string;
 }>()
-
 </script>
 
 <template>
@@ -21,13 +20,17 @@ defineProps<{
           </i>
         </div>
         <div class="description">
-          <p v-for="desc in experience.description">{{ desc }}</p>
+          <template v-for="(desc, index) in experience.description" :key="`desc-${index}`">
+            <p v-if="desc.type === 'p'">{{ desc.content }}</p>
+            <ul v-else-if="desc.type === 'ul'">
+              <li v-for="(item, idx) in desc.content" :key="`item-${idx}`">{{ item }}</li>
+            </ul>
+          </template>
         </div>
         <DeveloperProficiencies :proficiencies="experience.skills" />
       </div>
     </div>
   </div>
-
 </template>
 
 
@@ -51,5 +54,11 @@ defineProps<{
 h5 {
   color: var(--vt-c-text-code);
   font-weight: 600;
+}
+
+.description ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 8px;
 }
 </style>

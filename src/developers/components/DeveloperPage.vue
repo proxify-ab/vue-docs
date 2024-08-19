@@ -19,7 +19,7 @@ const props = defineProps<{
 
 const developer = (data as DeveloperProfiles).find(
   (developer) => developer.id === props.developerId
-)!
+)!;
 
 const { id, alias, image, location, description, compensations, proficiencies, experiences, education } = developer
 
@@ -32,8 +32,8 @@ const profileImage = computed(() => getDeveloperProfileImage(image, id))
     <div class="back">
       <a href="./index.html">
         <VTIconChevronLeft class="icon" />
-        Back to all developers</a
-      >
+        Back to all developers
+      </a>
     </div>
 
     <div class="developer-page__content">
@@ -43,8 +43,9 @@ const profileImage = computed(() => getDeveloperProfileImage(image, id))
       <div class="developer-page__main">
         <div class="developer-page__main-info">
           <h2 class="developer-page__name">{{ alias }}</h2>
-          <a class="accent-button developer-page__main-action" :href="partnerConfig.contactPage" target="_blank">Get in
-            contact</a>
+          <a class="accent-button developer-page__main-action" :href="partnerConfig.contactPage" target="_blank">
+            Get in contact
+          </a>
 
           <p class="developer-page__location">
             <VTIconMapPin class="icon" />
@@ -52,7 +53,7 @@ const profileImage = computed(() => getDeveloperProfileImage(image, id))
           </p>
 
           <div class="developer-page__description">
-            <p v-for="desc in description">{{ desc }}</p>
+            <p v-for="desc in description" :key="desc">{{ desc }}</p>
           </div>
         </div>
 
@@ -66,8 +67,8 @@ const profileImage = computed(() => getDeveloperProfileImage(image, id))
         <DeveloperProficiencies
           class="developer-page__text-section"
           title="Proficiencies"
-          :proficiencies="proficiencies" />
-
+          :proficiencies="proficiencies"
+        />
 
         <DeveloperProfileDiagram
           :developerId="id"
@@ -100,7 +101,6 @@ const profileImage = computed(() => getDeveloperProfileImage(image, id))
       </div>
 
       <DeveloperPageFooter class="developer-page__footer" />
-
     </div>
   </div>
 </template>

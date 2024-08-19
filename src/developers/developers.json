@@ -36,7 +36,6 @@
     },
     "location": "Greece",
     "timezone": "GTM+3",
-    "candidateProfile": "#",
     "experiences": [
       {
         "id": 1,
@@ -46,9 +45,17 @@
         "endDate": "Present",
         "period": "3 years 8 months",
         "description": [
-          "White Hat Gaming is a casino game provider company in Malta:",
-          "- Using Vue.js version 3 with composition API for front end development Software Architecture;",
-          "- Planning and Development for in-house Web Apps; Unit testing."
+          {
+            "type": "p",
+            "content": "White Hat Gaming is a casino game provider company in Malta:"
+          },
+          {
+            "type": "ul",
+            "content": [
+              "Using Vue.js version 3 with composition API for front end development Software Architecture;",
+              "Planning and Development for in-house Web Apps; Unit testing."
+            ]
+          }
         ],
         "skills": [
           "JavaScript",
@@ -69,10 +76,15 @@
         "endDate": "Dec 2020",
         "period": "1 year",
         "description": [
-          "Provided effective troubleshooting and remediation for web applications;",
-          "Interfaced with clients to identify business requirements;",
-          "Utilized the latest software development tools, techniques, and approaches. Using Node.js, Express.js, Vue.js, React.js, MongoDB, PostgreSQL. Brought forth a passion and dedication to software development;",
-          "Utilized the latest software development tools, techniques, and approaches."
+          {
+            "type": "ul",
+            "content": [
+              "Provided effective troubleshooting and remediation for web applications;",
+              "Interfaced with clients to identify business requirements;",
+              "Utilized the latest software development tools, techniques, and approaches. Using Node.js, Express.js, Vue.js, React.js, MongoDB, PostgreSQL. Brought forth a passion and dedication to software development;",
+              "Utilized the latest software development tools, techniques, and approaches."
+            ]
+          }
         ],
         "skills": [
           "JavaScript",
@@ -97,9 +109,17 @@
         "endDate": "Dec 2019",
         "period": "2 years 2 months",
         "description": [
-          "Draxis was a company that created applications for European unions, with a focus on agricultural applications:",
-          "- Performed software architecture, planning, and development for web apps, and mobile apps;",
-          "- Designed and developed large-scale ICT systems, funded by international donors, the Horizon 2020 program, and the European Commission."
+          {
+            "type": "p",
+            "content": "Draxis was a company that created applications for European unions, with a focus on agricultural applications:"
+          },
+          {
+            "type": "ul",
+            "content": [
+              "Performed software architecture, planning, and development for web apps, and mobile apps;",
+              "Designed and developed large-scale ICT systems, funded by international donors, the Horizon 2020 program, and the European Commission."
+            ]
+          }
         ],
         "skills": [
           "PHP",
@@ -122,9 +142,17 @@
         "endDate": "Aug 2017",
         "period": "1 year 11 months",
         "description": [
-          "Archirodon Group N.V. was a construction company focused on building artificial lakes and skyscrapers.",
-          "- Developed web applications;",
-          "- Created, communicated, and managed project plans."
+          {
+            "type": "p",
+            "content": "Archirodon Group N.V. was a construction company focused on building artificial lakes and skyscrapers."
+          },
+          {
+            "type": "ul",
+            "content": [
+              "Developed web applications;",
+              "Created, communicated, and managed project plans."
+            ]
+          }
         ],
         "skills": [
           "Laravel",
@@ -141,8 +169,16 @@
         "endDate": "Aug 2015",
         "period": "7 months",
         "description": [
-          "It was an internship. 24 Media Digital Media Group is a big journal company in Greece.",
-          "- Created websites and web applications."
+          {
+            "type": "p",
+            "content": "It was an internship. 24 Media Digital Media Group is a big journal company in Greece."
+          },
+          {
+            "type": "ul",
+            "content": [
+              "Created websites and web applications."
+            ]
+          }
         ],
         "skills": [
           "PHP",
@@ -159,9 +195,17 @@
         "endDate": "Feb 2014",
         "period": "2 months",
         "description": [
-          "It was an ads company, and Stelios was creating websites.",
-          "- Developed and supported the website;",
-          "- Performed SEO of the platform."
+          {
+            "type": "p",
+            "content": "It was an ads company, and Stelios was creating websites."
+          },
+          {
+            "type": "ul",
+            "content": [
+              "Developed and supported the website;",
+              "Performed SEO of the platform."
+            ]
+          }
         ],
         "skills": [
           "PHP",
@@ -220,7 +264,6 @@
     },
     "location": "Poland",
     "timezone": "GTM+3",
-    "candidateProfile": "#",
     "experiences": [
       {
         "id": 1,
@@ -230,19 +273,32 @@
         "endDate": "Jun 2022",
         "period": "11 years 11 months",
         "description": [
-          "- Feature design, requirements for the dev team.",
-          "- Development of more advanced or mission-critical features.",
-          "- Code reviews + support for the other dev/front-end.",
-          "- Technical meetings with clients.",
-          "- Infrastructure design and maintenance/automation (GCP last 10 years).",
-          "- Time & cost estimates.",
-          "- Systems That Built",
-          "- Multi-channel (eBay, Amazon + web front) eCommerce solution with advanced modules to calculate optimal selling prices, complex product definitions & shipping rules, promotions, and integrations with couriers & warehousing solutions.",
-          "- Public sector CMS with content versioning, advanced access control, publishing flows, widget-based content editor, dynamic forms module with manageable logic, validation, and payments; eventually used by councils for most citizen-council interactions (about 80 forms per website, i.e., bus passes, reporting issues, bins).",
-          "- Charity donation platform - used to this date by a number of medium to large charities in the UK, integrated with MS Dynamics and other CRM solutions, also integrated with Gov.UK.",
-          "- Project management - dedicated for media agencies, used internally for about 4 years. Too many features to list, definitely more than Basecamp/TeamWork (leaders at the time).",
-          "- SEO campaign management - dedicated to marketing agencies, integrated into all relevant tools in the world of online marketing, report generation, prospect negotiations, content writing, time tracking, campaign schedule planning, task lists, etc.",
-          "- Many bespoke websites: penny auctions, online poster design, search directories of various sorts, award applications, recruitment...the list goes on."
+          {
+            "type": "ul",
+            "content": [
+              "Feature design, requirements for the dev team.",
+              "Development of more advanced or mission-critical features.",
+              "Code reviews + support for the other dev/front-end.",
+              "Technical meetings with clients.",
+              "Infrastructure design and maintenance/automation (GCP last 10 years).",
+              "Time & cost estimates."
+            ]
+          },
+          {
+            "type": "p",
+            "content": "Systems That Built"
+          },
+          {
+            "type": "ul",
+            "content": [
+              "Multi-channel (eBay, Amazon + web front) eCommerce solution with advanced modules to calculate optimal selling prices, complex product definitions & shipping rules, promotions, and integrations with couriers & warehousing solutions.",
+              "Public sector CMS with content versioning, advanced access control, publishing flows, widget-based content editor, dynamic forms module with manageable logic, validation, and payments; eventually used by councils for most citizen-council interactions (about 80 forms per website, i.e., bus passes, reporting issues, bins).",
+              "Charity donation platform - used to this date by a number of medium to large charities in the UK, integrated with MS Dynamics and other CRM solutions, also integrated with Gov.UK.",
+              "Project management - dedicated for media agencies, used internally for about 4 years. Too many features to list, definitely more than Basecamp/TeamWork (leaders at the time).",
+              "SEO campaign management - dedicated to marketing agencies, integrated into all relevant tools in the world of online marketing, report generation, prospect negotiations, content writing, time tracking, campaign schedule planning, task lists, etc.",
+              "Many bespoke websites: penny auctions, online poster design, search directories of various sorts, award applications, recruitment...the list goes on."
+            ]
+          }
         ],
         "skills": [
           "PHP",
@@ -266,8 +322,16 @@
         "endDate": "Jul 2010",
         "period": "3 years 2 months",
         "description": [
-          "i3MEDIA was a small agency building websites for local businesses.",
-          "- Developed the first bespoke CMS, which became the core product, the second version of which was implemented on some nationally recognized websites in 2010."
+          {
+            "type": "p",
+            "content": "i3MEDIA was a small agency building websites for local businesses.\n\n"
+          },
+          {
+            "type": "ul",
+            "content": [
+              "Developed the first bespoke CMS, which became the core product, the second version of which was implemented on some nationally recognized websites in 2010."
+            ]
+          }
         ],
         "skills": [
           "PHP",
@@ -284,7 +348,10 @@
         "endDate": "Mar 2007",
         "period": "2 years",
         "description": [
-          "Managed to complete 3 commercial projects."
+          {
+            "type": "p",
+            "content": "Managed to complete 3 commercial projects."
+          }
         ],
         "skills": [
           "PHP",
@@ -348,7 +415,6 @@
     },
     "location": "Armenia",
     "timezone": "GTM+4",
-    "candidateProfile": "#",
     "experiences": [
       {
         "id": 1,
@@ -358,9 +424,14 @@
         "endDate": "Feb 2024",
         "period": "1 year",
         "description": [
-          "Led the development of the HR Help Desk, Ticketing, Inventory, Documents Management and Performance Reviews projects.",
-          "Participated in code reviews and provided constructive feedback to colleagues to ensure best practices and high-quality code.",
-          "Led post-project evaluations to identify areas for improvement and implemented process improvements for future projects."
+          {
+            "type": "ul",
+            "content": [
+              "Led the development of the HR Help Desk, Ticketing, Inventory, Documents Management and Performance Reviews projects.",
+              "Participated in code reviews and provided constructive feedback to colleagues to ensure best practices and high-quality code.",
+              "Led post-project evaluations to identify areas for improvement and implemented process improvements for future projects."
+            ]
+          }
         ],
         "skills": [
           "React.js",
@@ -377,9 +448,14 @@
         "endDate": "Dec 2023",
         "period": "1 year 10 months",
         "description": [
-          "Effectively communicated project progress, risks, and issues to stakeholders, ensuring that all parties were informed and aligned throughout the project.",
-          "Conducted a thorough analysis of existing processes and identified areas for improvement, using this knowledge to develop and implement new processes that better aligned with business needs and objectives.",
-          "Switched the MVP version by defining the project structure and revisiting the architecture."
+          {
+            "type": "ul",
+            "content": [
+              "Effectively communicated project progress, risks, and issues to stakeholders, ensuring that all parties were informed and aligned throughout the project.",
+              "Conducted a thorough analysis of existing processes and identified areas for improvement, using this knowledge to develop and implement new processes that better aligned with business needs and objectives.",
+              "Switched the MVP version by defining the project structure and revisiting the architecture."
+            ]
+          }
         ],
         "skills": [
           "JavaScript",
@@ -398,9 +474,14 @@
         "endDate": "Nov 2022",
         "period": "6 months",
         "description": [
-          "Developed the Remix official website's user interface and core functionalities, ensuring mobile responsiveness;",
-          "Utilized GitHub Pages to deploy the React application;",
-          "Implemented a custom section scroller for enhanced user experience."
+          {
+            "type": "ul",
+            "content": [
+              "Developed the Remix official website's user interface and core functionalities, ensuring mobile responsiveness;",
+              "Utilized GitHub Pages to deploy the React application;",
+              "Implemented a custom section scroller for enhanced user experience."
+            ]
+          }
         ],
         "skills": [
           "JavaScript",
@@ -421,18 +502,23 @@
         "endDate": "Nov 2022",
         "period": "5 years 6 months",
         "description": [
-          "Mentored 4 junior frontend developers, enhancing their proficiency in JavaScript and Vue.js;",
-          "Collaborated closely with the PM to ensure alignment with project plans, timelines, and billing;",
-          "Developed and constructed dynamic user interfaces within Agile environments for enterprise clients with valuations of up to $3 billion;",
-          "Participated actively in all development phases, from conceptualization and functional design to detailed implementation, debugging, and software solution deployment;",
-          "Supervised and coordinated a team of six employees, overseeing multiple critical business processes;",
-          "Led the design of the project's frontend architecture, leading weekly team meetings and formulating and executing strategies and plans;",
-          "Provided 24/7 technical support to maintain the seamless operation of the website;",
-          "Generated wireframes, mockups, and prototypes to communicate design concepts visually;",
-          "Implemented responsive design techniques, ensuring optimal user interface performance across various devices and screen sizes;",
-          "Contributed to enhancing the software development by proposing new tools and implementing best practices;",
-          "Conducted user research and usability testing, gathering feedback and pinpointing areas for improvement;",
-          "Played a key role in documenting project requirements, technical specifications, and development procedures."
+          {
+            "type": "ul",
+            "content": [
+              "Mentored 4 junior frontend developers, enhancing their proficiency in JavaScript and Vue.js;",
+              "Collaborated closely with the PM to ensure alignment with project plans, timelines, and billing;",
+              "Developed and constructed dynamic user interfaces within Agile environments for enterprise clients with valuations of up to $3 billion;",
+              "Participated actively in all development phases, from conceptualization and functional design to detailed implementation, debugging, and software solution deployment;",
+              "Supervised and coordinated a team of six employees, overseeing multiple critical business processes;",
+              "Led the design of the project's frontend architecture, leading weekly team meetings and formulating and executing strategies and plans;",
+              "Provided 24/7 technical support to maintain the seamless operation of the website;",
+              "Generated wireframes, mockups, and prototypes to communicate design concepts visually;",
+              "Implemented responsive design techniques, ensuring optimal user interface performance across various devices and screen sizes;",
+              "Contributed to enhancing the software development by proposing new tools and implementing best practices;",
+              "Conducted user research and usability testing, gathering feedback and pinpointing areas for improvement;",
+              "Played a key role in documenting project requirements, technical specifications, and development procedures."
+            ]
+          }
         ],
         "skills": [
           "JavaScript",
@@ -455,14 +541,20 @@
         "endDate": "Jun 2021",
         "period": "1 year 6 months",
         "description": [
-          "Supervised a web development team, which included contract and off-shore developers, and held supervisory responsibilities over employees;",
-          "Established team-wide standards for quality processes and methodologies, ensuring that all applications met the highest quality benchmarks;",
-          "Provided mentorship and support to fellow team members, functioning as a team leader and in client interactions;",
-          "Led team meetings and organized task prioritization to ensure the punctual delivery of projects met required standards;",
-          "Maintained vigilant oversight across all facets of application development to guarantee alignment with quality standards;",
-          "Created comprehensive documentation for development tasks and Product Requirement Documents (PRD), ensuring clarity for team members and stakeholders;",
-          "Orchestrated software release planning and execution, encompassing testing, deployment, and documentation processes;",
-          "Conducted code reviews of team members' work, offering constructive feedback and guidance to enhance code quality."
+          {
+            "type": "ul",
+            "content": [
+              "Supervised a web development team, which included contract and off-shore developers, and held supervisory responsibilities over employees;",
+              "Established team-wide standards for quality processes and methodologies, ensuring that all applications met the highest quality benchmarks;",
+              "Provided mentorship and support to fellow team members, functioning as a team leader and in client interactions;",
+              "Led team meetings and organized task prioritization to ensure the punctual delivery of projects met required standards;",
+              "Maintained vigilant oversight across all facets of application development to guarantee alignment with quality standards;",
+              "Created comprehensive documentation for development tasks and Product Requirement Documents (PRD), ensuring clarity for team members and stakeholders;",
+              "Orchestrated software release planning and execution, encompassing testing, deployment, and documentation processes;",
+              "Conducted code reviews of team members' work, offering constructive feedback and guidance to enhance code quality.",
+              "Conducted code reviews of team members' work, offering constructive feedback and guidance to enhance code quality."
+            ]
+          }
         ],
         "skills": [
           "JavaScript",
@@ -552,13 +644,18 @@
         "endDate": "Oct 2023",
         "period": "2 years 2 months",
         "description": [
-          "Developed in-house PDF signing that allows users to process PDF documents directly within the browser using web assembly and Vuejs.",
-          "Built custom plugins and APIs tailored to clients' specifications, facilitating seamless integration into their web applications and Command Line Interfaces (CLIs).",
-          "Improved product quality and reduced risk of failure in production by setting up Cypress for code testing and Grafana for metrics monitoring.",
-          "Conducted performance enhancements through audits using Lighthouse and optimizing web application speed via advanced techniques like code splitting and lazy loading.",
-          "Worked on an e-prescription web app using Vue3, Typescript, and Bootstrap which allows medical personnel to ensure the authenticity of their prescriptions.",
-          "Collaborate with the design team to improve the user experience of the product by creating reusable components that conform to accessibility standards.",
-          "Perform regular peer programming and code reviews to evaluate the quality of the client and server-side code."
+          {
+            "type": "ul",
+            "content": [
+              "Developed in-house PDF signing that allows users to process PDF documents directly within the browser using web assembly and Vuejs.",
+              "Built custom plugins and APIs tailored to clients' specifications, facilitating seamless integration into their web applications and Command Line Interfaces (CLIs).",
+              "Improved product quality and reduced risk of failure in production by setting up Cypress for code testing and Grafana for metrics monitoring.",
+              "Conducted performance enhancements through audits using Lighthouse and optimizing web application speed via advanced techniques like code splitting and lazy loading.",
+              "Worked on an e-prescription web app using Vue3, Typescript, and Bootstrap which allows medical personnel to ensure the authenticity of their prescriptions.",
+              "Collaborate with the design team to improve the user experience of the product by creating reusable components that conform to accessibility standards.",
+              "Perform regular peer programming and code reviews to evaluate the quality of the client and server-side code."
+            ]
+          }
         ],
         "skills": [
           "JavaScript",
@@ -586,12 +683,17 @@
         "endDate": "Feb 2023",
         "period": "9 months",
         "description": [
-          "Migrated the entire codebase for Ethereum dashboard explorer (ethvm.com) from Vue2 to Vue3 in just under 6 months.",
-          "Collaborate with stakeholders and the leadership team to build demo features for the Ethereum Devcon 2022 event in Columbia.",
-          "Provided support to the business development team with pre-sale activities, contributing to RFPs where appropriate and assisting in large pitches to potential clients where required.",
-          "Integrated OpenSea API with the web app to display up-to-date NFT data.",
-          "Setup GraphQL and Apollo client to help with integration with the new Nodejs API.",
-          "Improved data visualization by integrating ChartJS, enabling a comprehensive display of portfolio value details directly within the web."
+          {
+            "type": "ul",
+            "content": [
+              "Migrated the entire codebase for Ethereum dashboard explorer (ethvm.com) from Vue2 to Vue3 in just under 6 months.",
+              "Collaborate with stakeholders and the leadership team to build demo features for the Ethereum Devcon 2022 event in Columbia.",
+              "Provided support to the business development team with pre-sale activities, contributing to RFPs where appropriate and assisting in large pitches to potential clients where required.",
+              "Integrated OpenSea API with the web app to display up-to-date NFT data.",
+              "Setup GraphQL and Apollo client to help with integration with the new Nodejs API.",
+              "Improved data visualization by integrating ChartJS, enabling a comprehensive display of portfolio value details directly within the web."
+            ]
+          }
         ],
         "skills": [
           "JavaScript",
@@ -616,9 +718,14 @@
         "endDate": "May 2022",
         "period": "6 months",
         "description": [
-          "Implemented Sentry configuration to monitor and rectify recurring issues in production.",
-          "Enhanced test coverage of the web dashboard using Cypress and Vue Test Utils.",
-          "Worked with JamfProtect team on the admin web app of the JamfProtect application using Vuejs."
+          {
+            "type": "ul",
+            "content": [
+              "Implemented Sentry configuration to monitor and rectify recurring issues in production.",
+              "Enhanced test coverage of the web dashboard using Cypress and Vue Test Utils.",
+              "Worked with JamfProtect team on the admin web app of the JamfProtect application using Vuejs."
+            ]
+          }
         ],
         "skills": [
           "JavaScript",
@@ -641,11 +748,16 @@
         "endDate": "Jun 2021",
         "period": "1 year 6 months",
         "description": [
-          "Led a team of backend and frontend developers to build an in-house HR system using Reactjs and Rails to track employee attendance, loans, and salary advances.",
-          "Handled communication between clients and team to better understand requirements and offered advice where necessary.",
-          "Collaborated with the design team to produce designs for client projects using Figma.",
-          "Oversaw the development of a central management system for the Federal Ministry of Humanitarian Affairs, Disaster Management, and Social Development Nigeria to keep track of the various social intervention schemes.",
-          "Built an online test portal with ReactJS and styled-components as part of the NASIMS program to provide a platform for assessing beneficiaries of the intervention schemes program."
+          {
+            "type": "ul",
+            "content": [
+              "Led a team of backend and frontend developers to build an in-house HR system using Reactjs and Rails to track employee attendance, loans, and salary advances.",
+              "Handled communication between clients and team to better understand requirements and offered advice where necessary.",
+              "Collaborated with the design team to produce designs for client projects using Figma.",
+              "Oversaw the development of a central management system for the Federal Ministry of Humanitarian Affairs, Disaster Management, and Social Development Nigeria to keep track of the various social intervention schemes.",
+              "Built an online test portal with ReactJS and styled-components as part of the NASIMS program to provide a platform for assessing beneficiaries of the intervention schemes program."
+            ]
+          }
         ],
         "skills": [
           "JavaScript",
@@ -669,11 +781,16 @@
         "endDate": "Dec 2018",
         "period": "6 months",
         "description": [
-          "Developed a multi-source data analytics dashboard using VueJS.",
-          "Total rewrite of existing data visualization library Plotly to Highcharts.",
-          "Integrated map SVG data showing states with the ability to drill down to local governments, which helped local hospitals and clinics have a better idea of the health data in their community.",
-          "Used Google scripts to convert data gathered in Google Sheets to Firebase JSON objects to be used for data visualization on the web app.",
-          "Provided general IT support to office staff, ensuring the internet was running and all computers worked as expected."
+          {
+            "type": "ul",
+            "content": [
+              "Developed a multi-source data analytics dashboard using VueJS.",
+              "Total rewrite of existing data visualization library Plotly to Highcharts.",
+              "Integrated map SVG data showing states with the ability to drill down to local governments, which helped local hospitals and clinics have a better idea of the health data in their community.",
+              "Used Google scripts to convert data gathered in Google Sheets to Firebase JSON objects to be used for data visualization on the web app.",
+              "Provided general IT support to office staff, ensuring the internet was running and all computers worked as expected."
+            ]
+          }
         ],
         "skills": [
           "JavaScript",
@@ -733,16 +850,21 @@
     "experiences": [
       {
         "id": 1,
-        "role": "ENGINEER MANAGER",
+        "role": "Engineer Manager",
         "company": "WISBOO.COM",
         "startDate": "Oct 2022",
         "endDate": "Aug 2023",
         "period": "10 months",
         "description": [
-          "GROUP TECH LEAD & DEVELOPER ENGINEER MANAGER.",
-          "APP DEVELOPMENT - WISBOO.COM / A dynamic application tailored for content creators, enabling them to craft and sell courses through personalized websites.",
-          "Responsible for the roles of Engineer Manager and Tech Lead.",
-          "Helped the team with contributing significantly to a dedicated working cell focused on a specific component of the app."
+          {
+            "type": "ul",
+            "content": [
+              "GROUP TECH LEAD & DEVELOPER ENGINEER MANAGER.",
+              "APP DEVELOPMENT - WISBOO.COM / A dynamic application tailored for content creators, enabling them to craft and sell courses through personalized websites.",
+              "Responsible for the roles of Engineer Manager and Tech Lead.",
+              "Helped the team with contributing significantly to a dedicated working cell focused on a specific component of the app."
+            ]
+          }
         ],
         "skills": [
           "Angular.js",
@@ -754,15 +876,20 @@
       },
       {
         "id": 2,
-        "role": "FULL STACK DEVELOPER",
+        "role": "Full Stack Developer",
         "company": "KEEPCON",
         "startDate": "Jun 2020",
         "endDate": "Apr 2022",
         "period": "1 year 10 months",
         "description": [
-          "APP DEVELOPMENT - KEEPCON.COM / An innovative application for large corporations, aggregating messages from various social media platforms for efficient operator response.",
-          "Responsible for a strategic migration to Vue.js.",
-          "Helped the team with enhancing the app's performance and user experience."
+          {
+            "type": "ul",
+            "content": [
+              "APP DEVELOPMENT - KEEPCON.COM / An innovative application for large corporations, aggregating messages from various social media platforms for efficient operator response.",
+              "Responsible for a strategic migration to Vue.js.",
+              "Helped the team with enhancing the app's performance and user experience."
+            ]
+          }
         ],
         "skills": [
           "JavaScript",
@@ -777,14 +904,19 @@
       },
       {
         "id": 3,
-        "role": "FULL STACK DEVELOPER",
+        "role": "Full Stack Developer",
         "company": "XUBIO",
         "startDate": "Mar 2019",
         "endDate": "Dec 2019",
         "period": "9 months",
         "description": [
-          "APP DEVELOPMENT - XUBIO.COM / A specialized application for accountants, designed to manage client or company accounts with features tailored to different countries.",
-          "Responsible for providing a robust and user-friendly platform for accounting needs."
+          {
+            "type": "ul",
+            "content": [
+              "APP DEVELOPMENT - XUBIO.COM / A specialized application for accountants, designed to manage client or company accounts with features tailored to different countries.",
+              "Responsible for providing a robust and user-friendly platform for accounting needs."
+            ]
+          }
         ],
         "skills": [
           "MySQL",
@@ -796,14 +928,19 @@
       },
       {
         "id": 4,
-        "role": "FULL STACK DEVELOPER",
+        "role": "Full Stack Developer",
         "company": "KEEPERS",
         "startDate": "Feb 2018",
         "endDate": "Mar 2019",
         "period": "1 year 1 month",
         "description": [
-          "WEB APPLICATIONS DEVELOPMENT.",
-          "Responsible for user-friendly and efficient platforms."
+          {
+            "type": "ul",
+            "content": [
+              "WEB APPLICATIONS DEVELOPMENT.",
+              "Responsible for user-friendly and efficient platforms."
+            ]
+          }
         ],
         "skills": [
           "Vue.js",
@@ -816,8 +953,8 @@
     "education": [
       {
         "id": 1,
-        "degree": "BSc. SYSTEMS ENGENEERING",
-        "school": "UNIVERSIDAD TECNOLÓGICA NACIONAL",
+        "degree": "BSc. Systems Engeneering",
+        "school": "Universidad Technologica Nacinal",
         "startDate": "2015",
         "endDate": "2021"
       }
@@ -881,10 +1018,15 @@
         "endDate": "Present",
         "period": "1 year 9 months",
         "description": [
-          "Single-handedly worked on a CO2 Calculator, which helped easily calculate the cost split for CO2 emission between landlords and tenants.",
-          "Created the base project setup, leveraging TypeScript to speed up the development in the long run.",
-          "Generated many modular base components to be used throughout the project.",
-          "Helped setting up deployment cycles and environments using Vercel."
+          {
+            "type": "ul",
+            "content": [
+              "Single-handedly worked on a CO2 Calculator, which helped easily calculate the cost split for CO2 emission between landlords and tenants.",
+              "Created the base project setup, leveraging TypeScript to speed up the development in the long run.",
+              "Generated many modular base components to be used throughout the project.",
+              "Helped setting up deployment cycles and environments using Vercel."
+            ]
+          }
         ],
         "skills": [
           "Vue.js",
@@ -912,8 +1054,13 @@
         "endDate": "Present",
         "period": "2 years 2 months",
         "description": [
-          "Managed a team of 15+ members actively collaborating on non-profit community projects.",
-          "Connected communities across divided regions on a single platform to perform integrated businesses, find matrimonial matches, engage in advanced discussions, and much more."
+          {
+            "type": "ul",
+            "content": [
+              "Managed a team of 15+ members actively collaborating on non-profit community projects.",
+              "Connected communities across divided regions on a single platform to perform integrated businesses, find matrimonial matches, engage in advanced discussions, and much more."
+            ]
+          }
         ],
         "skills": [
           "React.js",
@@ -950,9 +1097,14 @@
         "endDate": "Oct 2022",
         "period": "11 months",
         "description": [
-          "Worked with a great team to build advanced real-estate brokerage software.",
-          "Solved many user-centric issues and helped the team transition to TypeScript.",
-          "Created real-time compilation of GraphQL schemas to be directly used in the Frontend codebase, reducing the related bug reports by ~40% and enhancing Developer Experience."
+          {
+            "type": "ul",
+            "content": [
+              "Worked with a great team to build advanced real-estate brokerage software.",
+              "Solved many user-centric issues and helped the team transition to TypeScript.",
+              "Created real-time compilation of GraphQL schemas to be directly used in the Frontend codebase, reducing the related bug reports by ~40% and enhancing Developer Experience."
+            ]
+          }
         ],
         "skills": [
           "Vue.js",
@@ -981,11 +1133,16 @@
         "endDate": "Apr 2022",
         "period": "4 years 5 months",
         "description": [
-          "Fulfilled requirements of 20+ clients.",
-          "Developed 25+ projects.",
-          "Helped the team grow with an overall experience in the SDLC process.",
-          "Managed a team of 8+ members.",
-          "Provided technical support to two successful startups, uplifting their profits by more than 250% and still counting."
+          {
+            "type": "ul",
+            "content": [
+              "Fulfilled requirements of 20+ clients.",
+              "Developed 25+ projects.",
+              "Helped the team grow with an overall experience in the SDLC process.",
+              "Managed a team of 8+ members.",
+              "Provided technical support to two successful startups, uplifting their profits by more than 250% and still counting."
+            ]
+          }
         ],
         "skills": [
           "Laravel",
@@ -1067,12 +1224,17 @@
         "endDate": "Present",
         "period": "2 years 10 months",
         "description": [
-          "Developed high-performance micro-frontends using cutting-edge technologies like VueJS, Svelte, and TypeScript, resulting in improved application performance and scalability.",
-          "Played a key role in designing and implementing a micro-frontend applications, component libraries, and routing, which allowed for faster development, easier maintenance, and consistent user experiences across multiple applications.",
-          "Collaborated with cross-functional teams, including UX/UI designers, backend developers, and product managers, in an Agile environment to ensure smooth communication, timely delivery of features, and overall project success.",
-          "Actively participated in code reviews, ensuring adherence to best practices and high-quality code standards.",
-          "Implemented and maintained unit and integration tests, resulting in increased application stability and reduced time spent on bug fixes.",
-          "Demonstrated commitment to continuous learning and professional development by staying up-to-date with the latest frontend technologies and industry trends, leading to adopting new tools and practices that improved team efficiency and product quality."
+          {
+            "type": "ul",
+            "content": [
+              "Developed high-performance micro-frontends using cutting-edge technologies like VueJS, Svelte, and TypeScript, resulting in improved application performance and scalability.",
+              "Played a key role in designing and implementing a micro-frontend applications, component libraries, and routing, which allowed for faster development, easier maintenance, and consistent user experiences across multiple applications.",
+              "Collaborated with cross-functional teams, including UX/UI designers, backend developers, and product managers, in an Agile environment to ensure smooth communication, timely delivery of features, and overall project success.",
+              "Actively participated in code reviews, ensuring adherence to best practices and high-quality code standards.",
+              "Implemented and maintained unit and integration tests, resulting in increased application stability and reduced time spent on bug fixes.",
+              "Demonstrated commitment to continuous learning and professional development by staying up-to-date with the latest frontend technologies and industry trends, leading to adopting new tools and practices that improved team efficiency and product quality."
+            ]
+          }
         ],
         "skills": [
           "Vue.js",
@@ -1089,14 +1251,19 @@
         "endDate": "Oct 2021",
         "period": "3 years 10 months",
         "description": [
-          "Successfully delivered a wide range of projects for diverse clients, including the development of websites from scratch, enhancements to existing frontends, and the creation of custom web applications, showcasing adaptability and versatility in addressing varied client needs.",
-          "Achieved outstanding results in speed optimization, SEO optimization, and quality audits, leading to increased client satisfaction, improved site rankings, and reduced page load times.",
-          "Expertly utilized a diverse range of frontend and backend technologies, including VueJS, Laravel, NodeJS, AdonisJs, and ExpressJS, to develop tailor-made solutions that met client requirements and exceeded expectations.",
-          "Developed and maintained component libraries and design systems in VueJS, ensuring a seamless user experience, improved maintainability, and efficient UI development across multiple projects.",
-          "Collaborated with clients to gather requirements, provide estimates, and offer technical guidance, ensuring clear communication, timely delivery, and alignment with project goals.",
-          "Effectively managed projects using tools like Jira, Azure, and YouTrack, prioritizing tasks, tracking progress, and providing regular status updates to clients.",
-          "Proactively identified and addressed performance bottlenecks, security vulnerabilities, and code maintainability issues, resulting in the delivery of robust, secure, and maintainable web applications.",
-          "Kept up-to-date with the latest industry trends, best practices, and emerging technologies, incorporating them into projects when appropriate to deliver cutting-edge solutions and stay competitive in the market."
+          {
+            "type": "ul",
+            "content": [
+              "Successfully delivered a wide range of projects for diverse clients, including the development of websites from scratch, enhancements to existing frontends, and the creation of custom web applications, showcasing adaptability and versatility in addressing varied client needs.",
+              "Achieved outstanding results in speed optimization, SEO optimization, and quality audits, leading to increased client satisfaction, improved site rankings, and reduced page load times.",
+              "Expertly utilized a diverse range of frontend and backend technologies, including VueJS, Laravel, NodeJS, AdonisJs, and ExpressJS, to develop tailor-made solutions that met client requirements and exceeded expectations.",
+              "Developed and maintained component libraries and design systems in VueJS, ensuring a seamless user experience, improved maintainability, and efficient UI development across multiple projects.",
+              "Collaborated with clients to gather requirements, provide estimates, and offer technical guidance, ensuring clear communication, timely delivery, and alignment with project goals.",
+              "Effectively managed projects using tools like Jira, Azure, and YouTrack, prioritizing tasks, tracking progress, and providing regular status updates to clients.",
+              "Proactively identified and addressed performance bottlenecks, security vulnerabilities, and code maintainability issues, resulting in the delivery of robust, secure, and maintainable web applications.",
+              "Kept up-to-date with the latest industry trends, best practices, and emerging technologies, incorporating them into projects when appropriate to deliver cutting-edge solutions and stay competitive in the market."
+            ]
+          }
         ],
         "skills": [
           "Laravel",
@@ -1115,14 +1282,19 @@
         "endDate": "Dec 2017",
         "period": "1 year 9 months",
         "description": [
-          "Developed high-quality frontend solutions for Magento and OpenCart e-commerce platforms, consistently meeting project deadlines and exceeding client expectations with visually appealing and user-friendly designs.",
-          "Leveraged expertise in Git, Docker, and Linux to optimize development workflows, enhance collaboration among team members, and ensure efficient deployment and maintenance of applications.",
-          "Mentored colleagues in frontend development best practices, fostering a collaborative and supportive team environment that encouraged skill development and knowledge sharing.",
-          "Acted as a key contributor in the planning and execution of projects, working closely with project managers and other team members to gather requirements, estimate timelines, and allocate resources effectively.",
-          "Implemented responsive design principles, ensuring seamless and consistent user experiences across various devices and browsers, resulting in increased customer engagement and reduced bounce rates.",
-          "Proactively identified and resolved performance issues, bugs, and usability concerns, leading to improved site stability, increased conversion rates, and overall enhanced user satisfaction.",
-          "Participated in regular code reviews, providing constructive feedback and suggestions for improvement, leading to higher quality code and reduced technical debt.",
-          "Stayed up-to-date with the latest industry trends and frontend technologies, incorporating new tools and best practices to improve team efficiency, product quality, and client satisfaction."
+          {
+            "type": "ul",
+            "content": [
+              "Developed high-quality frontend solutions for Magento and OpenCart e-commerce platforms, consistently meeting project deadlines and exceeding client expectations with visually appealing and user-friendly designs.",
+              "Leveraged expertise in Git, Docker, and Linux to optimize development workflows, enhance collaboration among team members, and ensure efficient deployment and maintenance of applications.",
+              "Mentored colleagues in frontend development best practices, fostering a collaborative and supportive team environment that encouraged skill development and knowledge sharing.",
+              "Acted as a key contributor in the planning and execution of projects, working closely with project managers and other team members to gather requirements, estimate timelines, and allocate resources effectively.",
+              "Implemented responsive design principles, ensuring seamless and consistent user experiences across various devices and browsers, resulting in increased customer engagement and reduced bounce rates.",
+              "Proactively identified and resolved performance issues, bugs, and usability concerns, leading to improved site stability, increased conversion rates, and overall enhanced user satisfaction.",
+              "Participated in regular code reviews, providing constructive feedback and suggestions for improvement, leading to higher quality code and reduced technical debt.",
+              "Stayed up-to-date with the latest industry trends and frontend technologies, incorporating new tools and best practices to improve team efficiency, product quality, and client satisfaction."
+            ]
+          }
         ],
         "skills": [
           "JavaScript",
@@ -1142,14 +1314,19 @@
         "endDate": "Oct 2016",
         "period": "1 year 8 months",
         "description": [
-          "Crafted visually stunning and responsive frontend designs for a variety of CMS-based websites using Photoshop and Zeplin mockups, resulting in increased client satisfaction and enhanced user experiences.",
-          "Developed responsive email templates that significantly improved client engagement, open rates, and click-through rates by optimizing for various devices and email clients.",
-          "Demonstrated proficiency in CSS, HTML, JavaScript, PHP, Angular, and Git to deliver exceptional results, showcasing adaptability and a strong foundation in frontend development technologies.",
-          "Collaborated with cross-functional teams, including designers, developers, and project managers, to ensure clear communication, efficient workflows, and alignment with project goals.",
-          "Implemented web accessibility best practices, ensuring that websites were usable and inclusive for a diverse range of users, leading to increased site traffic and improved brand reputation.",
-          "Actively participated in code reviews and knowledge sharing sessions, contributing to the continuous improvement of the team's coding standards and practices.",
-          "Worked with various CMS platforms, gaining valuable experience in customizing and extending their functionality to meet unique client requirements.",
-          "Kept up-to-date with the latest industry trends, best practices, and emerging frontend technologies, applying new knowledge and techniques to projects as appropriate."
+          {
+            "type": "ul",
+            "content": [
+              "Crafted visually stunning and responsive frontend designs for a variety of CMS-based websites using Photoshop and Zeplin mockups, resulting in increased client satisfaction and enhanced user experiences.",
+              "Developed responsive email templates that significantly improved client engagement, open rates, and click-through rates by optimizing for various devices and email clients.",
+              "Demonstrated proficiency in CSS, HTML, JavaScript, PHP, Angular, and Git to deliver exceptional results, showcasing adaptability and a strong foundation in frontend development technologies.",
+              "Collaborated with cross-functional teams, including designers, developers, and project managers, to ensure clear communication, efficient workflows, and alignment with project goals.",
+              "Implemented web accessibility best practices, ensuring that websites were usable and inclusive for a diverse range of users, leading to increased site traffic and improved brand reputation.",
+              "Actively participated in code reviews and knowledge sharing sessions, contributing to the continuous improvement of the team's coding standards and practices.",
+              "Worked with various CMS platforms, gaining valuable experience in customizing and extending their functionality to meet unique client requirements.",
+              "Kept up-to-date with the latest industry trends, best practices, and emerging frontend technologies, applying new knowledge and techniques to projects as appropriate."
+            ]
+          }
         ],
         "skills": [
           "PHP",
@@ -1231,11 +1408,16 @@
         "endDate": "Aug 2023",
         "period": "3 months",
         "description": [
-          "Led frontend development efforts in creating the online clothing store network for a leading German market player.",
-          "Focused on designing and implementing user panels, product listing pages, and search functionalities to enhance user experience.",
-          "Developed reusable components for Storybook, featuring diverse themes, to ensure consistent design elements across all online stores with unique visual identities.",
-          "Employed Nuxt 3 for its performance optimization and server-side rendering capabilities, enhancing overall website speed and responsiveness.",
-          "Demonstrated proficiency in Storybook, Vue, Nuxt, and Shopware to meet project requirements effectively."
+          {
+            "type": "ul",
+            "content": [
+              "Led frontend development efforts in creating the online clothing store network for a leading German market player.",
+              "Focused on designing and implementing user panels, product listing pages, and search functionalities to enhance user experience.",
+              "Developed reusable components for Storybook, featuring diverse themes, to ensure consistent design elements across all online stores with unique visual identities.",
+              "Employed Nuxt 3 for its performance optimization and server-side rendering capabilities, enhancing overall website speed and responsiveness.",
+              "Demonstrated proficiency in Storybook, Vue, Nuxt, and Shopware to meet project requirements effectively."
+            ]
+          }
         ],
         "skills": [
           "JavaScript",
@@ -1258,12 +1440,17 @@
         "endDate": "Oct 2022",
         "period": "1 year 8 months",
         "description": [
-          "Developed a web application for a subsidiary of Elop specializing in smart concrete scanning solutions for architectural and bridge building firms.",
-          "Designed and implemented reusable UI components to enhance the application's usability and maintainability.",
-          "Utilized TypeScript to write clean and maintainable code, ensuring codebase quality and reliability.",
-          "Leveraged the Three.js library to create interactive 3D visualizations of concrete structures, enhancing the user experience.",
-          "Demonstrated expertise in Vue.js, JavaScript, Vuetify, and TypeScript to meet the project's technical requirements effectively.",
-          "Contributed to the advancement of smart concrete scanning solutions, supporting architectural and bridge-building companies in their projects."
+          {
+            "type": "ul",
+            "content": [
+              "Developed a web application for a subsidiary of Elop specializing in smart concrete scanning solutions for architectural and bridge building firms.",
+              "Designed and implemented reusable UI components to enhance the application's usability and maintainability.",
+              "Utilized TypeScript to write clean and maintainable code, ensuring codebase quality and reliability.",
+              "Leveraged the Three.js library to create interactive 3D visualizations of concrete structures, enhancing the user experience.",
+              "Demonstrated expertise in Vue.js, JavaScript, Vuetify, and TypeScript to meet the project's technical requirements effectively.",
+              "Contributed to the advancement of smart concrete scanning solutions, supporting architectural and bridge-building companies in their projects."
+            ]
+          }
         ],
         "skills": [
           "JavaScript",
@@ -1284,11 +1471,16 @@
         "endDate": "Feb 2021",
         "period": "9 months",
         "description": [
-          "Spearheaded the development of a robust web calendar as an integral module within the Recman platform.",
-          "Employed Vanilla.js extensively to implement core features, including routing, MVC architecture, state management, and view rendering, all crafted from scratch.",
-          "Designed and built a calendar system akin to Google Calendar, seamlessly integrated into the organization's internal infrastructure.",
-          "Demonstrated proficiency in Vue.js, JavaScript, and SASS, ensuring the successful completion of the project.",
-          "Contributed significantly to enhancing the Recman platform's functionality by adding a feature-rich, internally focused web calendar module."
+          {
+            "type": "ul",
+            "content": [
+              "Spearheaded the development of a robust web calendar as an integral module within the Recman platform.",
+              "Employed Vanilla.js extensively to implement core features, including routing, MVC architecture, state management, and view rendering, all crafted from scratch.",
+              "Designed and built a calendar system akin to Google Calendar, seamlessly integrated into the organization's internal infrastructure.",
+              "Demonstrated proficiency in Vue.js, JavaScript, and SASS, ensuring the successful completion of the project.",
+              "Contributed significantly to enhancing the Recman platform's functionality by adding a feature-rich, internally focused web calendar module."
+            ]
+          }
         ],
         "skills": [
           "JavaScript",
@@ -1307,11 +1499,16 @@
         "endDate": "May 2020",
         "period": "11 months",
         "description": [
-          "Played a key role in a substantial analytical project aimed at enhancing the hotel and restaurant industry.",
-          "Led the migration process of an Angular.js application to Angular, ensuring the seamless transition while preserving the existing design system guidelines.",
-          "Successfully implemented new features within the Angular framework to enhance the functionality and capabilities of the application.",
-          "Demonstrated proficiency in Vue.js, JavaScript, SASS, and Angular to meet project requirements effectively.",
-          "Contributed significantly to the project's success, improving the analytical tools and capabilities available to the hotel and restaurant business."
+          {
+            "type": "ul",
+            "content": [
+              "Played a key role in a substantial analytical project aimed at enhancing the hotel and restaurant industry.",
+              "Led the migration process of an Angular.js application to Angular, ensuring the seamless transition while preserving the existing design system guidelines.",
+              "Successfully implemented new features within the Angular framework to enhance the functionality and capabilities of the application.",
+              "Demonstrated proficiency in Vue.js, JavaScript, SASS, and Angular to meet project requirements effectively.",
+              "Contributed significantly to the project's success, improving the analytical tools and capabilities available to the hotel and restaurant business."
+            ]
+          }
         ],
         "skills": [
           "JavaScript",
@@ -1333,10 +1530,15 @@
         "endDate": "Jun 2019",
         "period": "2 years 3 months",
         "description": [
-          "Developed custom WordPress templates from scratch within the educational sector, paying close attention to design aesthetics, SEO best practices, and alignment with the business's core values.",
-          "Demonstrated proficiency in JavaScript, WordPress, PHP, and Angular to successfully create bespoke templates tailored to educational needs.",
-          "Played a crucial role in enhancing the online presence and functionality of educational websites, catering to both user experience and search engine optimization.",
-          "Contributed to the growth and success of educational institutions by providing them with tailored WordPress solutions that aligned with their unique requirements and goals."
+          {
+            "type": "ul",
+            "content": [
+              "Developed custom WordPress templates from scratch within the educational sector, paying close attention to design aesthetics, SEO best practices, and alignment with the business's core values.",
+              "Demonstrated proficiency in JavaScript, WordPress, PHP, and Angular to successfully create bespoke templates tailored to educational needs.",
+              "Played a crucial role in enhancing the online presence and functionality of educational websites, catering to both user experience and search engine optimization.",
+              "Contributed to the growth and success of educational institutions by providing them with tailored WordPress solutions that aligned with their unique requirements and goals."
+            ]
+          }
         ],
         "skills": [
           "PHP",
@@ -1357,10 +1559,15 @@
         "endDate": "Jan 2017",
         "period": "7 months",
         "description": [
-          "Crafted customized templates to meet clients' unique design and functionality demands during my tenure at a web agency.",
-          "Delivered tailored solutions for various projects, including basic corporate websites and expansive online cosmetics stores, all built from the ground up.",
-          "Demonstrated expertise in WordPress, PHP, and MySQL to develop templates that catered to the specific needs and goals of each client.",
-          "Played a pivotal role in the agency's ability to provide clients with highly individualized web solutions, contributing to the success of various online ventures."
+          {
+            "type": "ul",
+            "content": [
+              "Crafted customized templates to meet clients' unique design and functionality demands during my tenure at a web agency.",
+              "Delivered tailored solutions for various projects, including basic corporate websites and expansive online cosmetics stores, all built from the ground up.",
+              "Demonstrated expertise in WordPress, PHP, and MySQL to develop templates that catered to the specific needs and goals of each client.",
+              "Played a pivotal role in the agency's ability to provide clients with highly individualized web solutions, contributing to the success of various online ventures."
+            ]
+          }
         ],
         "skills": [
           "PHP",
@@ -1380,10 +1587,15 @@
         "endDate": "Jun 2016",
         "period": "1 year 7 months",
         "description": [
-          "Offered valuable guidance and mentorship to students, focusing on contemporary website creation techniques, Adobe Creative Cloud (CC) tools, and navigating the job search process.",
-          "Equipped students with the necessary skills and knowledge to excel in website development within the dynamic IT industry.",
-          "Facilitated students' journeys toward securing their first positions in the IT field by providing essential insights and practical advice.",
-          "Acted as a supportive and knowledgeable resource for aspiring professionals, contributing to their career development and growth."
+          {
+            "type": "ul",
+            "content": [
+              "Offered valuable guidance and mentorship to students, focusing on contemporary website creation techniques, Adobe Creative Cloud (CC) tools, and navigating the job search process.",
+              "Equipped students with the necessary skills and knowledge to excel in website development within the dynamic IT industry.",
+              "Facilitated students' journeys toward securing their first positions in the IT field by providing essential insights and practical advice.",
+              "Acted as a supportive and knowledgeable resource for aspiring professionals, contributing to their career development and growth."
+            ]
+          }
         ],
         "skills": [
           "HTML",
@@ -1401,10 +1613,15 @@
         "endDate": "Aug 2014",
         "period": "5 months",
         "description": [
-          "Held the position of lead web designer, with primary responsibilities encompassing the creation of visually captivating and impactful promotional websites.",
-          "Designed banners and engaging printed materials tailored to clients' distinct requirements within our digital marketing agency.",
-          "Leveraged skills in Adobe Photoshop and Adobe Illustrator to ensure the delivery of high-quality design work that effectively communicated our clients' messages and brand identities.",
-          "Played a pivotal role in enhancing the online presence and marketing collateral of various clients, contributing to their success in the digital landscape."
+          {
+            "type": "ul",
+            "content": [
+              "Held the position of lead web designer, with primary responsibilities encompassing the creation of visually captivating and impactful promotional websites.",
+              "Designed banners and engaging printed materials tailored to clients' distinct requirements within our digital marketing agency.",
+              "Leveraged skills in Adobe Photoshop and Adobe Illustrator to ensure the delivery of high-quality design work that effectively communicated our clients' messages and brand identities.",
+              "Played a pivotal role in enhancing the online presence and marketing collateral of various clients, contributing to their success in the digital landscape."
+            ]
+          }
         ],
         "skills": [
           "Adobe Photoshop",
@@ -1419,10 +1636,15 @@
         "endDate": "Jan 2014",
         "period": "11 months",
         "description": [
-          "Designed and developed commercial websites and promotional materials catering to the needs of small to mid-sized businesses.",
-          "Prioritized user-friendliness, responsiveness, and visual appeal in all web projects to enhance the online presence and customer engagement for clients.",
-          "Generated blueprints and wireframes for websites, establishing clear and concise plans before the development phase.",
-          "Ensured that the end products were not only interactive but also engaging for users, enhancing the overall user experience and client satisfaction."
+          {
+            "type": "ul",
+            "content": [
+              "Designed and developed commercial websites and promotional materials catering to the needs of small to mid-sized businesses.",
+              "Prioritized user-friendliness, responsiveness, and visual appeal in all web projects to enhance the online presence and customer engagement for clients.",
+              "Generated blueprints and wireframes for websites, establishing clear and concise plans before the development phase.",
+              "Ensured that the end products were not only interactive but also engaging for users, enhancing the overall user experience and client satisfaction."
+            ]
+          }
         ],
         "skills": [
           "Adobe Photoshop",
@@ -1438,9 +1660,14 @@
         "endDate": "Jan 2013",
         "period": "1 year",
         "description": [
-          "Actively explored and applied Drupal's API to enhance the functionality and interactivity of web applications, contributing to the mastery of this versatile content management system.",
-          "Acquired knowledge and expertise in leveraging Drupal's capabilities to build dynamic and feature-rich web applications.",
-          "Kept abreast of the latest trends and best practices in Drupal web development, ensuring the ability to create robust and efficient solutions."
+          {
+            "type": "ul",
+            "content": [
+              "Actively explored and applied Drupal's API to enhance the functionality and interactivity of web applications, contributing to the mastery of this versatile content management system.",
+              "Acquired knowledge and expertise in leveraging Drupal's capabilities to build dynamic and feature-rich web applications.",
+              "Kept abreast of the latest trends and best practices in Drupal web development, ensuring the ability to create robust and efficient solutions."
+            ]
+          }
         ],
         "skills": [
           "PHP",
@@ -1518,8 +1745,13 @@
         "endDate": "Present",
         "period": "1 year 1 month",
         "description": [
-          "Worked with a German company and helped them build a job app that connects students and employers.",
-          "Worked on Vue.js and Node.js."
+          {
+            "type": "ul",
+            "content": [
+              "Worked with a German company and helped them build a job app that connects students and employers.",
+              "Worked on Vue.js and Node.js."
+            ]
+          }
         ],
         "skills": [
           "Vue.js",
@@ -1541,10 +1773,15 @@
         "endDate": "Jun 2023",
         "period": "1 year 8 months",
         "description": [
-          "Migrated a desktop user experience into a single-page app, improving customer engagement by 30%.",
-          "Architected product tours with React for a new feature that improved customer adoption by 20%, leading to over $1M in revenue.",
-          "Worked with designers to develop the front end for a new Kanban layout (Trello-like) that increased work efficiency and productivity by providing better data visibility.",
-          "Participated in each step of the product development process, from ideation to development improvement and testing for features reaching over 150,000 users."
+          {
+            "type": "ul",
+            "content": [
+              "Migrated a desktop user experience into a single-page app, improving customer engagement by 30%.",
+              "Architected product tours with React for a new feature that improved customer adoption by 20%, leading to over $1M in revenue.",
+              "Worked with designers to develop the front end for a new Kanban layout (Trello-like) that increased work efficiency and productivity by providing better data visibility.",
+              "Participated in each step of the product development process, from ideation to development improvement and testing for features reaching over 150,000 users."
+            ]
+          }
         ],
         "skills": [
           "JavaScript",
@@ -1570,11 +1807,16 @@
         "endDate": "May 2023",
         "period": "4 years 9 months",
         "description": [
-          "Architected microservices backend using Golang and NodeJS.",
-          "Built REST APIs for web apps, decreasing request latency by 40%.",
-          "Implemented CI/CD pipelines, automating testing and deployment processes.",
-          "Optimized MongoDB queries and indexing, reducing latency by 50%.",
-          "Led migration of monolith to microservices, decoupling frontend and backend."
+          {
+            "type": "ul",
+            "content": [
+              "Architected microservices backend using Golang and NodeJS.",
+              "Built REST APIs for web apps, decreasing request latency by 40%.",
+              "Implemented CI/CD pipelines, automating testing and deployment processes.",
+              "Optimized MongoDB queries and indexing, reducing latency by 50%.",
+              "Led migration of monolith to microservices, decoupling frontend and backend."
+            ]
+          }
         ],
         "skills": [
           "Laravel",
@@ -1602,9 +1844,14 @@
         "endDate": "Sept 2021",
         "period": "2 years 8 months",
         "description": [
-          "Led a complete overhaul of the user interface (UI) for the internal tool Akokomarket, contributing to a remarkable 30% increase in sales revenue.",
-          "Collaborated closely with the backend engineering team to implement GraphQL APIs, optimizing the reporting process for the analytical team and increasing reporting speed by 40%.",
-          "Spearheaded the implementation of a robust unit testing infrastructure using Jest for the applications, reducing user-reported bugs by 30% monthly."
+          {
+            "type": "ul",
+            "content": [
+              "Led a complete overhaul of the user interface (UI) for the internal tool Akokomarket, contributing to a remarkable 30% increase in sales revenue.",
+              "Collaborated closely with the backend engineering team to implement GraphQL APIs, optimizing the reporting process for the analytical team and increasing reporting speed by 40%.",
+              "Spearheaded the implementation of a robust unit testing infrastructure using Jest for the applications, reducing user-reported bugs by 30% monthly."
+            ]
+          }
         ],
         "skills": [
           "Laravel",
@@ -1634,9 +1881,14 @@
         "endDate": "Nov 2018",
         "period": "2 years 4 months",
         "description": [
-          "Developed software solutions for individual departments in the company.",
-          "Developed and designed UI for SSNIT records system that allowed proper record keeping for user physical documents.",
-          "Designed biometric forms to collect customer biometric data."
+          {
+            "type": "ul",
+            "content": [
+              "Developed software solutions for individual departments in the company.",
+              "Developed and designed UI for SSNIT records system that allowed proper record keeping for user physical documents.",
+              "Designed biometric forms to collect customer biometric data."
+            ]
+          }
         ],
         "skills": [
           "Laravel",
@@ -1706,9 +1958,14 @@
         "endDate": "Jul 2024",
         "period": "10 months",
         "description": [
-          "Got experience creating custom web plugins: i18n localization plugin and automated docker runner plugin using Vite.",
-          "Configured project settings with prettierrc and vite.config, postcss.config, tsup.config, ts.config.",
-          "Developed Tablet and Mobile views by applying PostCSS."
+          {
+            "type": "ul",
+            "content": [
+              "Got experience creating custom web plugins: i18n localization plugin and automated docker runner plugin using Vite.",
+              "Configured project settings with prettierrc and vite.config, postcss.config, tsup.config, ts.config.",
+              "Developed Tablet and Mobile views by applying PostCSS."
+            ]
+          }
         ],
         "skills": [
           "Vue.js",
@@ -1725,11 +1982,16 @@
         "endDate": "Sept 2023",
         "period": "8 months",
         "description": [
-          "Got experience in building web apps using Modular Architecture.",
-          "Took full responsibility for complex tasks (such as authentication and fixing merge conflicts).",
-          "Got experience in using Turbo repo in projects that are based on mono repo architecture.",
-          "Did releases into the PROD environment.",
-          "Integrated localization using i18n-vue package."
+          {
+            "type": "ul",
+            "content": [
+              "Got experience in building web apps using Modular Architecture.",
+              "Took full responsibility for complex tasks (such as authentication and fixing merge conflicts).",
+              "Got experience in using Turbo repo in projects that are based on mono repo architecture.",
+              "Did releases into the PROD environment.",
+              "Integrated localization using i18n-vue package."
+            ]
+          }
         ],
         "skills": [
           "Laravel",
@@ -1748,14 +2010,19 @@
         "endDate": "May 2023",
         "period": "1 year 8 months",
         "description": [
-          "Implemented new features using Vue.js/NUXT.js.",
-          "Conducted Code reviews.",
-          "Bug fixing.",
-          "Refactored the code to make it cleaner.",
-          "Made documented reports about commits using Gitlab's MergeRequests and Spikes.",
-          "Learnt new Prismic CMS.",
-          "Got experience with Magnolia CMS to work with the classic version of the project.",
-          "Worked in a Scrum environment and understood all of the features and terminologies of the methodology, including sprints, sprint plannings, retrospectives, and daily meetings/Stand-Ups."
+          {
+            "type": "ul",
+            "content": [
+              "Implemented new features using Vue.js/NUXT.js.",
+              "Conducted Code reviews.",
+              "Bug fixing.",
+              "Refactored the code to make it cleaner.",
+              "Made documented reports about commits using Gitlab's MergeRequests and Spikes.",
+              "Learnt new Prismic CMS.",
+              "Got experience with Magnolia CMS to work with the classic version of the project.",
+              "Worked in a Scrum environment and understood all of the features and terminologies of the methodology, including sprints, sprint plannings, retrospectives, and daily meetings/Stand-Ups."
+            ]
+          }
         ],
         "skills": [
           "MySQL",
@@ -1777,14 +2044,19 @@
         "endDate": "Dec 2021",
         "period": "11 months",
         "description": [
-          "Created components/UI according to Figma design.",
-          "Connected APIs to UI using Axios.",
-          "Provided token authorizations, silent authentication method, and refreshed token/ JWT token.",
-          "Connected charts using Apex charts.",
-          "Created Vue Routers.",
-          "Used i18n internal language localization.",
-          "Widely used 'Vuex' module-based structure.",
-          "Created Designs using Element UI."
+          {
+            "type": "ul",
+            "content": [
+              "Created components/UI according to Figma design.",
+              "Connected APIs to UI using Axios.",
+              "Provided token authorizations, silent authentication method, and refreshed token/ JWT token.",
+              "Connected charts using Apex charts.",
+              "Created Vue Routers.",
+              "Used i18n internal language localization.",
+              "Widely used 'Vuex' module-based structure.",
+              "Created Designs using Element UI."
+            ]
+          }
         ],
         "skills": [
           "JavaScript",
@@ -1803,10 +2075,15 @@
         "endDate": "Jun 2021",
         "period": "2 years",
         "description": [
-          "Worked in a team to build the Uzbekistan Banking System.",
-          "Improved System’s performance, stability Querying, indexing, writing procedures, and functions to make the backend section of the system.",
-          "Created sophisticated JSP pages with JavaScript language for the frontend logic of the banking system.",
-          "Made Java services for exchanging information with the Government Custom Center in XML and JSON formats with key exchange techniques for providing such potential REST APIs."
+          {
+            "type": "ul",
+            "content": [
+              "Worked in a team to build the Uzbekistan Banking System.",
+              "Improved System’s performance, stability Querying, indexing, writing procedures, and functions to make the backend section of the system.",
+              "Created sophisticated JSP pages with JavaScript language for the frontend logic of the banking system.",
+              "Made Java services for exchanging information with the Government Custom Center in XML and JSON formats with key exchange techniques for providing such potential REST APIs."
+            ]
+          }
         ],
         "skills": [
           "MySQL",
@@ -1827,10 +2104,15 @@
         "endDate": "Jan 2020",
         "period": "1 year 4 months",
         "description": [
-          "Worked in a team to build a real-world system for the technology industry.",
-          "Improved UI/frontend interface.",
-          "Built an Analytical section of the System with graphic analysis, according to the industry's provided Excel sheets, using logic to extract data.",
-          "Implemented frontend structures/components of the Internal Document Exchange System."
+          {
+            "type": "ul",
+            "content": [
+              "Worked in a team to build a real-world system for the technology industry.",
+              "Improved UI/frontend interface.",
+              "Built an Analytical section of the System with graphic analysis, according to the industry's provided Excel sheets, using logic to extract data.",
+              "Implemented frontend structures/components of the Internal Document Exchange System."
+            ]
+          }
         ],
         "skills": [
           "JavaScript",
