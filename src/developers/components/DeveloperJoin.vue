@@ -1,14 +1,22 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import CallToActionSection from '@theme/components/CallToActionSection.vue'
 import partnerConfig from '../partnerConfig.js'
+import { generateUTMUrl } from './utils'
+import { useRoute } from 'vitepress'
+
+const route = useRoute()
+
+const applyLink = computed(() => {
+  return generateUTMUrl(partnerConfig.pageJoinSection.applyButton.url, route.path)
+})
 </script>
 
 <template>
   <CallToActionSection
-    v-if="partnerConfig.applyPage"
-    title="Become a listed developer"
-    description="Get a long-term part-time or full-time position at company looking for a Vue.js developer."
-    :link="partnerConfig.applyPage"
-    linkText="Apply to join"
+    :title="partnerConfig.pageJoinSection.title"
+    :description="partnerConfig.pageJoinSection.description"
+    :link="applyLink"
+    :linkText="partnerConfig.pageJoinSection.applyButton.label"
   />
 </template>

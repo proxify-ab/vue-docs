@@ -3,7 +3,7 @@ import { computed } from 'vue'
 import data from '../developers.json'
 import partnerConfig from '../partnerConfig.js'
 import { DeveloperProfiles } from './type'
-import { getDeveloperProfileImage } from './utils'
+import { generateUTMUrl, getDeveloperProfileImage } from './utils'
 import { VTIconChevronLeft, VTIconMapPin } from '@vue/theme'
 import DeveloperCompensations from './DeveloperCompensations.vue'
 import DeveloperProficiencies from './DeveloperProficiencies.vue'
@@ -11,6 +11,7 @@ import DeveloperProfileDiagram from './DeveloperProfileDiagram.vue'
 import DeveloperExperiences from './DeveloperExperiences.vue'
 import DeveloperEducation from './DeveloperEducation.vue'
 import DeveloperPageFooter from './DeveloperPageFooter.vue'
+import { useRoute } from 'vitepress'
 
 
 const props = defineProps<{
@@ -19,12 +20,17 @@ const props = defineProps<{
 
 const developer = (data as DeveloperProfiles).find(
   (developer) => developer.id === props.developerId
-)!;
+)!
 
 const { id, alias, image, location, description, compensations, proficiencies, experiences, education } = developer
 
 const profileImage = computed(() => getDeveloperProfileImage(image, id))
 
+const route = useRoute()
+
+const hireUsLink = computed(() => {
+  return generateUTMUrl(partnerConfig.hireUsButtonUrl, route.path)
+})
 </script>
 
 <template>
@@ -43,7 +49,7 @@ const profileImage = computed(() => getDeveloperProfileImage(image, id))
       <div class="developer-page__main">
         <div class="developer-page__main-info">
           <h2 class="developer-page__name">{{ alias }}</h2>
-          <a class="accent-button developer-page__main-action" :href="partnerConfig.contactPage" target="_blank">
+          <a class="accent-button developer-page__main-action" :href="hireUsLink" target="_blank">
             Get in contact
           </a>
 

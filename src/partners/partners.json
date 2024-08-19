@@ -208,10 +208,10 @@
     ],
     "website": {
       "text": "proxify.io",
-      "url": "https://proxify.io/"
+      "url": "https://proxify.io?utm_source=partnership&utm_medium=vuejs&utm_campaign=partners/proxify.html"
     },
-    "contactPage": "https://career.proxify.io",
-    "hiring": "https://career.proxify.io/apply",
+    "contactPage": "https://proxify.io/hire-vue?utm_source=partnership&utm_medium=vuejs&utm_campaign=partners/proxify.html",
+    "hiring": "https://career.proxify.io/apply?utm_source=partnership&utm_medium=vuejs&utm_campaign=partners/proxify.html",
     "platinum": true
   }
 ]

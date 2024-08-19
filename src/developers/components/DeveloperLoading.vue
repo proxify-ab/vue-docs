@@ -9,7 +9,14 @@ import DeveloperHero from './DeveloperHero.vue'
 import DeveloperCard from './DeveloperCard.vue'
 import DeveloperRegionFilter from './DeveloperRegionFilter.vue'
 import DeveloperJoin from './DeveloperJoin.vue'
+import { useRoute } from 'vitepress'
+import { generateUTMUrl } from './utils'
 
+// Link to contact us with UTM parameters
+const route = useRoute()
+const hireUsLink = computed(() => {
+  return generateUTMUrl(partnerConfig.hireUsButtonUrl, route.path)
+})
 
 // Data initialization
 const selectedTimezone = ref<string | null>(null)
@@ -48,7 +55,7 @@ const filterDeveloperByRegion = (developer: DeveloperProfile): boolean => {
         :selectedTimezone="selectedTimezone"
         @update:timezone="selectedTimezone = $event"
       />
-      <a class="accent-button" :href="partnerConfig.contactPage" target="_blank">Contact us for a tailored fit</a>
+      <a class="accent-button" :href="hireUsLink" target="_blank">Contact us for a tailored fit</a>
     </template>
 
     <template #featured-list>
@@ -61,7 +68,7 @@ const filterDeveloperByRegion = (developer: DeveloperProfile): boolean => {
 
     <template #featured-cta>
       <div class="featured-cta">
-        <a class="accent-button" :href="partnerConfig.contactPage" target="_blank">Contact us for a tailored fit</a>
+        <a class="accent-button" :href="hireUsLink" target="_blank">Contact us for a tailored fit</a>
       </div>
     </template>
 

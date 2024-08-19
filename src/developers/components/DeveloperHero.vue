@@ -1,20 +1,25 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import PageHero from '@theme/components/PageHero.vue'
 import partnerConfig from '../partnerConfig.js'
+import { useRoute } from 'vitepress'
+import { generateUTMUrl } from './utils'
 
 defineProps<{ title?: string }>()
+
+const route = useRoute()
+const applyLink = computed(() => {
+  return generateUTMUrl(partnerConfig.pageHeroBanner.applyButton.url, route.path)
+})
 </script>
 
 <template>
   <PageHero>
     <template #title>{{ title || partnerConfig.pageHeroBanner.title }}</template>
     <template #lead>
-      Vue Developers are certified individual freelancers. Payments, compliance and vetting are administrated by our
-      partner
-      <a class="link" :href="partnerConfig.companyWebsiteLink" target="_blank">{{ partnerConfig.partnerName }}</a>.
-      Interested to join the list?
+      {{ partnerConfig.pageHeroBanner.description }}
       <br />
-      <a class="link" :href="partnerConfig.applyPage" target="_blank">Apply here</a>.
+      <a class="link" :href="applyLink" target="_blank">{{ partnerConfig.pageHeroBanner.applyButton.label }}</a>.
     </template>
   </PageHero>
 </template>
