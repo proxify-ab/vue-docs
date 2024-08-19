@@ -1,64 +1,63 @@
 <template>
-  <div class="PageHero">
-    <h1 class="title">
+  <div class="page-hero">
+    <h1 class="page-hero__title">
       <slot name="title" />
     </h1>
-    <p class="lead">
+    <p class="page-hero__lead">
       <slot name="lead" />
     </p>
   </div>
 </template>
 
 <style scoped>
-.PageHero {
+.page-hero {
   padding: 48px 24px;
   text-align: center;
   margin: 0 auto;
   max-width: 688px;
 }
 
-@media (min-width: 768px) {
-  .PageHero {
-    padding: 64px 32px;
-  }
-}
-
-.title,
-.lead,
-.PageHero :deep(.link) {
+.page-hero__title,
+.page-hero__lead,
+.page-hero :deep(.link) {
   transition: color 0.25s;
 }
 
-.title {
+.page-hero__title {
   line-height: 32px;
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 0.3em;
 }
 
-@media (min-width: 768px) {
-  .title {
-    line-height: 40px;
-    font-size: 40px;
-  }
-}
-
-.lead {
+.page-hero__lead {
   padding-top: 8px;
   font-size: 16px;
   font-weight: 500;
   color: var(--vt-c-text-2);
 }
 
-.lead a {
+.page-hero__lead a {
   color: var(--vt-c-brand);
 }
 
-.PageHero :deep(.link) {
+.page-hero :deep(.link) {
   color: var(--vt-c-brand);
 }
 
-.PageHero :deep(.link:hover) {
+.page-hero :deep(.link:hover) {
   color: var(--vt-c-brand-dark);
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .page-hero {
+    padding: 64px 32px;
+  }
+
+  .page-hero__title {
+    line-height: 40px;
+    font-size: 40px;
+  }
 }
 </style>

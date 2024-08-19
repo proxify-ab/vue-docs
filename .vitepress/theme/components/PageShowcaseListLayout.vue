@@ -13,7 +13,7 @@ const props = defineProps<{
     <slot name="hero"></slot>
 
     <!-- Spotlight Section -->
-    <div class="showcase-spotlight">
+    <div class="showcase-layout__spotlight">
       <div class="spotlight-content">
         <h2 class="section-title">{{ props.spotlightTitle }}</h2>
         <slot name="spotlight"></slot>
@@ -21,7 +21,7 @@ const props = defineProps<{
     </div>
 
     <!-- Featured Section -->
-    <div class="showcase-featured">
+    <div class="showcase-layout__featured">
       <!-- Optional Actions Section -->
       <div v-if="$slots.actions" class="featured-actions">
         <slot name="actions"></slot>
@@ -45,7 +45,7 @@ const props = defineProps<{
   padding-bottom: 16px;
 }
 
-.showcase-spotlight {
+.showcase-layout__spotlight {
   background-color: var(--vt-c-bg-soft);
 }
 
@@ -62,7 +62,7 @@ const props = defineProps<{
   color: var(--vt-c-text-2);
 }
 
-.showcase-featured {
+.showcase-layout__featured {
   padding: 36px 48px;
   max-width: 960px;
   width: 100%;
@@ -111,9 +111,10 @@ const props = defineProps<{
   background-color: var(--vt-c-gray-dark-3);
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
   .spotlight-content,
-  .showcase-featured {
+  .showcase-layout__featured {
     padding: 36px 28px;
   }
 

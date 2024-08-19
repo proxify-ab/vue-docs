@@ -14,24 +14,24 @@ const props = defineProps<{
 const mounted = ref(false)
 const items = shallowRef(props.items)
 
-const filtered = computed(() => {
+const filteredItems = computed(() => {
   return props.filter ? items.value.filter(props.filter) : items.value
 })
 
 onMounted(() => {
   mounted.value = true
-  const platinum = items.value.filter((p) => p.platinum)
-  const normal = items.value.filter((p) => !p.platinum)
+  const platinumItems = items.value.filter((item) => item.platinum)
+  const normalItems = items.value.filter((item) => !item.platinum)
 
   if (props.shuffleItems) {
-    shuffle(platinum)
-    shuffle(normal)
+    shuffleArray(platinumItems)
+    shuffleArray(normalItems)
   }
 
-  items.value = [...platinum, ...normal]
+  items.value = [...platinumItems, ...normalItems]
 })
 
-function shuffle(array: Array<any>) {
+function shuffleArray(array: Array<any>) {
   let currentIndex = array.length
   let temporaryValue
   let randomIndex
@@ -52,54 +52,53 @@ function shuffle(array: Array<any>) {
 </script>
 
 <template>
-  <div v-show="mounted" class="CardList">
+  <div v-show="mounted" class="card-list">
     <!-- to skip SSG since the partners are shuffled -->
     <ClientOnly>
       <component
         :is="cardComponent"
-        v-for="item in filtered"
+        v-for="item in filteredItems"
         :key="item.id || item.name"
         :data="item"
       />
     </ClientOnly>
 
     <a
-      class="browse-all"
+      class="browse-all-link"
       :href="props.browseLinkUrl"
-      v-if="showLinkToAll && filtered.length % 2"
+      v-if="showLinkToAll && filteredItems.length % 2"
     >
       {{ browseLinkText }}
     </a>
   </div>
 </template>
 
-
 <style scoped>
-.CardList {
+.card-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.browse-all {
-  color: var(--vt-c-text-2);
-  transition: color 0.5s ease;
-  font-size: 1.2em;
-  text-align: center;
-  padding-top: 240px;
+.browse-all-link {
   display: block;
-  border-radius: 4px;
-  border: 1px solid var(--vt-c-divider-light);
   width: 48.5%;
   margin-bottom: 36px;
+  padding-top: 240px;
+  font-size: 1.2em;
+  text-align: center;
+  color: var(--vt-c-text-2);
+  border: 1px solid var(--vt-c-divider-light);
+  border-radius: 4px;
+  transition: color 0.5s ease;
 }
 
-.browse-all:hover {
+.browse-all-link:hover {
   color: var(--vt-c-text-1);
 }
 
 @media (max-width: 768px) {
-  .browse-all {
+  .browse-all-link {
     display: none;
   }
 }
