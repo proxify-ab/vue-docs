@@ -1,4 +1,4 @@
-export interface TalentExperience {
+export interface DeveloperExperience {
   id: number;
   role: string;
   company: string;
@@ -9,7 +9,7 @@ export interface TalentExperience {
   skills: string[];
 }
 
-export interface TalentEducation {
+export interface DeveloperEducation {
   id: number;
   degree: string;
   school: string;
@@ -17,27 +17,27 @@ export interface TalentEducation {
   endDate: string;
 }
 
-export interface TalentCompensations {
+export interface DeveloperCompensations {
   partTime: string;
   monthly: string;
 }
 
 
-export interface TalentProfile {
+export interface DeveloperProfile {
   id: number;
   name: string;
   image?: string;
   intro: string;
   description: string[];
   proficiencies: string[];
-  compensations: TalentCompensations;
+  compensations: DeveloperCompensations;
   location: string;
   timezone: string;
   candidateProfile?: string;
-  experiences?: TalentExperience[];
-  education?: TalentEducation[];
+  experiences?: DeveloperExperience[];
+  education?: DeveloperEducation[];
   highlighted?: boolean;
 }
 
-export interface TalentProfiles extends Array<TalentProfile> {
+export interface DeveloperProfiles extends Array<DeveloperProfile> {
 }

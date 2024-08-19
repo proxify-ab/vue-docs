@@ -1,7 +1,7 @@
 import partnerData from '../partners/partners.json'
 
 const partnerName = 'Proxify'
-const partner = partnerData.find(p => p.name === partnerName)
+const partner = partnerData.find(partner => partner.name === partnerName)
 
 const partnerConfig = {
   // Partner information
@@ -19,8 +19,8 @@ const partnerConfig = {
 
   // Hero Section
   pageHeroBanner: {
-    title: 'Vue Talent',
-    lead: `Vue Talent are certified individual freelancers. Payments, compliance, and vetting are administrated by our partner <a class="link" href="${partner?.website?.url || '#'}" target="_blank">${partner?.name || 'Our Partner'}</a>. Interested in joining the list? <a class="link" href="${partner?.hiring || '#'}" target="_blank">Apply here</a>.`
+    title: 'Vue Developer',
+    lead: `Vue Developer are certified individual freelancers. Payments, compliance, and vetting are administrated by our partner <a class="link" href="${partner?.website?.url || '#'}" target="_blank">${partner?.name || 'Our Partner'}</a>. Interested in joining the list? <a class="link" href="${partner?.hiring || '#'}" target="_blank">Apply here</a>.`
   },
 
   // Footer Configuration

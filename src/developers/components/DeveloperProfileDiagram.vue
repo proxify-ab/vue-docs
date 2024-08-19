@@ -4,8 +4,8 @@ import { ref, onMounted } from 'vue'
 const props = defineProps<{
   title?: string
   titleTag?: string
-  talentName: string
-  talentId: number
+  developerName: string
+  developerId: number
   image?: string
   diagramType: 'profile' | 'score'
   prependText?: string
@@ -15,7 +15,7 @@ const props = defineProps<{
 const svgContent = ref('')
 
 onMounted(async () => {
-  const url = `/images/talents/${props.image || `${props.talentId}-${props.diagramType}.svg`}`
+  const url = `/images/developers/${props.image || `${props.developerId}-${props.diagramType}.svg`}`
   const response = await fetch(url)
   if (response.ok) {
     svgContent.value = await response.text()
@@ -24,7 +24,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="talent-diagram">
+  <div class="developer-diagram">
     <Component v-if="title" :is="titleTag || 'h4'">{{ title }}</Component>
     <p v-if="prependText">{{ prependText }}</p>
     <div v-html="svgContent" class="svg-wrapper"></div>
@@ -33,11 +33,11 @@ onMounted(async () => {
 </template>
 
 <style scoped>
-.talent-diagram {
+.developer-diagram {
   color: var(--vt-c-gray-dark-3);
 }
 
-.dark .talent-diagram {
+.dark .developer-diagram {
   color: var(--vt-c-gray-light-3);
 }
 

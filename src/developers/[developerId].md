@@ -5,9 +5,9 @@ footer: false
 
 <script setup>
 import { useData } from 'vitepress'
-import Page from './components/TalentPage.vue'
+import Page from './components/DeveloperPage.vue'
 
 const { page } = useData()
 </script>
 
-<Page :talent="page.params.talentId" />
+<Page :developerId="page.params.developerId" />

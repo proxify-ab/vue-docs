@@ -1,67 +1,66 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { TalentProfile } from './type'
-import { getTalentProfileImage } from './utils'
+import { DeveloperProfile } from './type'
+import { getDeveloperProfileImage } from './utils'
 import { VTIconMapPin } from '@vue/theme'
-import TalentProficiencies from './TalentProficiencies.vue'
-import TalentCompensations from './TalentCompensations.vue'
+import DeveloperProficiencies from './DeveloperProficiencies.vue'
+import DeveloperCompensations from './DeveloperCompensations.vue'
 import { useRouter } from 'vitepress'
-
 const router = useRouter()
 
 const props = defineProps<{
-  data: TalentProfile
+  data: DeveloperProfile
   hero?: boolean
 }>()
 
 const { id, name, image, intro, compensations, proficiencies, location } = props.data
 
-const profileImage = computed(() => getTalentProfileImage(image, id))
+const profileImage = computed(() => getDeveloperProfileImage(image, id))
 
-function openTalentPage() {
-  router.go(`./talents/${id}.html`)
+function openDeveloperPage() {
+  router.go(`./developers/${id}.html`)
 }
 </script>
 
 <template>
   <div
-    class="talent-card"
-    :class="{ 'talent-card--hero': hero }"
-    @click="openTalentPage"
+    class="developer-card"
+    :class="{ 'developer-card--hero': hero }"
+    @click="openDeveloperPage"
   >
-    <div class="talent-card__header">
-      <div v-if="!hero" class="talent-card__avatar">
+    <div class="developer-card__header">
+      <div v-if="!hero" class="developer-card__avatar">
         <img :src="profileImage" :alt="name" />
       </div>
-      <div class="talent-card__summary">
-        <h3 class="talent-card__name">{{ name }}</h3>
-        <p class="talent-card__location">
-          <VTIconMapPin class="talent-card__icon" />
+      <div class="developer-card__summary">
+        <h3 class="developer-card__name">{{ name }}</h3>
+        <p class="developer-card__location">
+          <VTIconMapPin class="developer-card__icon" />
           {{ location }}
         </p>
-        <p v-if="!hero" class="talent-card__compensation">{{ compensations.monthly }}</p>
+        <p v-if="!hero" class="developer-card__compensation">{{ compensations.monthly }}</p>
       </div>
     </div>
 
-    <p class="talent-card__intro">{{ intro }}</p>
+    <p class="developer-card__intro">{{ intro }}</p>
 
-    <TalentCompensations
+    <DeveloperCompensations
       v-if="hero"
       title="Compensation"
       :compensations="compensations"
-      class="talent-card__section talent-card__compensation"
+      class="developer-card__section developer-card__compensation"
     />
 
-    <TalentProficiencies
+    <DeveloperProficiencies
       :proficiencies="proficiencies"
       :title="hero ? 'Main proficiencies' : undefined"
       enable-show-all
-      class="talent-card__section talent-card__proficiencies"
+      class="developer-card__section developer-card__proficiencies"
       @click.stop
     />
 
 
-    <div v-if="hero" class="talent-card__image">
+    <div v-if="hero" class="developer-card__image">
       <img :src="profileImage" :alt="name" />
     </div>
   </div>
@@ -69,7 +68,7 @@ function openTalentPage() {
 
 <style scoped>
 /* General Styles */
-.talent-card {
+.developer-card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -84,13 +83,13 @@ function openTalentPage() {
   transition: background-color 0.5s, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
-.talent-card:hover {
+.developer-card:hover {
   cursor: pointer;
   box-shadow: 0 12px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Header Styles */
-.talent-card__header {
+.developer-card__header {
   display: flex;
   align-items: center;
   gap: 24px;
@@ -101,28 +100,28 @@ function openTalentPage() {
   letter-spacing: 0.2px;
 }
 
-.talent-card__avatar {
+.developer-card__avatar {
   width: 88px;
   height: 88px;
   border-radius: 50%;
   overflow: hidden;
 }
 
-.talent-card__avatar img {
+.developer-card__avatar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: top;
 }
 
-.talent-card__summary {
+.developer-card__summary {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
 }
 
-.talent-card__name {
+.developer-card__name {
   color: var(--vt-c-text-1);
   font-size: 22.5px;
   font-weight: 700;
@@ -130,22 +129,22 @@ function openTalentPage() {
   letter-spacing: -0.1px;
 }
 
-.talent-card--hero .talent-card__name {
+.developer-card--hero .developer-card__name {
   font-size: 24px;
 }
 
 /* Location Styles */
-.talent-card__location {
+.developer-card__location {
   display: flex;
   align-items: center;
   gap: 4px;
 }
 
-.talent-card--hero .talent-card__location {
+.developer-card--hero .developer-card__location {
   font-size: 14px;
 }
 
-.talent-card__icon {
+.developer-card__icon {
   width: 20px;
   height: 20px;
   opacity: 0.5;
@@ -153,8 +152,8 @@ function openTalentPage() {
 }
 
 /* Card Sections Styles */
-.talent-card__section h4,
-.talent-card__section :deep(h4) {
+.developer-card__section h4,
+.developer-card__section :deep(h4) {
   color: var(--vt-c-text-1);
   font-size: 18px;
   font-weight: 600;
@@ -162,13 +161,13 @@ function openTalentPage() {
 }
 
 /* Image Styles */
-.talent-card__image {
+.developer-card__image {
   display: inline-block;
   object-fit: cover;
 }
 
 /* Hero Card Styles */
-.talent-card--hero {
+.developer-card--hero {
   display: grid;
   gap: 16px;
   width: 100%;
@@ -182,31 +181,31 @@ function openTalentPage() {
 }
 
 /* Header, Intro, Sections, and Image Styles */
-.talent-card--hero .talent-card__header {
+.developer-card--hero .developer-card__header {
   grid-area: header;
 }
 
-.talent-card--hero .talent-card__intro {
+.developer-card--hero .developer-card__intro {
   grid-area: intro;
 }
 
-.talent-card--hero .talent-card__proficiencies {
+.developer-card--hero .developer-card__proficiencies {
   grid-area: proficiencies;
   cursor: default;
 }
 
-.talent-card--hero .talent-card__compensation {
+.developer-card--hero .developer-card__compensation {
   grid-area: compensation;
 }
 
-.talent-card--hero .talent-card__image {
+.developer-card--hero .developer-card__image {
   grid-area: image;
   width: 100%;
   max-height: 400px;
   overflow: hidden;
 }
 
-.talent-card--hero .talent-card__image img {
+.developer-card--hero .developer-card__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -214,7 +213,7 @@ function openTalentPage() {
 }
 
 @media (min-width: 640px) and (max-width: 768px) {
-  .talent-card--hero {
+  .developer-card--hero {
     grid-template-areas:
       "header image"
       "intro image"
@@ -225,7 +224,7 @@ function openTalentPage() {
     align-items: start;
   }
 
-  .talent-card--hero .talent-card__image {
+  .developer-card--hero .developer-card__image {
     max-width: 250px;
     height: auto;
     margin-left: auto;
@@ -233,7 +232,7 @@ function openTalentPage() {
 }
 
 @media (min-width: 769px) and (max-width: 959px) {
-  .talent-card--hero {
+  .developer-card--hero {
     grid-template-areas:
       "header image"
       "intro image"
@@ -243,13 +242,13 @@ function openTalentPage() {
     grid-template-columns: 1fr 288px;
   }
 
-  .talent-card--hero .talent-card__image {
+  .developer-card--hero .developer-card__image {
     max-width: 288px;
   }
 }
 
 @media (min-width: 960px) {
-  .talent-card--hero {
+  .developer-card--hero {
     grid-template-areas:
       "header image"
       "intro image"
@@ -259,35 +258,35 @@ function openTalentPage() {
     grid-template-rows: auto auto auto 1fr;
   }
 
-  .talent-card--hero .talent-card__image {
+  .developer-card--hero .developer-card__image {
     overflow: visible;
   }
 
-  .talent-card--hero .talent-card__image img {
+  .developer-card--hero .developer-card__image img {
     height: auto;
   }
 }
 
 /* Responsive Styles */
 @media (max-width: 640px) {
-  .talent-card {
+  .developer-card {
     width: 100%;
   }
 }
 
 @media (min-width: 640px) and (max-width: 768px) {
-  .talent-card__header {
+  .developer-card__header {
     flex-direction: column;
     align-items: flex-start;
   }
 }
 
 /* Dark Mode Styles */
-.dark .talent-card:not(.talent-card--hero) {
+.dark .developer-card:not(.developer-card--hero) {
   border: 1px solid var(--vt-c-divider-light);
 }
 
-.dark .talent-card:not(.talent-card--hero):hover {
+.dark .developer-card:not(.developer-card--hero):hover {
   border-color: #555;
 }
 </style>

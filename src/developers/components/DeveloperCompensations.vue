@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { TalentCompensations } from './type'
+import { DeveloperCompensations } from './type'
 
 defineProps<{
-  compensations?: TalentCompensations
+  compensations?: DeveloperCompensations
   showDetails?: boolean
   title?: string
 }>()
@@ -12,12 +12,12 @@ defineProps<{
   <div>
     <h4 v-if="title">{{ title }}</h4>
     <div>
-      <div v-if="compensations && Object.keys(compensations).length" class="talent-compensations__list">
+      <div v-if="compensations && Object.keys(compensations).length" class="developer-compensations__list">
         <div v-for="(compensation, key) in compensations" :key="key">
           {{ compensation }}
         </div>
       </div>
-      <div v-if="showDetails" class="talent-compensations__details">
+      <div v-if="showDetails" class="developer-compensations__details">
         <p>No other costs.</p>
         <p>One month trial period, thereafter, one month notice period.</p>
       </div>
@@ -27,12 +27,12 @@ defineProps<{
 
 
 <style scoped>
-.talent-compensations__list {
+.developer-compensations__list {
   display: flex;
   flex-direction: column;
 }
 
-.talent-compensations__details {
+.developer-compensations__details {
   margin-top: 32px;
 }
 </style>

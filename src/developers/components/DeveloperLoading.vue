@@ -1,29 +1,30 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import TalentHero from './TalentHero.vue'
-import TalentCard from './TalentCard.vue'
-import TalentJoin from './TalentJoin.vue'
-import data from '../talent.json'
-import { TalentProfiles, TalentProfile } from './type'
+import data from '../developers.json'
+import { DeveloperProfiles, DeveloperProfile } from './type'
 import PageShowcaseListLayout from '@theme/components/PageShowcaseListLayout.vue'
 import partnerConfig from '../partnerConfig'
 import CardList from '@theme/components/CardList.vue'
-import TalentTimezoneFilter from './TalentTimezoneFilter.vue'
+import DeveloperHero from './DeveloperHero.vue'
+import DeveloperCard from './DeveloperCard.vue'
+import DeveloperRegionFilter from './DeveloperRegionFilter.vue'
+import DeveloperJoin from './DeveloperJoin.vue'
+
 
 // Data initialization
 const selectedTimezone = ref<string | null>(null)
-const allTalents = ref<TalentProfiles>(data as TalentProfiles)
-const allTimezones = computed(() => [...new Set(allTalents.value.map(profile => profile.timezone))])
+const allDevelopers = ref<DeveloperProfiles>(data as DeveloperProfiles)
+const allTimezones = computed(() => [...new Set(allDevelopers.value.map(profile => profile.timezone))])
 
 // Randomly select any profile to be the spotlighted profile
 const spotlightedProfile = computed(() => {
-  return allTalents.value.length ? allTalents.value[Math.floor(Math.random() * allTalents.value.length)] : null
+  return allDevelopers.value.length ? allDevelopers.value[Math.floor(Math.random() * allDevelopers.value.length)] : null
 })
 
 // Filtering cards logic
-const filterTalentByTimezone = (talent: TalentProfile): boolean => {
+const filterDeveloperByRegion = (developer: DeveloperProfile): boolean => {
   return selectedTimezone.value
-    ? talent.timezone === selectedTimezone.value
+    ? developer.timezone === selectedTimezone.value
     : true
 }
 </script>
@@ -34,15 +35,15 @@ const filterTalentByTimezone = (talent: TalentProfile): boolean => {
     featuredTitle="Vue.js Certified individuals"
   >
     <template #hero>
-      <TalentHero />
+      <DeveloperHero />
     </template>
 
     <template #spotlight>
-      <TalentCard v-if="spotlightedProfile" hero :data="spotlightedProfile" />
+      <DeveloperCard v-if="spotlightedProfile" hero :data="spotlightedProfile" />
     </template>
 
     <template #actions>
-      <TalentTimezoneFilter
+      <DeveloperRegionFilter
         :allTimezones="allTimezones"
         :selectedTimezone="selectedTimezone"
         @update:timezone="selectedTimezone = $event"
@@ -52,11 +53,9 @@ const filterTalentByTimezone = (talent: TalentProfile): boolean => {
 
     <template #featured-list>
       <CardList
-        :items="allTalents"
-        :filter="filterTalentByTimezone"
-        :cardComponent="TalentCard"
-        browseLinkText="Browse and Search all Talents"
-        browseLinkUrl="./all.html"
+        :items="allDevelopers"
+        :filter="filterDeveloperByRegion"
+        :cardComponent="DeveloperCard"
       />
     </template>
 
@@ -67,7 +66,7 @@ const filterTalentByTimezone = (talent: TalentProfile): boolean => {
     </template>
 
     <template #join>
-      <TalentJoin />
+      <DeveloperJoin />
     </template>
   </PageShowcaseListLayout>
 </template>

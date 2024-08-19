@@ -9,7 +9,8 @@ defineProps<{ title?: string }>()
   <PageHero>
     <template #title>{{ title || partnerConfig.pageHeroBanner.title }}</template>
     <template #lead>
-      Vue Talent are certified individual freelancers. Payments, compliance and vetting are administrated by our partner
+      Vue Developers are certified individual freelancers. Payments, compliance and vetting are administrated by our
+      partner
       <a class="link" :href="partnerConfig.companyWebsiteLink" target="_blank">{{ partnerConfig.partnerName }}</a>.
       Interested to join the list?
       <br />

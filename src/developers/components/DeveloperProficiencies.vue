@@ -37,8 +37,8 @@ const toggleShowAll = (event: Event) => {
 <template>
   <div>
     <Component v-if="title" :is="titleTag || 'h4'">{{ title }}</Component>
-    <div class="talent-proficiencies">
-      <span class="talent-proficiency" v-for="p in visibleProficiencies" :key="p">{{ p }}</span>
+    <div class="developer-proficiencies">
+      <span class="developer-proficiency" v-for="p in visibleProficiencies" :key="p">{{ p }}</span>
       <button
         v-if="shouldShowButton"
         @click.stop="toggleShowAll"
@@ -51,13 +51,13 @@ const toggleShowAll = (event: Event) => {
 </template>
 
 <style scoped>
-.talent-proficiencies {
+.developer-proficiencies {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-.talent-proficiency {
+.developer-proficiency {
   display: inline-block;
   color: var(--vt-c-text-code);
   font-weight: 600;
