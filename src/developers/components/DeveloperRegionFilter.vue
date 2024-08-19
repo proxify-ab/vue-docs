@@ -1,34 +1,39 @@
 <script setup lang="ts">
 
 import { VTFlyout, VTIconPlus } from '@vue/theme'
+import { computed } from 'vue'
 
-defineProps<{
-  allTimezones: string[]
-  selectedTimezone: string | null
+const props = defineProps<{
+  allRegions: string[]
+  selectedRegion: string | null
 }>()
 
-const emit = defineEmits(['update:timezone'])
+const emit = defineEmits(['update:region'])
 
-const selectTimezone = (timezone: string | null) => {
-  emit('update:timezone', timezone)
+const selectRegion = (region: string | null) => {
+  emit('update:region', region)
 }
+
+const sortedRegions = computed(() => {
+  return [...props.allRegions].sort((a, b) => a.localeCompare(b))
+})
 </script>
 
 
 <template>
   <div>
-    <VTFlyout class="dropdown timezone-dropdown" button="Timezones" label="Timezones">
+    <VTFlyout class="dropdown region-dropdown" button="Regions" label="Regions">
       <div class="vt-menu-items">
-        <template v-for="item in allTimezones" :key="item">
-          <span class="vt-menu-item" @click="selectTimezone(item)">{{ item }}</span>
+        <template v-for="item in sortedRegions" :key="item">
+          <span class="vt-menu-item" @click="selectRegion(item)">{{ item }}</span>
         </template>
       </div>
     </VTFlyout>
-    <div v-if="selectedTimezone" class="timezone-selected">
-      <span class="timezone-label">{{ selectedTimezone }}</span>
-      <span class="timezone-reset" @click="selectTimezone(null)">
+    <div v-if="selectedRegion" class="region-selected">
+      <span class="region-label">{{ selectedRegion }}</span>
+      <span class="region-reset" @click="selectRegion(null)">
         <span>Reset</span>
-        <VTIconPlus class="timezone-reset-icon" />
+        <VTIconPlus class="region-reset-icon" />
       </span>
     </div>
   </div>
@@ -56,7 +61,7 @@ const selectTimezone = (timezone: string | null) => {
   color: var(--vt-c-brand);
 }
 
-.timezone-dropdown {
+.region-dropdown {
   z-index: 10;
 }
 
@@ -69,12 +74,12 @@ const selectTimezone = (timezone: string | null) => {
   line-height: 100%;
 }
 
-.timezone-selected {
+.region-selected {
   display: flex;
   gap: 8px;
 }
 
-.timezone-label {
+.region-label {
   padding: 4px 16px;
   color: var(--vt-c-text-code);
   font-weight: 600;
@@ -83,7 +88,7 @@ const selectTimezone = (timezone: string | null) => {
   border-radius: 6px;
 }
 
-.timezone-reset {
+.region-reset {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -92,7 +97,7 @@ const selectTimezone = (timezone: string | null) => {
   transition: color 0.25s;
 }
 
-.timezone-reset-icon {
+.region-reset-icon {
   margin-left: 5px;
   width: 16px;
   height: 16px;
@@ -101,11 +106,11 @@ const selectTimezone = (timezone: string | null) => {
   transition: fill 0.25s;
 }
 
-.timezone-reset:hover {
+.region-reset:hover {
   color: var(--vt-c-text-2);
 }
 
-.timezone-reset-icon {
+.region-reset-icon {
   fill: var(--vt-c-text-2);
 }
 </style>

@@ -19,9 +19,9 @@ const hireUsLink = computed(() => {
 })
 
 // Data initialization
-const selectedTimezone = ref<string | null>(null)
+const selectedRegion = ref<string | null>(null)
 const allDevelopers = ref<DeveloperProfiles>(data as DeveloperProfiles)
-const allTimezones = computed(() => [...new Set(allDevelopers.value.map(profile => profile.timezone))])
+const allRegions = computed(() => [...new Set(allDevelopers.value.map(profile => profile.region))])
 
 // Randomly select any profile to be the spotlighted profile
 const spotlightedProfile = computed(() => {
@@ -30,8 +30,8 @@ const spotlightedProfile = computed(() => {
 
 // Filtering cards logic
 const filterDeveloperByRegion = (developer: DeveloperProfile): boolean => {
-  return selectedTimezone.value
-    ? developer.timezone === selectedTimezone.value
+  return selectedRegion.value
+    ? developer.region === selectedRegion.value
     : true
 }
 </script>
@@ -51,9 +51,9 @@ const filterDeveloperByRegion = (developer: DeveloperProfile): boolean => {
 
     <template #actions>
       <DeveloperRegionFilter
-        :allTimezones="allTimezones"
-        :selectedTimezone="selectedTimezone"
-        @update:timezone="selectedTimezone = $event"
+        :allRegions="allRegions"
+        :selectedRegion="selectedRegion"
+        @update:region="selectedRegion = $event"
       />
       <a class="accent-button" :href="hireUsLink" target="_blank">Contact us for a tailored fit</a>
     </template>
@@ -79,7 +79,7 @@ const filterDeveloperByRegion = (developer: DeveloperProfile): boolean => {
 </template>
 
 <style scoped>
-/* Timezone Selection Styles */
+/* Region Selection Styles */
 :deep(.featured-actions) {
   min-height: 90px;
   align-items: flex-start;

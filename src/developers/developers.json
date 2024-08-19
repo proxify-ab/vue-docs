@@ -35,7 +35,7 @@
       "monthly": "6300 EUR / month"
     },
     "location": "Greece",
-    "timezone": "GTM+3",
+    "region": "GTM+3",
     "experiences": [
       {
         "id": 1,
@@ -263,7 +263,7 @@
       "monthly": "6300 EUR / month"
     },
     "location": "Poland",
-    "timezone": "GTM+3",
+    "region": "GTM+3",
     "experiences": [
       {
         "id": 1,
@@ -414,7 +414,7 @@
       "monthly": "6300 EUR / month"
     },
     "location": "Armenia",
-    "timezone": "GTM+4",
+    "region": "GTM+4",
     "experiences": [
       {
         "id": 1,
@@ -634,7 +634,7 @@
       "monthly": "6300 EUR / month"
     },
     "location": "Nigeria",
-    "timezone": "GTM+1",
+    "region": "GTM+1",
     "experiences": [
       {
         "id": 1,
@@ -846,7 +846,7 @@
       "monthly": "6300 EUR / month"
     },
     "location": "Argentina",
-    "timezone": "GTM-3",
+    "region": "GTM-3",
     "experiences": [
       {
         "id": 1,
@@ -1008,7 +1008,7 @@
       "monthly": "6300 EUR / month"
     },
     "location": "India",
-    "timezone": "GTM+5:30",
+    "region": "GTM+5:30",
     "experiences": [
       {
         "id": 1,
@@ -1214,7 +1214,7 @@
       "monthly": "6300 EUR / month"
     },
     "location": "Ukraine",
-    "timezone": "GTM+3",
+    "region": "GTM+3",
     "experiences": [
       {
         "id": 1,
@@ -1398,7 +1398,7 @@
       "monthly": "6300 EUR / month"
     },
     "location": "Ukraine",
-    "timezone": "GTM+3",
+    "region": "GTM+3",
     "experiences": [
       {
         "id": 1,
@@ -1735,7 +1735,7 @@
       "monthly": "6500 EUR / month"
     },
     "location": "Ghana",
-    "timezone": "GTM+0",
+    "region": "GTM+0",
     "experiences": [
       {
         "id": 1,
@@ -1948,7 +1948,7 @@
       "monthly": "6000 EUR / month"
     },
     "location": "Uzbekistan",
-    "timezone": "GTM+5",
+    "region": "GTM+5",
     "experiences": [
       {
         "id": 1,

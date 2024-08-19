@@ -35,7 +35,7 @@ export interface DeveloperProfile {
   proficiencies: string[];
   compensations: DeveloperCompensations;
   location: string;
-  timezone: string;
+  region: string;
   experiences?: DeveloperExperience[];
   education?: DeveloperEducation[];
   highlighted?: boolean;
