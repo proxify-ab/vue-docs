@@ -1,58 +1,58 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, shallowRef } from 'vue'
 
-const props = defineProps<{
-  items: Array<any>;
-  filter?: (item: any) => boolean | undefined;
-  cardComponent: any;
-  showLinkToAll?: boolean;
-  shuffleItems?: boolean;
-  browseLinkText?: string;
-  browseLinkUrl?: string;
-}>()
+const props = withDefaults(
+  defineProps<{
+    items: Array<any>;
+    filter?: (item: any) => boolean;
+    cardComponent: any;
+    showLinkToAll?: boolean;
+    shuffleItems?: boolean;
+    browseLinkText?: string;
+    browseLinkUrl?: string;
+    splitBy?: string;
+  }>(),
+  {
+    showLinkToAll: false,
+    shuffleItems: false,
+    splitBy: 'platinum'
+  }
+)
 
-const mounted = ref(false)
-const items = shallowRef(props.items)
+const isMounted = ref(false)
+const items = shallowRef([...props.items])
 
-const filteredItems = computed(() => {
-  return props.filter ? items.value.filter(props.filter) : items.value
-})
+const filteredItems = computed(() =>
+  props.filter ? items.value.filter(props.filter) : items.value
+)
 
 onMounted(() => {
-  mounted.value = true
-  const platinumItems = items.value.filter((item) => item.platinum)
-  const normalItems = items.value.filter((item) => !item.platinum)
-
-  if (props.shuffleItems) {
-    shuffleArray(platinumItems)
-    shuffleArray(normalItems)
-  }
-
-  items.value = [...platinumItems, ...normalItems]
+  isMounted.value = true
+  items.value = processItems([...items.value], props.splitBy, props.shuffleItems)
 })
 
-function shuffleArray(array: Array<any>) {
-  let currentIndex = array.length
-  let temporaryValue
-  let randomIndex
+function processItems(items: Array<any>, splitBy: string, shouldShuffle: boolean) {
+  const splitItems = items.filter(item => item[splitBy])
+  const otherItems = items.filter(item => !item[splitBy])
 
-  // while there remain elements to shuffle...
-  while (currentIndex !== 0) {
-    // pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex)
-    currentIndex -= 1
-    // and swap it with the current element.
-    temporaryValue = array[currentIndex]
-    array[currentIndex] = array[randomIndex]
-    array[randomIndex] = temporaryValue
+  if (shouldShuffle) {
+    shuffleArray(splitItems)
+    shuffleArray(otherItems)
   }
-  return array
+
+  return [...splitItems, ...otherItems]
 }
 
+function shuffleArray(array: Array<any>) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[array[i], array[j]] = [array[j], array[i]]
+  }
+}
 </script>
 
 <template>
-  <div v-show="mounted" class="card-list">
+  <div v-show="isMounted" class="card-list">
     <!-- to skip SSG since the partners are shuffled -->
     <ClientOnly>
       <component
@@ -64,9 +64,9 @@ function shuffleArray(array: Array<any>) {
     </ClientOnly>
 
     <a
-      class="browse-all-link"
-      :href="props.browseLinkUrl"
       v-if="showLinkToAll && filteredItems.length % 2"
+      :href="browseLinkUrl"
+      class="browse-all-link"
     >
       {{ browseLinkText }}
     </a>
