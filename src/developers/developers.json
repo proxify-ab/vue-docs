@@ -9,17 +9,13 @@
       "Stelios holds a Master’s Degree in Computing, equipping him with a thorough understanding of the tech landscape. His perfectionist approach is ideal for projects that benefit from meticulous attention to detail."
     ],
     "proficiencies": [
-      "JavaScript",
       "Vue.js",
-      "React.js",
-      "TypeScript",
       "Nuxt.js",
+      "JavaScript",
+      "TypeScript",
+      "React.js",
       "Laravel",
-      "Git",
-      "Agile",
-      "Scrum",
       "PHP",
-      "Less CSS",
       "Node.js",
       "PostgreSQL",
       "Ionic",
@@ -32,8 +28,8 @@
       "Angular.js"
     ],
     "compensations": {
-      "partTime": "3300 EUR / part-time (20 h per week)",
-      "monthly": "6300 EUR / month"
+      "partTime": "4276 EUR / part-time (20 h per week)",
+      "monthly": "7879 EUR / month"
     },
     "location": "Greece",
     "region": "GTM+3",
@@ -64,9 +60,7 @@
           "PostgreSQL",
           "TypeScript",
           "Node.js",
-          "Nuxt.js",
-          "Agile",
-          "Scrum"
+          "Nuxt.js"
         ]
       },
       {
@@ -96,10 +90,7 @@
           "TypeScript",
           "Node.js",
           "Express.js",
-          "Nuxt.js",
-          "Agile",
-          "Scrum",
-          "Git"
+          "Nuxt.js"
         ]
       },
       {
@@ -241,13 +232,11 @@
       "Tomek has consistently received high appreciation from Proxify clients for his outstanding contributions and leadership."
     ],
     "proficiencies": [
-      "JavaScript",
       "Vue.js",
       "Node.js",
+      "JavaScript",
       "PHP",
       "MySQL",
-      "Linux",
-      "Command-line interface",
       "Google Cloud",
       "ElasticSearch",
       "Redis",
@@ -261,8 +250,8 @@
       "Nest.js"
     ],
     "compensations": {
-      "partTime": "3300 EUR / part-time (20 h per week)",
-      "monthly": "6300 EUR / month"
+      "partTime": "4696 EUR / part-time (20 h per week)",
+      "monthly": "8551 EUR / month"
     },
     "location": "Poland",
     "region": "GTM+3",
@@ -384,37 +373,20 @@
     "proficiencies": [
       "Vue.js",
       "JavaScript",
-      "SCSS",
       "Tailwind",
-      "HTML / CSS",
-      "HTML",
-      "CSS",
-      "Git",
-      "Webstorm",
-      "Unit Testing",
-      "REST API",
-      "Web testing",
-      "API",
       "React.js",
-      "Team leading",
       "TypeScript",
       "SQL",
       "PostgreSQL",
-      "Project management",
-      "Scrum",
-      "Agile",
-      "Regression testing",
-      "PyCharm",
       "Node.js",
       "Jira",
       "GraphQL",
       "Apollo",
-      "Performance Testing",
       "Flask"
     ],
     "compensations": {
-      "partTime": "3300 EUR / part-time (20 h per week)",
-      "monthly": "6300 EUR / month"
+      "partTime": "3772 EUR / part-time (20 h per week)",
+      "monthly": "6871 EUR / month"
     },
     "location": "Armenia",
     "region": "GTM+4",
@@ -602,40 +574,24 @@
       "Vue.js",
       "Nuxt.js",
       "JavaScript",
-      "HTML / CSS",
       "Vuex",
-      "API",
-      "REST API",
-      "Git",
-      "Vuetify",
-      "VSCode",
       "Tailwind",
-      "Bootstrap",
       "Cypress",
-      "SCSS",
-      "SASS",
-      "IntelliJ",
-      "Team leading",
       "React.js",
       "TypeScript",
       "Golang",
       "Chart.js",
       "Storybook",
       "Grafana",
-      "Unit Testing",
       "Apollo",
       "GraphQL",
-      "JSON",
-      "Adobe XD",
-      "Performance Testing",
-      "Webstorm",
       "Figma",
       "Sentry",
       "Plotly"
     ],
     "compensations": {
-      "partTime": "3300 EUR / part-time (20 h per week)",
-      "monthly": "6300 EUR / month"
+      "partTime": "3436 EUR / part-time (20 h per week)",
+      "monthly": "6199 EUR / month"
     },
     "location": "Nigeria",
     "region": "GTM+1",
@@ -830,7 +786,6 @@
       "Vue.js",
       "JavaScript",
       "SQL",
-      "REST API",
       "PostgreSQL",
       "Ruby",
       "Ruby on Rails",
@@ -847,8 +802,8 @@
       "MongoDB"
     ],
     "compensations": {
-      "partTime": "3300 EUR / part-time (20 h per week)",
-      "monthly": "6300 EUR / month"
+      "partTime": "3100 EUR / part-time (20 h per week)",
+      "monthly": "5695 EUR / month"
     },
     "location": "Argentina",
     "region": "GTM-3",
@@ -977,11 +932,6 @@
     "proficiencies": [
       "Vue.js",
       "JavaScript",
-      "HTML / CSS",
-      "HTML",
-      "VSCode",
-      "API",
-      "CSS",
       "Tailwind",
       "Nuxt.js",
       "TypeScript",
@@ -990,28 +940,22 @@
       "React.js",
       "Golang",
       "Dart",
-      "MVVM",
-      "DevOps",
       "Apollo",
       "Vuex",
       "Figma",
       "Node.js",
       "Agile",
       "Jira",
-      "Microservices",
       "Neo4j",
-      "Adobe Illustrator",
-      "Chakra UI",
       "Vuetify",
       "Angular",
       "Storybook",
-      "Fusion 360",
       "Laravel",
       "React Native"
     ],
     "compensations": {
-      "partTime": "3300 EUR / part-time (20 h per week)",
-      "monthly": "6300 EUR / month"
+      "partTime": "3688 EUR / part-time (20 h per week)",
+      "monthly": "6552 EUR / month"
     },
     "location": "India",
     "region": "GTM+5:30",
@@ -1200,16 +1144,8 @@
     "proficiencies": [
       "JavaScript",
       "Vue.js",
-      "HTML / CSS",
-      "SASS",
-      "Git",
-      "Webpack",
-      "API",
       "Vuex",
       "Figma",
-      "REST API",
-      "Agile",
-      "Scrum",
       "TypeScript",
       "Cypress",
       "Svelte",
@@ -1217,8 +1153,8 @@
       "Nuxt.js"
     ],
     "compensations": {
-      "partTime": "3300 EUR / part-time (20 h per week)",
-      "monthly": "6300 EUR / month"
+      "partTime": "4024 EUR / part-time (20 h per week)",
+      "monthly": "6199 EUR / month"
     },
     "location": "Ukraine",
     "region": "GTM+3",
@@ -1366,34 +1302,16 @@
     "proficiencies": [
       "JavaScript",
       "Vue.js",
-      "CSS",
-      "HTML",
-      "Adobe Photoshop",
-      "HTML / CSS",
-      "PhpStorm",
-      "JSON",
-      "XML",
-      "SCSS",
-      "SASS",
-      "Git",
-      "WordPress",
-      "SQL",
       "MySQL",
       "Vuex",
+      "WordPress",
       "jQuery",
-      "Gulp",
-      "Agile",
-      "Jira",
-      "Postman",
       "Vuetify",
-      "Bootstrap",
+      "Gulp",
       "Nuxt.js",
-      "Scrum",
-      "Apache HTTP Server",
       "PHP",
       "TypeScript",
       "Jest",
-      "Webpack",
       "Adobe Illustrator",
       "Figma",
       "Vagrant",
@@ -1402,8 +1320,8 @@
       "Laravel"
     ],
     "compensations": {
-      "partTime": "3300 EUR / part-time (20 h per week)",
-      "monthly": "6300 EUR / month"
+      "partTime": "3436 EUR / part-time (20 h per week)",
+      "monthly": "6119 EUR / month"
     },
     "location": "Ukraine",
     "region": "GTM+3",
@@ -1720,28 +1638,20 @@
       "TypeScript",
       "Nest.js",
       "Laravel",
-      "HTML / CSS",
-      "SQL",
-      "Agile",
-      "Digital Ocean",
-      "Bootstrap",
-      "NGINX",
+      "PostgreSQL",
       "Docker",
       "Kubernetes",
+      "Digital Ocean",
       "Flutter",
       "GraphQL",
-      "UI",
       "MongoDB",
-      "PostgreSQL",
-      "Team leading",
       "Firebase",
       "AWS Lambda",
-      "Golang",
-      "Microservices"
+      "Golang"
     ],
     "compensations": {
-      "partTime": "3500 EUR / part-time (20 h per week)",
-      "monthly": "6500 EUR / month"
+      "partTime": "3772 EUR / part-time (20 h per week)",
+      "monthly": "6871 EUR / month"
     },
     "location": "Ghana",
     "region": "GTM+0",
@@ -1931,31 +1841,22 @@
     "proficiencies": [
       "Vue.js",
       "JavaScript",
-      "HTML",
-      "CSS",
-      "ES5/ES6",
-      "JSON",
-      "Git",
       "Vuex",
-      "REST API",
       "Nuxt.js",
       "MySQL",
-      "Storybook",
       "React.js",
       "Tailwind",
-      "UI",
       "Jest",
       "Jenkins",
+      "Storybook",
       "SonarQube",
       "Java",
-      "SQL",
-      "XML",
       "Laravel",
       "Docker"
     ],
     "compensations": {
-      "partTime": "3000 EUR / part-time (20 h per week)",
-      "monthly": "6000 EUR / month"
+      "partTime": "2764 EUR / part-time (20 h per week)",
+      "monthly": "5359 EUR / month"
     },
     "location": "Uzbekistan",
     "region": "GTM+5",
