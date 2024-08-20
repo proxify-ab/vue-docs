@@ -13,7 +13,6 @@ import DeveloperEducation from './DeveloperEducation.vue'
 import DeveloperPageFooter from './DeveloperPageFooter.vue'
 import { useRoute } from 'vitepress'
 
-
 const props = defineProps<{
   developerId: number
   developerSlug: string
@@ -23,39 +22,37 @@ const developer = (data as DeveloperProfiles).find(
   (developer) => developer.id === props.developerId
 )!
 
-const { id, alias, image, location, description, compensations, proficiencies, experiences, education } = developer
+const { id, name, image, location, description, compensations, proficiencies, experiences, education } = developer
 
 const profileImage = computed(() => getDeveloperProfileImage(image, id))
 
 const route = useRoute()
-
-const hireUsLink = computed(() => {
-  return generateUTMUrl(partnerConfig.hireUsButtonUrl, route.path)
-})
+const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, route.path))
 </script>
 
 <template>
   <div class="developer-page">
-    <div class="back">
+    <div class="developer-page__back">
       <a href="./index.html">
-        <VTIconChevronLeft class="icon" />
+        <VTIconChevronLeft class="developer-page__icon" />
         Back to all developers
       </a>
     </div>
 
     <div class="developer-page__content">
       <div class="developer-page__profile-image">
-        <img :src="profileImage" :alt="alias" />
+        <img :src="profileImage" :alt="name" />
       </div>
+
       <div class="developer-page__main">
         <div class="developer-page__main-info">
-          <h2 class="developer-page__name">{{ alias }}</h2>
+          <h2 class="developer-page__name">{{ name }}</h2>
           <a class="accent-button developer-page__main-action" :href="hireUsLink" target="_blank">
             Get in contact
           </a>
 
           <p class="developer-page__location">
-            <VTIconMapPin class="icon" />
+            <VTIconMapPin class="developer-page__icon" />
             {{ location }}
           </p>
 
@@ -79,7 +76,6 @@ const hireUsLink = computed(() => {
 
         <DeveloperProfileDiagram
           :developerId="id"
-          :developerAlias="alias"
           diagramType="profile"
           title="Candidate profile"
           class="developer-page__text-section"
@@ -87,7 +83,6 @@ const hireUsLink = computed(() => {
 
         <DeveloperProfileDiagram
           :developerId="id"
-          :developerAlias="alias"
           diagramType="score"
           title="Candidate score"
           prependText="The practical score range is 0 to 100. For all Vue.js developers who have been evaluated, this is the distribution of their scores across that range, and here’s where your candidate scored."
@@ -121,23 +116,23 @@ const hireUsLink = computed(() => {
   margin: 0 auto;
 }
 
-.back {
+.developer-page__back {
   display: block;
   font-size: 0.9em;
   font-weight: 600;
   margin: 24px 0 96px;
 }
 
-.back a {
+.developer-page__back a {
   color: var(--vt-c-text-3);
   transition: color 0.5s;
 }
 
-.back a:hover {
+.developer-page__back a:hover {
   color: var(--vt-c-text-2);
 }
 
-.icon {
+.developer-page__icon {
   width: 22px;
   height: 22px;
   display: inline-block;
@@ -207,14 +202,14 @@ const hireUsLink = computed(() => {
   grid-row: 3 / 4;
   font-size: 16px;
   margin-bottom: 40px;
+}
 
-  p {
-    margin-bottom: 16px;
-  }
+.developer-page__description p {
+  margin-bottom: 16px;
+}
 
-  p:last-child {
-    margin-bottom: 0;
-  }
+.developer-page__description p:last-child {
+  margin-bottom: 0;
 }
 
 .developer-page__main-action {
@@ -309,7 +304,6 @@ const hireUsLink = computed(() => {
   }
 }
 
-
 @media (max-width: 768px) {
   .developer-page__main-action {
     display: none;
@@ -319,7 +313,7 @@ const hireUsLink = computed(() => {
     margin-bottom: 24px;
   }
 
-  .back {
+  .developer-page__back {
     margin-bottom: 48px;
   }
 }

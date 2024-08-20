@@ -14,9 +14,7 @@ import { generateUTMUrl } from './utils'
 
 // Link to contact us with UTM parameters
 const route = useRoute()
-const hireUsLink = computed(() => {
-  return generateUTMUrl(partnerConfig.hireUsButtonUrl, route.path)
-})
+const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, route.path))
 
 // Data initialization
 const selectedRegion = ref<string | null>(null)
@@ -30,9 +28,7 @@ const spotlightedProfile = computed(() => {
 
 // Filtering cards logic
 const filterDeveloperByRegion = (developer: DeveloperProfile): boolean => {
-  return selectedRegion.value
-    ? developer.region === selectedRegion.value
-    : true
+  return selectedRegion.value ? developer.region === selectedRegion.value : true
 }
 </script>
 
@@ -85,7 +81,7 @@ const filterDeveloperByRegion = (developer: DeveloperProfile): boolean => {
   align-items: flex-start;
 }
 
-/* Page cta */
+/* Page CTA */
 .featured-cta {
   margin: 1.5rem auto;
   display: flex;

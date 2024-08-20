@@ -7,9 +7,7 @@ import { useRoute } from 'vitepress'
 
 const route = useRoute()
 
-const applyLink = computed(() => {
-  return generateUTMUrl(partnerConfig.pageJoinSection.applyButton.url, route.path)
-})
+const applyLink = computed(() => generateUTMUrl(partnerConfig.pageJoinSection.applyButton.url, route.path))
 </script>
 
 <template>

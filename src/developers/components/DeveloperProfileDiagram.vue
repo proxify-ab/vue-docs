@@ -4,7 +4,6 @@ import { ref, onMounted } from 'vue'
 const props = defineProps<{
   title?: string
   titleTag?: string
-  developerAlias: string
   developerId: number
   image?: string
   diagramType: 'profile' | 'score'
@@ -25,10 +24,12 @@ onMounted(async () => {
 
 <template>
   <div class="developer-diagram">
-    <Component v-if="title" :is="titleTag || 'h4'">{{ title }}</Component>
-    <p v-if="prependText">{{ prependText }}</p>
-    <div v-html="svgContent" class="svg-wrapper"></div>
-    <p v-if="appendText">{{ appendText }}</p>
+    <Component v-if="title" :is="titleTag || 'h4'" class="developer-diagram__title">
+      {{ title }}
+    </Component>
+    <p v-if="prependText" class="developer-diagram__prepend-text">{{ prependText }}</p>
+    <div v-html="svgContent" class="developer-diagram__svg-wrapper"></div>
+    <p v-if="appendText" class="developer-diagram__append-text">{{ appendText }}</p>
   </div>
 </template>
 
@@ -41,7 +42,7 @@ onMounted(async () => {
   color: var(--vt-c-gray-light-3);
 }
 
-.svg-wrapper svg {
+.developer-diagram__svg-wrapper svg {
   width: 100%;
   height: auto;
 }

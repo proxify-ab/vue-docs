@@ -25,7 +25,6 @@ defineProps<{
   </div>
 </template>
 
-
 <style scoped>
 .developer-compensations__list {
   display: flex;

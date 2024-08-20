@@ -8,9 +8,7 @@ import { generateUTMUrl } from './utils'
 defineProps<{ title?: string }>()
 
 const route = useRoute()
-const applyLink = computed(() => {
-  return generateUTMUrl(partnerConfig.pageHeroBanner.applyButton.url, route.path)
-})
+const applyLink = computed(() => generateUTMUrl(partnerConfig.pageHeroBanner.applyButton.url, route.path))
 </script>
 
 <template>

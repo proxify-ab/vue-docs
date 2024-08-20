@@ -13,7 +13,7 @@ const props = defineProps<{
   hero?: boolean
 }>()
 
-const { id, alias, image, description, compensations, proficiencies, location } = props.data
+const { id, alias, name, image, description, compensations, proficiencies, location } = props.data
 
 const profileImage = computed(() => getDeveloperProfileImage(image, id))
 
@@ -30,10 +30,10 @@ function openDeveloperPage() {
   >
     <div class="developer-card__header">
       <div v-if="!hero" class="developer-card__avatar">
-        <img :src="profileImage" :alt="alias" />
+        <img :src="profileImage" :alt="name" />
       </div>
       <div class="developer-card__summary">
-        <h3 class="developer-card__name">{{ alias }}</h3>
+        <h3 class="developer-card__name">{{ name }}</h3>
         <p class="developer-card__location">
           <VTIconMapPin class="developer-card__icon" />
           {{ location }}
@@ -59,9 +59,8 @@ function openDeveloperPage() {
       @click.stop
     />
 
-
     <div v-if="hero" class="developer-card__image">
-      <img :src="profileImage" :alt="alias" />
+      <img :src="profileImage" :alt="name" />
     </div>
   </div>
 </template>
@@ -212,6 +211,13 @@ function openDeveloperPage() {
   object-position: top;
 }
 
+/* Media Queries */
+@media (max-width: 640px) {
+  .developer-card {
+    width: 100%;
+  }
+}
+
 @media (min-width: 640px) and (max-width: 768px) {
   .developer-card--hero {
     grid-template-areas:
@@ -219,7 +225,7 @@ function openDeveloperPage() {
       "intro image"
       "compensation compensation"
       "proficiencies proficiencies";
-    grid-template-rows: auto  1fr auto auto;
+    grid-template-rows: auto 1fr auto auto;
     grid-template-columns: 1fr 250px;
     align-items: start;
   }
@@ -228,6 +234,11 @@ function openDeveloperPage() {
     max-width: 250px;
     height: auto;
     margin-left: auto;
+  }
+
+  .developer-card__header {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -267,20 +278,6 @@ function openDeveloperPage() {
   }
 }
 
-/* Responsive Styles */
-@media (max-width: 640px) {
-  .developer-card {
-    width: 100%;
-  }
-}
-
-@media (min-width: 640px) and (max-width: 768px) {
-  .developer-card__header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
 /* Dark Mode Styles */
 .dark .developer-card:not(.developer-card--hero) {
   border: 1px solid var(--vt-c-divider-light);
@@ -290,6 +287,3 @@ function openDeveloperPage() {
   border-color: #555;
 }
 </style>
-
-
-

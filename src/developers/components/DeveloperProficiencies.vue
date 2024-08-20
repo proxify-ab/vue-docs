@@ -35,14 +35,14 @@ const toggleShowAll = (event: Event) => {
 </script>
 
 <template>
-  <div>
-    <Component v-if="title" :is="titleTag || 'h4'">{{ title }}</Component>
-    <div class="developer-proficiencies">
-      <span class="developer-proficiency" v-for="p in visibleProficiencies" :key="p">{{ p }}</span>
+  <div class="developer-proficiencies">
+    <Component v-if="title" :is="titleTag || 'h4'" class="developer-proficiencies__title">{{ title }}</Component>
+    <div class="developer-proficiencies__list">
+      <span class="developer-proficiencies__item" v-for="p in visibleProficiencies" :key="p">{{ p }}</span>
       <button
         v-if="shouldShowButton"
         @click.stop="toggleShowAll"
-        class="show-all-button"
+        class="developer-proficiencies__toggle"
       >
         {{ showAll ? 'Show less' : 'Show all' }}
       </button>
@@ -53,11 +53,16 @@ const toggleShowAll = (event: Event) => {
 <style scoped>
 .developer-proficiencies {
   display: flex;
+  flex-direction: column;
+}
+
+.developer-proficiencies__list {
+  display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-.developer-proficiency {
+.developer-proficiencies__item {
   display: inline-block;
   color: var(--vt-c-text-code);
   font-weight: 600;
@@ -67,7 +72,7 @@ const toggleShowAll = (event: Event) => {
   border-radius: 6px;
 }
 
-.show-all-button {
+.developer-proficiencies__toggle {
   display: inline-block;
   font-weight: 600;
   font-size: 0.85em;
@@ -77,11 +82,11 @@ const toggleShowAll = (event: Event) => {
   cursor: pointer;
 }
 
-.show-all-button:hover {
+.developer-proficiencies__toggle:hover {
   color: var(--vt-c-brand-dark);
 }
 
-.dark .show-all-button:hover {
+.dark .developer-proficiencies__toggle:hover {
   color: var(--vt-c-gray-dark-3);
 }
 </style>
