@@ -78,6 +78,7 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
           :developerId="id"
           diagramType="profile"
           title="Candidate profile"
+          prependText="How our developers score in the parameters that correlate best with future success in the role."
           class="developer-page__text-section"
         />
 
@@ -93,7 +94,8 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
         <DeveloperExperiences
           class="developer-page__text-section"
           title="Selected experience"
-          :experiences="experiences" />
+          :experiences="experiences"
+        />
 
         <DeveloperEducation
           class="developer-page__text-section"
