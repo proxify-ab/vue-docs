@@ -52,12 +52,14 @@ export function truncateTextFromArray(
   if (textArray.length === 0) return ''
 
   const combinedText = textArray.join(' ')
-  if (combinedText.length <= maxLength) {
-    return combinedText
-  }
 
-  const lastSpaceIndex = combinedText.lastIndexOf(' ', maxLength)
-  return lastSpaceIndex > 0
-    ? `${combinedText.slice(0, lastSpaceIndex)}${ellipsis}`
-    : `${combinedText.slice(0, maxLength)}${ellipsis}`
+  if (combinedText.length <= maxLength) return combinedText
+
+  let truncatedText = combinedText.slice(0, combinedText.lastIndexOf(' ', maxLength))
+
+  // Remove trailing comma or punctuation
+  truncatedText = truncatedText.replace(/,\s*$/, '')
+
+  return `${truncatedText}${ellipsis}`
 }
+
