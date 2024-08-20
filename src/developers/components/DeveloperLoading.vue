@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import data from '../developers.json'
 import { DeveloperProfiles, DeveloperProfile } from './type'
+import { useRoute } from 'vitepress'
+import { generateUTMUrl } from './utils'
 import PageShowcaseListLayout from '@theme/components/PageShowcaseListLayout.vue'
-import partnerConfig from '../partnerConfig'
 import CardList from '@theme/components/CardList.vue'
 import DeveloperHero from './DeveloperHero.vue'
 import DeveloperCard from './DeveloperCard.vue'
 import DeveloperRegionFilter from './DeveloperRegionFilter.vue'
 import DeveloperJoin from './DeveloperJoin.vue'
-import { useRoute } from 'vitepress'
-import { generateUTMUrl } from './utils'
+import partnerConfig from '../partnerConfig'
 
 // Link to contact us with UTM parameters
 const route = useRoute()
@@ -21,15 +21,17 @@ const selectedRegion = ref<string | null>(null)
 const allDevelopers = ref<DeveloperProfiles>(data as DeveloperProfiles)
 const allRegions = computed(() => [...new Set(allDevelopers.value.map(profile => profile.region))])
 
-// Randomly select any profile to be the spotlighted profile
-const spotlightedProfile = computed(() => {
-  return allDevelopers.value.length ? allDevelopers.value[Math.floor(Math.random() * allDevelopers.value.length)] : null
+// Spotlighted profile state and update function
+const spotlightedProfile = ref<DeveloperProfile | null>(null)
+onMounted(() => {
+  spotlightedProfile.value = allDevelopers.value.length
+    ? allDevelopers.value[Math.floor(Math.random() * allDevelopers.value.length)]
+    : null
 })
 
 // Filtering cards logic
-const filterDeveloperByRegion = (developer: DeveloperProfile): boolean => {
-  return selectedRegion.value ? developer.region === selectedRegion.value : true
-}
+const filterDeveloperByRegion = (developer: DeveloperProfile): boolean =>
+  !selectedRegion.value || developer.region === selectedRegion.value
 </script>
 
 <template>
