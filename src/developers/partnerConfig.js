@@ -6,7 +6,7 @@ const partner = partnerData.find(partner => partner.name === partnerName)
 const websiteLabel = 'proxify.io'
 const websiteUrl = 'https://proxify.io/'
 const applyUrl = 'https://career.proxify.io/apply'
-const hireUrl = 'https://proxify.io/hire-vue'
+const hireUrl = 'https://proxify.io/hire-vuejs'
 
 
 const partnerConfig = {
