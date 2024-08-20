@@ -152,7 +152,7 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
 
 .developer-page__profile-image img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   object-position: top;
 }
@@ -255,7 +255,13 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
   background-color: var(--vt-c-gray-dark-3);
 }
 
-@media (min-width: 769px) {
+@media (min-width: 512px) {
+  .developer-page__profile-image {
+    max-height: 500px;
+  }
+}
+
+@media (min-width: 640px) {
   .developer-page {
     padding: 0 28px 64px;
   }
