@@ -53,7 +53,7 @@ const filterDeveloperByRegion = (developer: DeveloperProfile): boolean =>
         :selectedRegion="selectedRegion"
         @update:region="selectedRegion = $event"
       />
-      <a class="accent-button" :href="hireUsLink" target="_blank">Contact us for a tailored fit</a>
+      <a class="accent-button" :href="hireUsLink" target="_blank">Contact Proxify for a tailored fit</a>
     </template>
 
     <template #featured-list>
@@ -66,7 +66,7 @@ const filterDeveloperByRegion = (developer: DeveloperProfile): boolean =>
 
     <template #featured-cta>
       <div class="featured-cta">
-        <a class="accent-button" :href="hireUsLink" target="_blank">Contact us for a tailored fit</a>
+        <a class="accent-button" :href="hireUsLink" target="_blank">Contact Proxify for a tailored fit</a>
       </div>
     </template>
 
