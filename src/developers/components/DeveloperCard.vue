@@ -131,9 +131,6 @@ function openDeveloperPage() {
   letter-spacing: -0.1px;
 }
 
-.developer-card--hero .developer-card__name {
-  font-size: 24px;
-}
 
 /* Location Styles */
 .developer-card__location {
@@ -142,9 +139,6 @@ function openDeveloperPage() {
   gap: 4px;
 }
 
-.developer-card--hero .developer-card__location {
-  font-size: 14px;
-}
 
 .developer-card__icon {
   width: 20px;
@@ -182,13 +176,21 @@ function openDeveloperPage() {
     "image";
 }
 
-/* Header, Intro, Sections, and Image Styles */
+/* Hero - Header, Intro, Sections, and Image Styles */
 .developer-card--hero .developer-card__header {
   grid-area: header;
 }
 
 .developer-card--hero .developer-card__intro {
   grid-area: intro;
+}
+
+.developer-card--hero .developer-card__location {
+  font-size: 14px;
+}
+
+.developer-card--hero .developer-card__name {
+  font-size: 24px;
 }
 
 .developer-card--hero .developer-card__proficiencies {
