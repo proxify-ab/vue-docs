@@ -21,8 +21,8 @@ const partnerConfig = {
 
   // Hero Section
   pageHeroBanner: {
-    title: 'Vue Developer',
-    description: 'Vue Talent are certified individual freelancers. Payments, compliance and vetting are administrated by our partner Proxify. Interested to join the list?',
+    title: 'Vue Developers',
+    description: 'Vue Developers are certified individual freelancers. Payments, compliance and vetting are administrated by our partner Proxify. Interested to join the list?',
     applyButton: {
       url: applyUrl,
       label: 'Apply here'
