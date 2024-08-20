@@ -1,7 +1,14 @@
-export interface DeveloperExperienceDescription {
-  type: 'p' | 'ul';
-  content: string | string[];
+export interface ParagraphDescription {
+  type: 'p';
+  content: string;
 }
+
+export interface UnorderedListDescription {
+  type: 'ul';
+  content: string[];
+}
+
+export type DeveloperExperienceDescription = ParagraphDescription | UnorderedListDescription;
 
 export interface DeveloperExperience {
   id: number;
