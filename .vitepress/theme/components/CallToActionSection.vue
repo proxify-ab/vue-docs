@@ -1,19 +1,24 @@
 <script setup lang="ts">
-defineProps<{
-  title: string;
-  description: string;
-  link: string;
-  linkText: string;
-}>()
+withDefaults(defineProps<{
+    title?: string;
+    description?: string;
+    link?: string;
+    linkText?: string;
+    showDivider?: boolean
+  }>(), {
+    showDivider: true
+  }
+)
 </script>
 
 <template>
   <section class="cta-section">
-    <div class="cta-divider"></div>
+    <div v-if="showDivider" class="cta-divider"></div>
     <div class="cta-content">
-      <h2 class="cta-title">{{ title }}</h2>
-      <p class="cta-description">{{ description }}</p>
-      <a class="cta-link" :href="link" target="_blank">{{ linkText }}</a>
+      <h2 v-if="title" class="cta-title">{{ title }}</h2>
+      <p v-if="description" class="cta-description">{{ description }}</p>
+      <a v-if="link" :href="link" target="_blank" class="cta-link">{{ linkText }}</a>
+      <slot></slot>
     </div>
   </section>
 </template>
