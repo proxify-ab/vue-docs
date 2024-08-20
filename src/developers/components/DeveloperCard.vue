@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { DeveloperProfile } from './type'
-import { getDeveloperProfileImage } from './utils'
+import { getDeveloperProfileImage, truncateTextFromArray } from './utils'
 import { VTIconMapPin } from '@vue/theme'
 import DeveloperProficiencies from './DeveloperProficiencies.vue'
 import DeveloperCompensations from './DeveloperCompensations.vue'
 import { useRouter } from 'vitepress'
+
 const router = useRouter()
 
 const props = defineProps<{
@@ -16,6 +17,8 @@ const props = defineProps<{
 const { id, alias, name, image, description, compensations, proficiencies, location } = props.data
 
 const profileImage = computed(() => getDeveloperProfileImage(image, id))
+
+const trimmedDescription = computed(() => truncateTextFromArray(description, 220))
 
 function openDeveloperPage() {
   router.go(`./developers/${id}-${alias.toLowerCase()}-freelance-developer.html`)
@@ -42,7 +45,7 @@ function openDeveloperPage() {
       </div>
     </div>
 
-    <p class="developer-card__intro">{{ description[0] }}</p>
+    <p class="developer-card__intro">{{ trimmedDescription }}</p>
 
     <DeveloperCompensations
       v-if="hero"
@@ -212,7 +215,14 @@ function openDeveloperPage() {
 }
 
 /* Media Queries */
-@media (max-width: 640px) {
+@media (min-width: 640px) and (max-width: 959px) {
+  .developer-card__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
   .developer-card {
     width: 100%;
   }
@@ -234,11 +244,6 @@ function openDeveloperPage() {
     max-width: 250px;
     height: auto;
     margin-left: auto;
-  }
-
-  .developer-card__header {
-    flex-direction: column;
-    align-items: flex-start;
   }
 }
 
