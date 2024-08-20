@@ -8,20 +8,14 @@ import PageShowcaseListLayout from '@theme/components/PageShowcaseListLayout.vue
 import CardList from '@theme/components/CardList.vue'
 import DeveloperHero from './DeveloperHero.vue'
 import DeveloperCard from './DeveloperCard.vue'
-import DeveloperRegionFilter from './DeveloperRegionFilter.vue'
 import DeveloperJoin from './DeveloperJoin.vue'
 import partnerConfig from '../partnerConfig'
 
-// Link to contact us with UTM parameters
 const route = useRoute()
 const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, route.path))
 
-// Data initialization
-const selectedRegion = ref<string | null>(null)
 const allDevelopers = ref<DeveloperProfiles>(data as DeveloperProfiles)
-const allRegions = computed(() => [...new Set(allDevelopers.value.map(profile => profile.region))])
 
-// Spotlighted profile state and update function
 const spotlightedProfile = ref<DeveloperProfile | null>(null)
 onMounted(() => {
   spotlightedProfile.value = allDevelopers.value.length
@@ -29,9 +23,6 @@ onMounted(() => {
     : null
 })
 
-// Filtering cards logic
-const filterDeveloperByRegion = (developer: DeveloperProfile): boolean =>
-  !selectedRegion.value || developer.region === selectedRegion.value
 </script>
 
 <template>
@@ -48,18 +39,12 @@ const filterDeveloperByRegion = (developer: DeveloperProfile): boolean =>
     </template>
 
     <template #actions>
-      <DeveloperRegionFilter
-        :allRegions="allRegions"
-        :selectedRegion="selectedRegion"
-        @update:region="selectedRegion = $event"
-      />
       <a class="accent-button" :href="hireUsLink" target="_blank">Contact Proxify for a tailored fit</a>
     </template>
 
     <template #featured-list>
       <CardList
         :items="allDevelopers"
-        :filter="filterDeveloperByRegion"
         :cardComponent="DeveloperCard"
       />
     </template>
@@ -77,10 +62,9 @@ const filterDeveloperByRegion = (developer: DeveloperProfile): boolean =>
 </template>
 
 <style scoped>
-/* Region Selection Styles */
+/* Action Selection Styles */
 :deep(.featured-actions) {
-  min-height: 90px;
-  align-items: flex-start;
+  justify-content: flex-end;
 }
 
 /* Page CTA */
@@ -90,14 +74,5 @@ const filterDeveloperByRegion = (developer: DeveloperProfile): boolean =>
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-  :deep(.featured-actions) {
-    min-height: 160px;
-    align-items: flex-start;
-    justify-content: flex-end;
-  }
 }
 </style>
