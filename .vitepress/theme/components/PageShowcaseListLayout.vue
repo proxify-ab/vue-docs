@@ -90,7 +90,6 @@ const props = defineProps<{
   display: block;
   width: fit-content;
   min-width: 240px;
-  max-width: 260px;
   text-align: center;
   background-color: var(--vt-c-brand);
   color: var(--vt-c-bg);
