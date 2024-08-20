@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "name": "Stelios Kitziris",
     "alias": "Stelios",
     "description": [
       "Stelios is a fullstack developer with over six years of commercial experience, specializing in the MEVN stack.",
@@ -232,6 +233,7 @@
   },
   {
     "id": 2,
+    "name": "Tomek Jankowski",
     "alias": "Tomek",
     "description": [
       "Tomek is a fullstack developer with over 17 years of commercial experience. Over the years, he has transitioned from using PHP to mastering modern tech stacks, focusing on Vue.js and Node.js in the last six years. His expertise in these technologies has driven the development and support of robust, high-traffic systems.",
@@ -372,6 +374,7 @@
   },
   {
     "id": 3,
+    "name": "Vardan Hayrapetyan",
     "alias": "Vardan",
     "description": [
       "Vardan is a frontend-heavy fullstack developer with expertise in Vue.js, and Node.js. With six years of experience, he has worked on several large-scale web applications, particularly excelling in the real estate sector.",
@@ -589,6 +592,7 @@
   },
   {
     "id": 4,
+    "name": "Abdulqudus Abubakre",
     "alias": "Abdulqudus",
     "description": [
       "Abdulqudus is a senior frontend developer with over six years of commercial experience. His main framework of choice is Vue.js. He has also worked with frameworks like Nuxt.js and Vuetify for over three years. He is a fan of TDD and uses Cypress as a main testing tool in all his projects.",
@@ -815,6 +819,7 @@
   },
   {
     "id": 5,
+    "name": "Santiago Anaya",
     "alias": "Santiago",
     "description": [
       "Santiago is a fullstack engineer with over six years of commercial experience, focusing on frontend development. He is an expert in Vue.js. On the backend, he uses Ruby on Rails and various relational databases, particularly PostgreSQL.",
@@ -962,6 +967,7 @@
   },
   {
     "id": 6,
+    "name": "Harshit Sangani",
     "alias": "Harshit",
     "description": [
       "Harshit is a frontend engineer with over six years of commercial experience, specializing in Vue.js. He has been integral to various stages of the software development lifecycle, from ideation to deployment, ensuring top-notch user experiences and scalable applications.",
@@ -1184,6 +1190,7 @@
   },
   {
     "id": 7,
+    "name": "Kostiantyn Draliuk",
     "alias": "Kostiantyn",
     "description": [
       "Kostiantyn is a frontend developer with eight years of commercial experience. His primary expertise lies in Vue.js, where he has demonstrated exceptional proficiency in building robust and scalable web applications.",
@@ -1349,6 +1356,7 @@
   },
   {
     "id": 8,
+    "name": "Eduard Miskov",
     "alias": "Eduard",
     "description": [
       "Eduard is a frontend developer with over seven years of commercial experience. His primary expertise is crafting visually appealing and user-friendly web applications using Vue.js.",
@@ -1696,6 +1704,7 @@
   },
   {
     "id": 9,
+    "name": "Emmanuel Sackey",
     "alias": "Emmanuel",
     "description": [
       "Emmanuel is a frontend-heavy fullstack developer with seven years of professional experience, proficient in Vue.js and Node.js. His main focus is on creating user-friendly web pages and dependable back-end systems.",
@@ -1911,6 +1920,7 @@
   },
   {
     "id": 10,
+    "name": "Abdusaid Umarov",
     "alias": "Abdusaid",
     "intro": "Abdusaid is a Senior Frontend Developer with over six years of experience, where he’s made a name for himself in Vue.js and Nuxt.js. His skill in Vue.js is top-notch, proven by the perfect 100% score he achieved on the Proxify test.",
     "description": [

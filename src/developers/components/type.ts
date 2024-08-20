@@ -29,6 +29,7 @@ export interface DeveloperCompensations {
 
 export interface DeveloperProfile {
   id: number;
+  name: string;
   alias: string;
   image?: string;
   description: string[];
