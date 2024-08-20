@@ -84,7 +84,7 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
         <DeveloperProfileDiagram
           :developerId="id"
           diagramType="score"
-          title="Candidate score"
+          title="Engineering excellence score"
           prependText="The practical score range is 0 to 100. For all Vue.js developers who have been evaluated, this is the distribution of their scores across that range, and here’s where your candidate scored."
           appendText="Data from 3,661 evaluated Vue.js developers and 38,008 applicants."
           class="developer-page__text-section"
