@@ -49,20 +49,24 @@ defineProps<{
   align-self: stretch;
 }
 
-.developer-experience__header {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
 .developer-experience__role {
   color: var(--vt-c-text-code);
   font-weight: 600;
+}
+
+.developer-experience__description {
+  margin: 32px 0 24px;
 }
 
 .developer-experience__description ul {
   list-style-type: disc;
   margin-left: 20px;
   margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .developer-experiences__list {
+    gap: 40px;
+  }
 }
 </style>

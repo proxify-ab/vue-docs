@@ -273,7 +273,7 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
     grid-template-columns: 1fr 213px;
     grid-template-rows: auto 1fr;
     align-items: start;
-    column-gap: 76px;
+    column-gap: 40px;
   }
 
   .developer-page__main {
@@ -305,6 +305,7 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
 @media (min-width: 1440px) {
   .developer-page__content {
     grid-template-columns: 1fr 306px;
+    column-gap: 76px;
   }
 
   .developer-page__name {
