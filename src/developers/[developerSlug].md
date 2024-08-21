@@ -1,6 +1,7 @@
 ---
 page: true
 footer: false
+title: Vue Developers
 ---
 
 <script setup>
