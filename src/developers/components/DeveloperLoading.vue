@@ -99,6 +99,8 @@ onMounted(() => {
   }
 
   :deep(.featured-actions) {
+    width: auto;
+    display: block;
     position: absolute;
     top: 34px;
     right: 48px;
