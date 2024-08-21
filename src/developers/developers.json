@@ -28,8 +28,8 @@
       "Angular.js"
     ],
     "compensations": {
-      "partTime": "4276 EUR / part-time (20 h per week)",
-      "monthly": "7879 EUR / month"
+      "partTime": "4276 EUR / month (20 h per week)",
+      "monthly": "7879 EUR / month (40 h per week)"
     },
     "location": "Greece",
     "region": "GTM+3",
@@ -250,8 +250,8 @@
       "Nest.js"
     ],
     "compensations": {
-      "partTime": "4696 EUR / part-time (20 h per week)",
-      "monthly": "8551 EUR / month"
+      "partTime": "4696 EUR / month (20 h per week)",
+      "monthly": "8551 EUR / month (40 h per week)"
     },
     "location": "Poland",
     "region": "GTM+3",
@@ -385,8 +385,8 @@
       "Flask"
     ],
     "compensations": {
-      "partTime": "3772 EUR / part-time (20 h per week)",
-      "monthly": "6871 EUR / month"
+      "partTime": "3772 EUR / month (20 h per week)",
+      "monthly": "6871 EUR / month (40 h per week)"
     },
     "location": "Armenia",
     "region": "GTM+4",
@@ -590,8 +590,8 @@
       "Plotly"
     ],
     "compensations": {
-      "partTime": "3436 EUR / part-time (20 h per week)",
-      "monthly": "6199 EUR / month"
+      "partTime": "3436 EUR / month (20 h per week)",
+      "monthly": "6199 EUR / month (40 h per week)"
     },
     "location": "Nigeria",
     "region": "GTM+1",
@@ -802,8 +802,8 @@
       "MongoDB"
     ],
     "compensations": {
-      "partTime": "3100 EUR / part-time (20 h per week)",
-      "monthly": "5695 EUR / month"
+      "partTime": "3100 EUR / month (20 h per week)",
+      "monthly": "5695 EUR / month (40 h per week)"
     },
     "location": "Argentina",
     "region": "GTM-3",
@@ -954,8 +954,8 @@
       "React Native"
     ],
     "compensations": {
-      "partTime": "3688 EUR / part-time (20 h per week)",
-      "monthly": "6552 EUR / month"
+      "partTime": "3688 EUR / month (20 h per week)",
+      "monthly": "6552 EUR / month (40 h per week)"
     },
     "location": "India",
     "region": "GTM+5:30",
@@ -1153,8 +1153,8 @@
       "Nuxt.js"
     ],
     "compensations": {
-      "partTime": "4024 EUR / part-time (20 h per week)",
-      "monthly": "6199 EUR / month"
+      "partTime": "4024 EUR / month (20 h per week)",
+      "monthly": "6199 EUR / month (40 h per week)"
     },
     "location": "Ukraine",
     "region": "GTM+3",
@@ -1320,8 +1320,8 @@
       "Laravel"
     ],
     "compensations": {
-      "partTime": "3436 EUR / part-time (20 h per week)",
-      "monthly": "6119 EUR / month"
+      "partTime": "3436 EUR / month (20 h per week)",
+      "monthly": "6119 EUR / month (40 h per week)"
     },
     "location": "Ukraine",
     "region": "GTM+3",
@@ -1650,8 +1650,8 @@
       "Golang"
     ],
     "compensations": {
-      "partTime": "3772 EUR / part-time (20 h per week)",
-      "monthly": "6871 EUR / month"
+      "partTime": "3772 EUR / month (20 h per week)",
+      "monthly": "6871 EUR / month (40 h per week)"
     },
     "location": "Ghana",
     "region": "GTM+0",
@@ -1855,8 +1855,8 @@
       "Docker"
     ],
     "compensations": {
-      "partTime": "2764 EUR / part-time (20 h per week)",
-      "monthly": "5359 EUR / month"
+      "partTime": "2764 EUR / month (20 h per week)",
+      "monthly": "5359 EUR / month (40 h per week)"
     },
     "location": "Uzbekistan",
     "region": "GTM+5",
