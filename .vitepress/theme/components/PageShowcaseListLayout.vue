@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const props = defineProps<{
-  spotlightTitle: string;
-  featuredTitle: string;
+  spotlightTitle?: string;
+  featuredTitle?: string;
   browseLinkText?: string;
   browseLinkUrl?: string;
 }>()
@@ -15,7 +15,7 @@ const props = defineProps<{
     <!-- Spotlight Section -->
     <div class="showcase-layout__spotlight">
       <div class="spotlight-content">
-        <h2 class="section-title">{{ props.spotlightTitle }}</h2>
+        <h2 v-if="props.spotlightTitle" class="section-title">{{ props.spotlightTitle }}</h2>
         <slot name="spotlight"></slot>
       </div>
     </div>
@@ -26,7 +26,7 @@ const props = defineProps<{
       <div v-if="$slots.actions" class="featured-actions">
         <slot name="actions"></slot>
       </div>
-      <h2 class="section-title">{{ props.featuredTitle }}</h2>
+      <h2 v-if="props.featuredTitle" class="section-title">{{ props.featuredTitle }}</h2>
       <slot name="featured-list"></slot>
       <slot name="featured-cta">
         <div v-if="browseLinkUrl" class="browse-more">

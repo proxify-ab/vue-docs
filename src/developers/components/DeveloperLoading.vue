@@ -43,7 +43,6 @@ onMounted(() => {
         :href="hireUsLink"
         target="_blank"
         class="accent-button"
-
       >
         Contact {{ partnerConfig.partnerName }} for a tailored fit
       </a>
@@ -75,6 +74,14 @@ onMounted(() => {
 </template>
 
 <style scoped>
+/* Action Selection Styles */
+:deep(.featured-actions) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
 /* Page CTA */
 .featured-cta {
   margin: 1.5rem auto;
@@ -83,4 +90,20 @@ onMounted(() => {
   align-items: center;
   justify-content: center;
 }
+
+@media (min-width: 768px) {
+  /* Action Selection Styles */
+  :deep(.showcase-layout__featured) {
+    padding: 48px 48px;
+    position: relative;
+  }
+
+  :deep(.featured-actions) {
+    position: absolute;
+    top: 34px;
+    right: 48px;
+  }
+}
+
+
 </style>
