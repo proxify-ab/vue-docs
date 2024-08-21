@@ -163,7 +163,7 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto;
   gap: 10px;
   align-items: center;
 }
@@ -203,7 +203,7 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
   grid-column: 1 / 3;
   grid-row: 3 / 4;
   font-size: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 8px;
 }
 
 .developer-page__description p {
@@ -215,9 +215,10 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
 }
 
 .developer-page__main-action {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  justify-self: end;
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  justify-self: flex-start;
+  margin-bottom: 40px;
 }
 
 .developer-page__location svg {
@@ -263,7 +264,7 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .developer-page {
     padding: 0 28px 64px;
   }
@@ -297,6 +298,17 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
     grid-template-rows: auto auto auto;
   }
 
+  .developer-page__main-action {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: flex-end;
+    margin-bottom: 0;
+  }
+
+  .developer-page__description {
+    margin-bottom: 40px;
+  }
+
   .developer-page__text-section {
     padding: 40px 0;
   }
@@ -314,14 +326,6 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
 }
 
 @media (max-width: 768px) {
-  .developer-page__main-action {
-    display: none;
-  }
-
-  .developer-page__description {
-    margin-bottom: 24px;
-  }
-
   .developer-page__back {
     margin-bottom: 48px;
   }

@@ -107,6 +107,8 @@ function openDeveloperPage() {
   height: 88px;
   border-radius: 50%;
   overflow: hidden;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .developer-card__avatar img {
