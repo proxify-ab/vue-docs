@@ -39,7 +39,14 @@ onMounted(() => {
     </template>
 
     <template #actions>
-      <a class="accent-button" :href="hireUsLink" target="_blank">Contact Proxify for a tailored fit</a>
+      <a
+        :href="hireUsLink"
+        target="_blank"
+        class="accent-button"
+
+      >
+        Contact {{ partnerConfig.partnerName }} for a tailored fit
+      </a>
     </template>
 
     <template #featured-list>
@@ -51,7 +58,13 @@ onMounted(() => {
 
     <template #featured-cta>
       <div class="featured-cta">
-        <a class="accent-button" :href="hireUsLink" target="_blank">Contact Proxify for a tailored fit</a>
+        <a
+          :href="hireUsLink"
+          target="_blank"
+          class="accent-button"
+        >
+          Contact {{ partnerConfig.partnerName }} for a tailored fit
+        </a>
       </div>
     </template>
 
@@ -62,11 +75,6 @@ onMounted(() => {
 </template>
 
 <style scoped>
-/* Action Selection Styles */
-:deep(.featured-actions) {
-  justify-content: flex-end;
-}
-
 /* Page CTA */
 .featured-cta {
   margin: 1.5rem auto;
