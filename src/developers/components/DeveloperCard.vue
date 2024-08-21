@@ -156,6 +156,10 @@ function openDeveloperPage() {
   margin-bottom: 8px;
 }
 
+.developer-card__proficiencies {
+  cursor: default;
+}
+
 /* Image Styles */
 .developer-card__image {
   display: inline-block;
@@ -195,7 +199,6 @@ function openDeveloperPage() {
 
 .developer-card--hero .developer-card__proficiencies {
   grid-area: proficiencies;
-  cursor: default;
 }
 
 .developer-card--hero .developer-card__compensation {

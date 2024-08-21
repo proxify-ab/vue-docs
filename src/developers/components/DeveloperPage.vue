@@ -35,7 +35,7 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
     <div class="developer-page__back">
       <a href="./index.html">
         <VTIconChevronLeft class="developer-page__icon" />
-        Back to all developers
+        All Vue.js certified developers
       </a>
     </div>
 
