@@ -71,9 +71,6 @@ const props = defineProps<{
 
 .featured-actions {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 1.5em;
 }
 
@@ -115,10 +112,6 @@ const props = defineProps<{
   .spotlight-content,
   .showcase-layout__featured {
     padding: 36px 28px;
-  }
-
-  .featured-actions {
-    flex-direction: column-reverse;
   }
 }
 </style>
