@@ -48,6 +48,18 @@ const partnerConfig = {
     websiteVueLabel: websiteLabel + '/vue'
   },
 
+  // Diagram sections
+  profileDiagram: {
+    title: 'Candidate profile',
+    prependText: 'How our developers score in the parameters that correlate best with future success in the role.'
+  },
+
+  scoreDiagram: {
+    title: 'Engineering excellence score',
+    prependText: 'The practical score range is 0 to 300. This is the distribution of scores for all evaluated Vue.js developers, and here’s where your candidate scored.',
+    appendText: 'Data from 3,661 evaluated Vue.js developers and 38,008 applicants.'
+  },
+
   // Proficiency Section
   proficiencies: {
     skillsPerCard: 5
