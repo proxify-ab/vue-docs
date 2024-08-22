@@ -32,7 +32,7 @@ const websiteVuePageLink = computed(() => generateUTMUrl(partnerConfig.pageFoote
     <div class="partner-footer__social-links">
       <a :href="`mailto:${partnerConfig.pageFooter.email}`">{{ partnerConfig.pageFooter.email }}</a>
       <p>{{ partnerConfig.pageFooter.phone }}</p>
-      <a :href="websiteVuePageLink">{{ partnerConfig.pageFooter.websiteVueLabel }}</a>
+      <a :href="websiteVuePageLink" target="_blank">{{ partnerConfig.pageFooter.websiteVueLabel }}</a>
     </div>
 
     <a class="partner-footer__contact-button accent-button" :href="hireUsLink" target="_blank">
