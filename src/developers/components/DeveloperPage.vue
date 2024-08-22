@@ -203,11 +203,11 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
   grid-column: 1 / 3;
   grid-row: 3 / 4;
   font-size: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 }
 
 .developer-page__description p {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .developer-page__description p:last-child {
@@ -286,6 +286,7 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
   .developer-page__profile-image {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    margin-bottom: 32px;
   }
 
   .developer-page__footer {
@@ -308,6 +309,11 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
   .developer-page__description {
     margin-bottom: 40px;
   }
+
+  .developer-page__location {
+    margin-bottom: 0;
+  }
+
 
   .developer-page__text-section {
     padding: 40px 0;

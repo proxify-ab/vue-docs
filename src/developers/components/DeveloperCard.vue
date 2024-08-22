@@ -74,12 +74,13 @@ function openDeveloperPage() {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 23px;
+  gap: 16px;
   width: 48.5%;
   margin-bottom: 36px;
   padding: 24px 28px;
   background-color: var(--vt-c-bg);
   border-radius: 4px;
+  border: 1px solid var(--vt-c-white-soft);
   box-shadow: 0 12px 12px rgba(0, 0, 0, 0.05);
   font-size: 15px;
   transition: background-color 0.5s, box-shadow 0.25s ease, border-color 0.25s ease;
@@ -100,6 +101,7 @@ function openDeveloperPage() {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.2px;
+  margin-bottom: 8px;
 }
 
 .developer-card__avatar {
@@ -128,7 +130,7 @@ function openDeveloperPage() {
 .developer-card__name {
   color: var(--vt-c-text-1);
   font-size: 22.5px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 24px;
   letter-spacing: -0.1px;
 }
@@ -185,6 +187,7 @@ function openDeveloperPage() {
 /* Hero - Header, Intro, Sections, and Image Styles */
 .developer-card--hero .developer-card__header {
   grid-area: header;
+  margin-bottom: 0;
 }
 
 .developer-card--hero .developer-card__intro {
@@ -193,10 +196,12 @@ function openDeveloperPage() {
 
 .developer-card--hero .developer-card__location {
   font-size: 14px;
+  line-height: 24px;
 }
 
 .developer-card--hero .developer-card__name {
   font-size: 24px;
+  line-height: 32px;
 }
 
 .developer-card--hero .developer-card__proficiencies {
@@ -232,6 +237,10 @@ function openDeveloperPage() {
 @media (max-width: 768px) {
   .developer-card {
     width: 100%;
+  }
+
+  .developer-card--hero .developer-card__image {
+    margin-top: 16px;
   }
 }
 
@@ -279,6 +288,11 @@ function openDeveloperPage() {
       "proficiencies image";
     grid-template-columns: 1fr 288px;
     grid-template-rows: auto auto auto 1fr;
+  }
+
+  .developer-card--hero .developer-card__name {
+    font-size: 32px;
+    line-height: 40px;
   }
 
   .developer-card--hero .developer-card__image {

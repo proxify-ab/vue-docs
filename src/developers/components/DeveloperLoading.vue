@@ -82,6 +82,11 @@ onMounted(() => {
   margin-bottom: 40px;
 }
 
+/* Card title */
+:deep(.section-title) {
+  margin-bottom: 32px;
+}
+
 /* Page CTA */
 .featured-cta {
   margin: 1.5rem auto;

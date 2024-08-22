@@ -43,7 +43,6 @@ onMounted(async () => {
 }
 
 .developer-diagram__svg-wrapper {
-  max-width: 456px;
   min-width: 200px;
   height: auto;
   width: 100%;
