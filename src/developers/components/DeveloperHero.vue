@@ -17,7 +17,8 @@ const applyLink = computed(() => generateUTMUrl(partnerConfig.pageHeroBanner.app
     <template #lead>
       {{ partnerConfig.pageHeroBanner.description }}
       <br />
-      <a class="link" :href="applyLink" target="_blank">{{ partnerConfig.pageHeroBanner.applyButton.label }}</a>.
+      <a v-if="applyLink" class="link" :href="applyLink"
+         target="_blank">{{ partnerConfig.pageHeroBanner.applyButton.label }}</a>.
     </template>
   </PageHero>
 </template>

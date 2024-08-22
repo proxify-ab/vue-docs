@@ -32,7 +32,7 @@ function openDeveloperPage() {
     @click="openDeveloperPage"
   >
     <div class="developer-card__header">
-      <div v-if="!hero" class="developer-card__avatar">
+      <div v-if="!hero && profileImage" class="developer-card__avatar">
         <img :src="profileImage" :alt="name" />
       </div>
       <div class="developer-card__summary">
@@ -48,13 +48,14 @@ function openDeveloperPage() {
     <p class="developer-card__intro">{{ trimmedDescription }}</p>
 
     <DeveloperCompensations
-      v-if="hero"
+      v-if="hero && compensations"
       title="Compensation"
       :compensations="compensations"
       class="developer-card__section developer-card__compensation"
     />
 
     <DeveloperProficiencies
+      v-if="proficiencies"
       :proficiencies="proficiencies"
       :title="hero ? 'Main proficiencies' : undefined"
       enable-show-all
@@ -62,7 +63,7 @@ function openDeveloperPage() {
       @click.stop
     />
 
-    <div v-if="hero" class="developer-card__image">
+    <div v-if="hero && profileImage" class="developer-card__image">
       <img :src="profileImage" :alt="name" />
     </div>
   </div>

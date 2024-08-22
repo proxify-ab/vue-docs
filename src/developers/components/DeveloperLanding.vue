@@ -40,6 +40,7 @@ onMounted(() => {
 
     <template #actions>
       <a
+        v-if="hireUsLink"
         :href="hireUsLink"
         target="_blank"
         class="accent-button"
@@ -50,6 +51,7 @@ onMounted(() => {
 
     <template #featured-list>
       <CardList
+        v-if="allDevelopers?.length"
         :items="allDevelopers"
         :cardComponent="DeveloperCard"
       />
@@ -58,6 +60,7 @@ onMounted(() => {
     <template #featured-cta>
       <div class="featured-cta">
         <a
+          v-if="hireUsLink"
           :href="hireUsLink"
           target="_blank"
           class="accent-button"

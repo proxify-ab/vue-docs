@@ -40,23 +40,23 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
     </div>
 
     <div class="developer-page__content">
-      <div class="developer-page__profile-image">
+      <div v-if="profileImage" class="developer-page__profile-image">
         <img :src="profileImage" :alt="name" />
       </div>
 
       <div class="developer-page__main">
         <div class="developer-page__main-info">
-          <h2 class="developer-page__name">{{ name }}</h2>
-          <a class="accent-button developer-page__main-action" :href="hireUsLink" target="_blank">
+          <h2 v-if="name" class="developer-page__name">{{ name }}</h2>
+          <a v-if="hireUsLink" class="accent-button developer-page__main-action" :href="hireUsLink" target="_blank">
             Get in contact
           </a>
 
-          <p class="developer-page__location">
+          <p v-if="location" class="developer-page__location">
             <VTIconMapPin class="developer-page__icon" />
             {{ location }}
           </p>
 
-          <div class="developer-page__description">
+          <div v-if="description" class="developer-page__description">
             <p v-for="desc in description" :key="desc">{{ desc }}</p>
           </div>
         </div>

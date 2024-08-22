@@ -3,7 +3,6 @@ import { ref, onMounted } from 'vue'
 
 const props = defineProps<{
   title?: string
-  titleTag?: string
   developerId: number
   diagramType: 'profile' | 'score'
   prependText?: string
@@ -22,10 +21,8 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="developer-diagram">
-    <Component v-if="title" :is="titleTag || 'h4'" class="developer-diagram__title">
-      {{ title }}
-    </Component>
+  <div v-if="svgContent" class="developer-diagram">
+    <h4 v-if="title" class="developer-diagram__title"> {{ title }} </h4>
     <p v-if="prependText" class="developer-diagram__prepend-text">{{ prependText }}</p>
     <div v-html="svgContent" class="developer-diagram__svg-wrapper"></div>
     <p v-if="appendText" class="developer-diagram__append-text">{{ appendText }}</p>

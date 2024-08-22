@@ -5,7 +5,7 @@ title: Vue Developers
 ---
 
 <script setup>
-import DeveloperLoading from './components/DeveloperLoading.vue'
+import DeveloperLanding from './components/DeveloperLanding.vue'
 </script>
 
-<DeveloperLoading />
+<DeveloperLanding />

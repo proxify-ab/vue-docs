@@ -12,6 +12,7 @@ const applyLink = computed(() => generateUTMUrl(partnerConfig.pageJoinSection.ap
 
 <template>
   <CallToActionSection
+    v-if="partnerConfig.pageJoinSection.applyButton.label"
     :title="partnerConfig.pageJoinSection.title"
     :description="partnerConfig.pageJoinSection.description"
     :link="applyLink"

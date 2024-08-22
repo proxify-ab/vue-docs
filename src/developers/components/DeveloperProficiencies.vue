@@ -5,7 +5,6 @@ import partnerConfig from '../partnerConfig'
 const props = defineProps<{
   proficiencies: string[]
   title?: string
-  titleTag?: string
   enableShowAll?: boolean
 }>()
 
@@ -36,7 +35,7 @@ const toggleShowAll = (event: Event) => {
 
 <template>
   <div class="developer-proficiencies">
-    <Component v-if="title" :is="titleTag || 'h4'" class="developer-proficiencies__title">{{ title }}</Component>
+    <h4 v-if="title" class="developer-proficiencies__title">{{ title }}</h4>
     <div class="developer-proficiencies__list">
       <span class="developer-proficiencies__item" v-for="p in visibleProficiencies" :key="p">{{ p }}</span>
       <button

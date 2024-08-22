@@ -12,7 +12,7 @@ defineProps<{
   <div>
     <h4 v-if="title">{{ title }}</h4>
     <div>
-      <div v-if="compensations && Object.keys(compensations).length" class="developer-compensations__list">
+      <div v-if="compensations" class="developer-compensations__list">
         <div v-for="(compensation, key) in compensations" :key="key">
           {{ compensation }}
         </div>

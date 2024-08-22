@@ -10,29 +10,32 @@ const route = useRoute()
 const logoLink = computed(() => generateUTMUrl(partnerConfig.websiteUrl, route.path))
 const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, route.path))
 const websiteVuePageLink = computed(() => generateUTMUrl(partnerConfig.pageFooter.websiteVueLink, route.path))
+
+const { text, email, phone, websiteVueLabel } = partnerConfig.pageFooter
+const { logo, partnerName } = partnerConfig
 </script>
 
 <template>
   <footer class="partner-footer">
-    <p class="partner-footer__text">{{ partnerConfig.pageFooter.text }}</p>
+    <p v-if="text" class="partner-footer__text">{{ text }}</p>
 
-    <a v-if="partnerConfig.logo" :href="logoLink" target="_blank" class="partner-footer__logo-link">
+    <a v-if="logo" :href="logoLink" target="_blank" class="partner-footer__logo-link">
       <img
         class="partner-footer__logo dark"
-        :alt="`${partnerConfig.partnerName} logo`"
-        :src="getLogo(partnerConfig.logo, true)"
+        :alt="`${partnerName} logo`"
+        :src="getLogo(logo, true)"
       />
       <img
         class="partner-footer__logo"
         :alt="`${partnerConfig.partnerName} logo`"
-        :src="getLogo(partnerConfig.logo)"
+        :src="getLogo(logo)"
       />
     </a>
 
     <div class="partner-footer__social-links">
-      <a :href="`mailto:${partnerConfig.pageFooter.email}`">{{ partnerConfig.pageFooter.email }}</a>
-      <p>{{ partnerConfig.pageFooter.phone }}</p>
-      <a :href="websiteVuePageLink" target="_blank">{{ partnerConfig.pageFooter.websiteVueLabel }}</a>
+      <a v-if="email" :href="`mailto:${email}`">{{ email }}</a>
+      <p v-if="phone">{{ phone }}</p>
+      <a v-if="websiteVuePageLink" :href="websiteVuePageLink" target="_blank">{{ websiteVueLabel }}</a>
     </div>
 
     <a class="partner-footer__contact-button accent-button" :href="hireUsLink" target="_blank">

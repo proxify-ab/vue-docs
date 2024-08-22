@@ -19,7 +19,7 @@ defineProps<{
             {{ experience.company }} · {{ experience.startDate }} - {{ experience.endDate }} ({{ experience.period }})
           </i>
         </div>
-        <div class="developer-experience__description">
+        <div v-if="experience.description" class="developer-experience__description">
           <template v-for="(desc, index) in experience.description" :key="`desc-${index}`">
             <p v-if="desc.type === 'p'">{{ desc.content }}</p>
             <ul v-else-if="desc.type === 'ul'" class="developer-experience__list">
@@ -27,7 +27,7 @@ defineProps<{
             </ul>
           </template>
         </div>
-        <DeveloperProficiencies :proficiencies="experience.skills" />
+        <DeveloperProficiencies v-if="experience.skills" :proficiencies="experience.skills" />
       </div>
     </div>
   </div>
