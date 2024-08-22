@@ -38,7 +38,6 @@ export interface DeveloperProfile {
   id: number;
   name: string;
   alias: string;
-  image?: string;
   description: string[];
   proficiencies: string[];
   compensations: DeveloperCompensations;
@@ -46,7 +45,6 @@ export interface DeveloperProfile {
   region: string;
   experiences?: DeveloperExperience[];
   education?: DeveloperEducation[];
-  highlighted?: boolean;
 }
 
 export interface DeveloperProfiles extends Array<DeveloperProfile> {

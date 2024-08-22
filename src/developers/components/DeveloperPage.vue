@@ -3,7 +3,7 @@ import { computed } from 'vue'
 import data from '../developers.json'
 import partnerConfig from '../partnerConfig.js'
 import { DeveloperProfiles } from './type'
-import { generateUTMUrl, getDeveloperProfileImage } from './utils'
+import { generateUTMUrl } from './utils'
 import { VTIconChevronLeft, VTIconMapPin } from '@vue/theme'
 import DeveloperCompensations from './DeveloperCompensations.vue'
 import DeveloperProficiencies from './DeveloperProficiencies.vue'
@@ -22,9 +22,9 @@ const developer = (data as DeveloperProfiles).find(
   (developer) => developer.id === props.developerId
 )!
 
-const { id, name, image, location, description, compensations, proficiencies, experiences, education } = developer
+const { id, name, location, description, compensations, proficiencies, experiences, education } = developer
 
-const profileImage = computed(() => getDeveloperProfileImage(image, id))
+const profileImage = computed(() => `/images/developers/${id}.jpg`)
 
 const route = useRoute()
 const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, route.path))
@@ -62,6 +62,7 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
         </div>
 
         <DeveloperCompensations
+          v-if="compensations"
           class="developer-page__text-section"
           title="Compensation"
           :compensations="compensations"
@@ -69,35 +70,40 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
         />
 
         <DeveloperProficiencies
+          v-if="proficiencies"
           class="developer-page__text-section"
           title="Proficiencies"
           :proficiencies="proficiencies"
         />
 
         <DeveloperProfileDiagram
+          v-if="partnerConfig?.profileDiagram"
           :developerId="id"
           diagramType="profile"
-          title="Candidate profile"
-          prependText="How our developers score in the parameters that correlate best with future success in the role."
+          :title="partnerConfig.profileDiagram.title"
+          :prependText="partnerConfig.profileDiagram.prependText"
           class="developer-page__text-section"
         />
 
         <DeveloperProfileDiagram
+          v-if="partnerConfig?.scoreDiagram"
           :developerId="id"
           diagramType="score"
-          title="Engineering excellence score"
-          prependText="The practical score range is 0 to 100. For all Vue.js developers who have been evaluated, this is the distribution of their scores across that range, and here’s where your candidate scored."
-          appendText="Data from 3,661 evaluated Vue.js developers and 38,008 applicants."
+          :title="partnerConfig.scoreDiagram.title"
+          :prependText="partnerConfig.scoreDiagram.prependText"
+          :appendText="partnerConfig.scoreDiagram.appendText"
           class="developer-page__text-section"
         />
 
         <DeveloperExperiences
+          v-if="experiences"
           class="developer-page__text-section"
           title="Selected experience"
           :experiences="experiences"
         />
 
         <DeveloperEducation
+          v-if="education"
           class="developer-page__text-section"
           title="Education"
           :education="education"

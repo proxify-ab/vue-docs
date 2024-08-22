@@ -1,14 +1,4 @@
 /**
- * Get the URL of a developer profile image.
- * @param img - The image filename or undefined.
- * @param id - The developer's ID to use as a fallback image filename.
- * @returns The URL of the developer's profile image.
- */
-export function getDeveloperProfileImage(img: string | undefined = undefined, id: number): string {
-  return `/images/developers/${img ?? `${id}.jpg`}`
-}
-
-/**
  * Generate a UTM-encoded URL for tracking purposes.
  * @param baseUrl - The base URL to append UTM parameters to.
  * @param page - The page path to be used for the UTM campaign.

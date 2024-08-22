@@ -5,7 +5,6 @@ const props = defineProps<{
   title?: string
   titleTag?: string
   developerId: number
-  image?: string
   diagramType: 'profile' | 'score'
   prependText?: string
   appendText?: string
@@ -14,7 +13,7 @@ const props = defineProps<{
 const svgContent = ref('')
 
 onMounted(async () => {
-  const url = `/images/developers/${props.image || `${props.developerId}-${props.diagramType}.svg`}`
+  const url = `/images/developers/${props.developerId}-${props.diagramType}.svg`
   const response = await fetch(url)
   if (response.ok) {
     svgContent.value = await response.text()

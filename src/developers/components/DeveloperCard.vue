@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { DeveloperProfile } from './type'
-import { getDeveloperProfileImage, truncateTextFromArray } from './utils'
+import { truncateTextFromArray } from './utils'
 import { VTIconMapPin } from '@vue/theme'
 import DeveloperProficiencies from './DeveloperProficiencies.vue'
 import DeveloperCompensations from './DeveloperCompensations.vue'
@@ -14,9 +14,9 @@ const props = defineProps<{
   hero?: boolean
 }>()
 
-const { id, alias, name, image, description, compensations, proficiencies, location } = props.data
+const { id, alias, name, description, compensations, proficiencies, location } = props.data
 
-const profileImage = computed(() => getDeveloperProfileImage(image, id))
+const profileImage = computed(() => `/images/developers/${id}.jpg`)
 
 const trimmedDescription = computed(() => truncateTextFromArray(description, 220))
 
