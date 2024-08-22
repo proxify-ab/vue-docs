@@ -34,11 +34,11 @@ onMounted(async () => {
 </template>
 
 <style scoped>
-.developer-diagram {
+.developer-diagram__svg-wrapper {
   color: var(--vt-c-gray-dark-3);
 }
 
-.dark .developer-diagram {
+.dark .developer-diagram__svg-wrapper {
   color: var(--vt-c-gray-light-3);
 }
 
