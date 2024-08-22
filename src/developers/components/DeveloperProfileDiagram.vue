@@ -31,14 +31,7 @@ onMounted(async () => {
 
 <style scoped>
 .developer-diagram__svg-wrapper {
-  color: var(--vt-c-gray-dark-3);
-}
-
-.dark .developer-diagram__svg-wrapper {
-  color: var(--vt-c-gray-light-3);
-}
-
-.developer-diagram__svg-wrapper {
+  max-width: 500px;
   min-width: 200px;
   height: auto;
   width: 100%;
