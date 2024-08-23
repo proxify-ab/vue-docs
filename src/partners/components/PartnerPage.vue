@@ -33,7 +33,7 @@ const contactLink = computed(() => {
 
     <div class="description">
       <h2>About {{ name }}</h2>
-      <p v-for="desc in description" :key="desc" v-html="desc"></p>
+      <p v-for="(desc, index) in description" :key="index" v-html="desc"></p>
     </div>
 
     <div class="actions">
