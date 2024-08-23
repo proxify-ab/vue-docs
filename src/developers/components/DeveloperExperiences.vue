@@ -21,10 +21,10 @@ defineProps<{
         </div>
         <div v-if="experience.description" class="developer-experience__description">
           <template v-for="(desc, index) in experience.description" :key="`desc-${index}`">
-            <p v-if="desc.type === 'p'">{{ desc.content }}</p>
-            <ul v-else-if="desc.type === 'ul'" class="developer-experience__list">
+            <ul v-if="desc.isGrouped" class="developer-experience__list">
               <li v-for="(item, idx) in desc.content" :key="`item-${idx}`">{{ item }}</li>
             </ul>
+            <p v-else>{{ desc.content }}</p>
           </template>
         </div>
         <DeveloperProficiencies v-if="experience.skills" :proficiencies="experience.skills" />

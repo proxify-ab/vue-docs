@@ -1,14 +1,7 @@
-export interface ParagraphDescription {
-  type: 'p';
-  content: string;
+export interface DeveloperExperienceDescription {
+  isGrouped: boolean;
+  content: string | string[];
 }
-
-export interface UnorderedListDescription {
-  type: 'ul';
-  content: string[];
-}
-
-export type DeveloperExperienceDescription = ParagraphDescription | UnorderedListDescription;
 
 export interface DeveloperExperience {
   id: number;

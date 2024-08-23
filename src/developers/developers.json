@@ -43,11 +43,11 @@
         "period": "3 years 8 months",
         "description": [
           {
-            "type": "p",
+            "isGrouped": false,
             "content": "White Hat Gaming is a casino game provider company in Malta:"
           },
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Using Vue.js version 3 with composition API for front end development Software Architecture;",
               "Planning and Development for in-house Web Apps; Unit testing."
@@ -72,7 +72,7 @@
         "period": "1 year",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Provided effective troubleshooting and remediation for web applications;",
               "Interfaced with clients to identify business requirements;",
@@ -102,11 +102,11 @@
         "period": "2 years 2 months",
         "description": [
           {
-            "type": "p",
+            "isGrouped": false,
             "content": "Draxis was a company that created applications for European unions, with a focus on agricultural applications:"
           },
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Performed software architecture, planning, and development for web apps, and mobile apps;",
               "Designed and developed large-scale ICT systems, funded by international donors, the Horizon 2020 program, and the European Commission."
@@ -135,11 +135,11 @@
         "period": "1 year 11 months",
         "description": [
           {
-            "type": "p",
+            "isGrouped": false,
             "content": "Archirodon Group N.V. was a construction company focused on building artificial lakes and skyscrapers."
           },
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Developed web applications;",
               "Created, communicated, and managed project plans."
@@ -162,11 +162,11 @@
         "period": "7 months",
         "description": [
           {
-            "type": "p",
+            "isGrouped": false,
             "content": "It was an internship. 24 Media Digital Media Group is a big journal company in Greece."
           },
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Created websites and web applications."
             ]
@@ -188,11 +188,11 @@
         "period": "2 months",
         "description": [
           {
-            "type": "p",
+            "isGrouped": false,
             "content": "It was an ads company, and Stelios was creating websites."
           },
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Developed and supported the website;",
               "Performed SEO of the platform."
@@ -265,7 +265,7 @@
         "period": "11 years 11 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Feature design, requirements for the dev team.",
               "Development of more advanced or mission-critical features.",
@@ -276,11 +276,11 @@
             ]
           },
           {
-            "type": "p",
+            "isGrouped": false,
             "content": "Systems That Built"
           },
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Multi-channel (eBay, Amazon + web front) eCommerce solution with advanced modules to calculate optimal selling prices, complex product definitions & shipping rules, promotions, and integrations with couriers & warehousing solutions.",
               "Public sector CMS with content versioning, advanced access control, publishing flows, widget-based content editor, dynamic forms module with manageable logic, validation, and payments; eventually used by councils for most citizen-council interactions (about 80 forms per website, i.e., bus passes, reporting issues, bins).",
@@ -314,11 +314,11 @@
         "period": "3 years 2 months",
         "description": [
           {
-            "type": "p",
+            "isGrouped": false,
             "content": "i3MEDIA was a small agency building websites for local businesses.\n\n"
           },
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Developed the first bespoke CMS, which became the core product, the second version of which was implemented on some nationally recognized websites in 2010."
             ]
@@ -340,7 +340,7 @@
         "period": "2 years",
         "description": [
           {
-            "type": "p",
+            "isGrouped": false,
             "content": "Managed to complete 3 commercial projects."
           }
         ],
@@ -400,7 +400,7 @@
         "period": "1 year",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Led the development of the HR Help Desk, Ticketing, Inventory, Documents Management and Performance Reviews projects.",
               "Participated in code reviews and provided constructive feedback to colleagues to ensure best practices and high-quality code.",
@@ -424,7 +424,7 @@
         "period": "1 year 10 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Effectively communicated project progress, risks, and issues to stakeholders, ensuring that all parties were informed and aligned throughout the project.",
               "Conducted a thorough analysis of existing processes and identified areas for improvement, using this knowledge to develop and implement new processes that better aligned with business needs and objectives.",
@@ -450,7 +450,7 @@
         "period": "6 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Developed the Remix official website's user interface and core functionalities, ensuring mobile responsiveness;",
               "Utilized GitHub Pages to deploy the React application;",
@@ -478,7 +478,7 @@
         "period": "5 years 6 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Mentored 4 junior frontend developers, enhancing their proficiency in JavaScript and Vue.js;",
               "Collaborated closely with the PM to ensure alignment with project plans, timelines, and billing;",
@@ -517,7 +517,7 @@
         "period": "1 year 6 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Supervised a web development team, which included contract and off-shore developers, and held supervisory responsibilities over employees;",
               "Established team-wide standards for quality processes and methodologies, ensuring that all applications met the highest quality benchmarks;",
@@ -605,7 +605,7 @@
         "period": "2 years 2 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Developed in-house PDF signing that allows users to process PDF documents directly within the browser using web assembly and Vuejs.",
               "Built custom plugins and APIs tailored to clients' specifications, facilitating seamless integration into their web applications and Command Line Interfaces (CLIs).",
@@ -644,7 +644,7 @@
         "period": "9 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Migrated the entire codebase for Ethereum dashboard explorer (ethvm.com) from Vue2 to Vue3 in just under 6 months.",
               "Collaborate with stakeholders and the leadership team to build demo features for the Ethereum Devcon 2022 event in Columbia.",
@@ -679,7 +679,7 @@
         "period": "6 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Implemented Sentry configuration to monitor and rectify recurring issues in production.",
               "Enhanced test coverage of the web dashboard using Cypress and Vue Test Utils.",
@@ -709,7 +709,7 @@
         "period": "1 year 6 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Led a team of backend and frontend developers to build an in-house HR system using Reactjs and Rails to track employee attendance, loans, and salary advances.",
               "Handled communication between clients and team to better understand requirements and offered advice where necessary.",
@@ -742,7 +742,7 @@
         "period": "6 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Developed a multi-source data analytics dashboard using VueJS.",
               "Total rewrite of existing data visualization library Plotly to Highcharts.",
@@ -817,7 +817,7 @@
         "period": "10 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "GROUP TECH LEAD & DEVELOPER ENGINEER MANAGER.",
               "APP DEVELOPMENT - WISBOO.COM / A dynamic application tailored for content creators, enabling them to craft and sell courses through personalized websites.",
@@ -843,7 +843,7 @@
         "period": "1 year 10 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "APP DEVELOPMENT - KEEPCON.COM / An innovative application for large corporations, aggregating messages from various social media platforms for efficient operator response.",
               "Responsible for a strategic migration to Vue.js.",
@@ -871,7 +871,7 @@
         "period": "9 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "APP DEVELOPMENT - XUBIO.COM / A specialized application for accountants, designed to manage client or company accounts with features tailored to different countries.",
               "Responsible for providing a robust and user-friendly platform for accounting needs."
@@ -895,7 +895,7 @@
         "period": "1 year 1 month",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "WEB APPLICATIONS DEVELOPMENT.",
               "Responsible for user-friendly and efficient platforms."
@@ -969,7 +969,7 @@
         "period": "1 year 9 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Single-handedly worked on a CO2 Calculator, which helped easily calculate the cost split for CO2 emission between landlords and tenants.",
               "Created the base project setup, leveraging TypeScript to speed up the development in the long run.",
@@ -1005,7 +1005,7 @@
         "period": "2 years 2 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Managed a team of 15+ members actively collaborating on non-profit community projects.",
               "Connected communities across divided regions on a single platform to perform integrated businesses, find matrimonial matches, engage in advanced discussions, and much more."
@@ -1048,7 +1048,7 @@
         "period": "11 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Worked with a great team to build advanced real-estate brokerage software.",
               "Solved many user-centric issues and helped the team transition to TypeScript.",
@@ -1084,7 +1084,7 @@
         "period": "4 years 5 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Fulfilled requirements of 20+ clients.",
               "Developed 25+ projects.",
@@ -1168,7 +1168,7 @@
         "period": "2 years 10 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Developed high-performance micro-frontends using cutting-edge technologies like VueJS, Svelte, and TypeScript, resulting in improved application performance and scalability.",
               "Played a key role in designing and implementing a micro-frontend applications, component libraries, and routing, which allowed for faster development, easier maintenance, and consistent user experiences across multiple applications.",
@@ -1195,7 +1195,7 @@
         "period": "3 years 10 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Successfully delivered a wide range of projects for diverse clients, including the development of websites from scratch, enhancements to existing frontends, and the creation of custom web applications, showcasing adaptability and versatility in addressing varied client needs.",
               "Achieved outstanding results in speed optimization, SEO optimization, and quality audits, leading to increased client satisfaction, improved site rankings, and reduced page load times.",
@@ -1226,7 +1226,7 @@
         "period": "1 year 9 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Developed high-quality frontend solutions for Magento and OpenCart e-commerce platforms, consistently meeting project deadlines and exceeding client expectations with visually appealing and user-friendly designs.",
               "Leveraged expertise in Git, Docker, and Linux to optimize development workflows, enhance collaboration among team members, and ensure efficient deployment and maintenance of applications.",
@@ -1258,7 +1258,7 @@
         "period": "1 year 8 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Crafted visually stunning and responsive frontend designs for a variety of CMS-based websites using Photoshop and Zeplin mockups, resulting in increased client satisfaction and enhanced user experiences.",
               "Developed responsive email templates that significantly improved client engagement, open rates, and click-through rates by optimizing for various devices and email clients.",
@@ -1335,7 +1335,7 @@
         "period": "3 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Led frontend development efforts in creating the online clothing store network for a leading German market player.",
               "Focused on designing and implementing user panels, product listing pages, and search functionalities to enhance user experience.",
@@ -1367,7 +1367,7 @@
         "period": "1 year 8 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Developed a web application for a subsidiary of Elop specializing in smart concrete scanning solutions for architectural and bridge building firms.",
               "Designed and implemented reusable UI components to enhance the application's usability and maintainability.",
@@ -1398,7 +1398,7 @@
         "period": "9 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Spearheaded the development of a robust web calendar as an integral module within the Recman platform.",
               "Employed Vanilla.js extensively to implement core features, including routing, MVC architecture, state management, and view rendering, all crafted from scratch.",
@@ -1426,7 +1426,7 @@
         "period": "11 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Played a key role in a substantial analytical project aimed at enhancing the hotel and restaurant industry.",
               "Led the migration process of an Angular.js application to Angular, ensuring the seamless transition while preserving the existing design system guidelines.",
@@ -1457,7 +1457,7 @@
         "period": "2 years 3 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Developed custom WordPress templates from scratch within the educational sector, paying close attention to design aesthetics, SEO best practices, and alignment with the business's core values.",
               "Demonstrated proficiency in JavaScript, WordPress, PHP, and Angular to successfully create bespoke templates tailored to educational needs.",
@@ -1486,7 +1486,7 @@
         "period": "7 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Crafted customized templates to meet clients' unique design and functionality demands during my tenure at a web agency.",
               "Delivered tailored solutions for various projects, including basic corporate websites and expansive online cosmetics stores, all built from the ground up.",
@@ -1514,7 +1514,7 @@
         "period": "1 year 7 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Offered valuable guidance and mentorship to students, focusing on contemporary website creation techniques, Adobe Creative Cloud (CC) tools, and navigating the job search process.",
               "Equipped students with the necessary skills and knowledge to excel in website development within the dynamic IT industry.",
@@ -1540,7 +1540,7 @@
         "period": "5 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Held the position of lead web designer, with primary responsibilities encompassing the creation of visually captivating and impactful promotional websites.",
               "Designed banners and engaging printed materials tailored to clients' distinct requirements within our digital marketing agency.",
@@ -1563,7 +1563,7 @@
         "period": "11 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Designed and developed commercial websites and promotional materials catering to the needs of small to mid-sized businesses.",
               "Prioritized user-friendliness, responsiveness, and visual appeal in all web projects to enhance the online presence and customer engagement for clients.",
@@ -1587,7 +1587,7 @@
         "period": "1 year",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Actively explored and applied Drupal's API to enhance the functionality and interactivity of web applications, contributing to the mastery of this versatile content management system.",
               "Acquired knowledge and expertise in leveraging Drupal's capabilities to build dynamic and feature-rich web applications.",
@@ -1665,7 +1665,7 @@
         "period": "1 year 1 month",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Worked with a German company and helped them build a job app that connects students and employers.",
               "Worked on Vue.js and Node.js."
@@ -1693,7 +1693,7 @@
         "period": "1 year 8 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Migrated a desktop user experience into a single-page app, improving customer engagement by 30%.",
               "Architected product tours with React for a new feature that improved customer adoption by 20%, leading to over $1M in revenue.",
@@ -1727,7 +1727,7 @@
         "period": "4 years 9 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Architected microservices backend using Golang and NodeJS.",
               "Built REST APIs for web apps, decreasing request latency by 40%.",
@@ -1764,7 +1764,7 @@
         "period": "2 years 8 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Led a complete overhaul of the user interface (UI) for the internal tool Akokomarket, contributing to a remarkable 30% increase in sales revenue.",
               "Collaborated closely with the backend engineering team to implement GraphQL APIs, optimizing the reporting process for the analytical team and increasing reporting speed by 40%.",
@@ -1801,7 +1801,7 @@
         "period": "2 years 4 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Developed software solutions for individual departments in the company.",
               "Developed and designed UI for SSNIT records system that allowed proper record keeping for user physical documents.",
@@ -1870,7 +1870,7 @@
         "period": "10 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Got experience creating custom web plugins: i18n localization plugin and automated docker runner plugin using Vite.",
               "Configured project settings with prettierrc and vite.config, postcss.config, tsup.config, ts.config.",
@@ -1894,7 +1894,7 @@
         "period": "8 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Got experience in building web apps using Modular Architecture.",
               "Took full responsibility for complex tasks (such as authentication and fixing merge conflicts).",
@@ -1922,7 +1922,7 @@
         "period": "1 year 8 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Implemented new features using Vue.js/NUXT.js.",
               "Conducted Code reviews.",
@@ -1956,7 +1956,7 @@
         "period": "11 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Created components/UI according to Figma design.",
               "Connected APIs to UI using Axios.",
@@ -1987,7 +1987,7 @@
         "period": "2 years",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Worked in a team to build the Uzbekistan Banking System.",
               "Improved System’s performance, stability Querying, indexing, writing procedures, and functions to make the backend section of the system.",
@@ -2016,7 +2016,7 @@
         "period": "1 year 4 months",
         "description": [
           {
-            "type": "ul",
+            "isGrouped": true,
             "content": [
               "Worked in a team to build a real-world system for the technology industry.",
               "Improved UI/frontend interface.",
