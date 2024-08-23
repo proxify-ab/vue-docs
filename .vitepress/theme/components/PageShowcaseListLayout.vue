@@ -102,11 +102,6 @@ const props = defineProps<{
   background-color: var(--vt-c-brand-dark);
 }
 
-.dark .accent-button:hover,
-.dark :deep(.accent-button):hover {
-  background-color: var(--vt-c-gray-dark-3);
-}
-
 /* Media Queries */
 @media (max-width: 768px) {
   .spotlight-content,

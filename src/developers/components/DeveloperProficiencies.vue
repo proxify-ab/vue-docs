@@ -84,8 +84,4 @@ const toggleShowAll = (event: Event) => {
 .developer-proficiencies__toggle:hover {
   color: var(--vt-c-brand-dark);
 }
-
-.dark .developer-proficiencies__toggle:hover {
-  color: var(--vt-c-gray-dark-3);
-}
 </style>

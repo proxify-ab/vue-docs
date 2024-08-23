@@ -259,11 +259,6 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
   background-color: var(--vt-c-brand-dark);
 }
 
-.dark .accent-button:hover,
-.dark :deep(.accent-button):hover {
-  background-color: var(--vt-c-gray-dark-3);
-}
-
 @media (min-width: 512px) {
   .developer-page__profile-image {
     max-height: 500px;
