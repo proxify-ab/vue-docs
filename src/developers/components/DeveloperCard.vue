@@ -183,6 +183,7 @@ function openDeveloperPage() {
     "compensation"
     "proficiencies"
     "image";
+  border: none;
 }
 
 /* Hero - Header, Intro, Sections, and Image Styles */
