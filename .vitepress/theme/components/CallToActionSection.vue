@@ -1,14 +1,13 @@
 <script setup lang="ts">
 withDefaults(defineProps<{
-    title?: string;
-    description?: string;
-    link?: string;
-    linkText?: string;
-    showDivider?: boolean
-  }>(), {
-    showDivider: true
-  }
-)
+  title?: string
+  description?: string
+  link?: string
+  linkText?: string
+  showDivider?: boolean
+}>(), {
+  showDivider: true
+})
 </script>
 
 <template>

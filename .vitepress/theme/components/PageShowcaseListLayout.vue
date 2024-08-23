@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const props = defineProps<{
-  spotlightTitle?: string;
-  featuredTitle?: string;
-  browseLinkText?: string;
-  browseLinkUrl?: string;
+  spotlightTitle?: string
+  featuredTitle?: string
+  browseLinkText?: string
+  browseLinkUrl?: string
 }>()
 </script>
 

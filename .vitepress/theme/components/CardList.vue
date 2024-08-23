@@ -3,14 +3,14 @@ import { computed, onMounted, ref, shallowRef } from 'vue'
 
 const props = withDefaults(
   defineProps<{
-    items: Array<any>;
-    filter?: (item: any) => boolean;
-    cardComponent: any;
-    showLinkToAll?: boolean;
-    shuffleItems?: boolean;
-    browseLinkText?: string;
-    browseLinkUrl?: string;
-    splitBy?: string;
+    items: Array<any>
+    filter?: (item: any) => boolean
+    cardComponent: any
+    showLinkToAll?: boolean
+    shuffleItems?: boolean
+    browseLinkText?: string
+    browseLinkUrl?: string
+    splitBy?: string
   }>(),
   {
     showLinkToAll: false,

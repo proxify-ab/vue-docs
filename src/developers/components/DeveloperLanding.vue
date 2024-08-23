@@ -22,7 +22,6 @@ onMounted(() => {
     ? allDevelopers.value[Math.floor(Math.random() * allDevelopers.value.length)]
     : null
 })
-
 </script>
 
 <template>

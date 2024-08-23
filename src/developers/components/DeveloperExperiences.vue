@@ -3,8 +3,8 @@ import { DeveloperExperience } from './type'
 import DeveloperProficiencies from './DeveloperProficiencies.vue'
 
 defineProps<{
-  experiences?: DeveloperExperience[];
-  title?: string;
+  experiences?: DeveloperExperience[]
+  title?: string
 }>()
 </script>
 
