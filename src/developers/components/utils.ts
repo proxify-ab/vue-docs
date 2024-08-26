@@ -23,6 +23,7 @@ export function generateUTMUrl(
   url.searchParams.append('utm_source', utmSource)
   url.searchParams.append('utm_medium', utmMedium)
   url.searchParams.append('utm_campaign', cleanedPage)
+  url.searchParams.append('from', window.location.hostname)
 
   return url.toString()
 }
