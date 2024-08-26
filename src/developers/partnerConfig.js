@@ -42,8 +42,8 @@ const partnerConfig = {
   // Footer Configuration
   pageFooter: {
     text: `This highly vetted developer is brought to you by Vue’s partner:`,
-    email: 'vue.teammates@proxify.io',
-    phone: '+44 20 4525 4787',
+    email: 'vue@proxify.io',
+    phone: '+44 20 4614 2667',
     websiteVueLink: hireUrl,
     websiteVueLabel: websiteLabel + '/vue'
   },
