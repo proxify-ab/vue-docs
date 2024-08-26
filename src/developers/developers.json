@@ -9,23 +9,20 @@
       "Stelios holds a Master’s Degree in Computing, equipping him with a thorough understanding of the tech landscape. His perfectionist approach is ideal for projects that benefit from meticulous attention to detail."
     ],
     "proficiencies": [
+      "MongoDB",
       "Vue.js",
-      "Nuxt.js",
-      "JavaScript",
+      "Express.js",
+      "Node.js",      
       "TypeScript",
-      "React.js",
+      "Nuxt.js",
       "Laravel",
       "PHP",
-      "Node.js",
       "PostgreSQL",
       "Ionic",
       "Cordova",
-      "MongoDB",
-      "Express.js",
-      "WordPress",
       "MySQL",
       "Docker",
-      "Angular.js"
+      "React.js"
     ],
     "compensations": {
       "partTime": "€4,276 /month (20 h per week)",
@@ -55,12 +52,11 @@
           }
         ],
         "skills": [
-          "JavaScript",
           "Vue.js",
           "PostgreSQL",
-          "TypeScript",
           "Node.js",
-          "Nuxt.js"
+          "Nuxt.js",
+          "TypeScript"
         ]
       },
       {
@@ -82,14 +78,12 @@
           }
         ],
         "skills": [
-          "JavaScript",
-          "React.js",
           "Vue.js",
           "MongoDB",
-          "PostgreSQL",
-          "TypeScript",
           "Node.js",
           "Express.js",
+          "PostgreSQL",
+          "TypeScript",
           "Nuxt.js"
         ]
       },
@@ -234,15 +228,14 @@
     "proficiencies": [
       "Vue.js",
       "Node.js",
-      "JavaScript",
+      "MongoDB",
+      "Nuxt.js",
       "PHP",
       "MySQL",
       "Google Cloud",
       "ElasticSearch",
       "Redis",
       "RabbitMQ",
-      "MongoDB",
-      "Nuxt.js",
       "Kubernetes",
       "TypeScript",
       "Express.js",
@@ -301,8 +294,7 @@
           "jQuery",
           "Node.js",
           "Zend",
-          "Google Cloud",
-          "Jira"
+          "Google Cloud"
         ]
       },
       {
@@ -372,15 +364,12 @@
     ],
     "proficiencies": [
       "Vue.js",
-      "JavaScript",
-      "Tailwind",
       "React.js",
-      "TypeScript",
-      "SQL",
-      "PostgreSQL",
       "Node.js",
-      "Jira",
-      "GraphQL",
+      "MongoDB",
+      "TypeScript",
+      "PostgreSQL",
+      "SQL",
       "Apollo",
       "Flask"
     ],
@@ -463,10 +452,7 @@
           "React.js",
           "TypeScript",
           "Project management",
-          "Tailwind",
-          "Jira",
-          "Agile",
-          "Scrum"
+          "Tailwind"
         ]
       },
       {
@@ -502,9 +488,6 @@
           "Project management",
           "Design",
           "Tailwind",
-          "Jira",
-          "Agile",
-          "Scrum",
           "Team leading"
         ]
       },
@@ -538,9 +521,6 @@
           "Flask",
           "Design",
           "Tailwind",
-          "Jira",
-          "Agile",
-          "Scrum",
           "Team leading"
         ]
       }
@@ -573,13 +553,12 @@
     "proficiencies": [
       "Vue.js",
       "Nuxt.js",
-      "JavaScript",
       "Vuex",
+      "TypeScript",
+      "Golang",
       "Tailwind",
       "Cypress",
       "React.js",
-      "TypeScript",
-      "Golang",
       "Chart.js",
       "Storybook",
       "Grafana",
@@ -618,7 +597,6 @@
           }
         ],
         "skills": [
-          "JavaScript",
           "Vue.js",
           "Bootstrap",
           "TypeScript",
@@ -629,9 +607,7 @@
           "Unit Testing",
           "IntelliJ",
           "Webstorm",
-          "Git",
           "Cypress",
-          "HTML / CSS",
           "Storybook"
         ]
       },
@@ -663,9 +639,7 @@
           "GraphQL",
           "Figma",
           "SCSS",
-          "API",
           "Vuetify",
-          "HTML / CSS",
           "Apollo",
           "Chart.js"
         ]
@@ -693,11 +667,9 @@
           "Bootstrap",
           "GraphQL",
           "Figma",
-          "SCSS",
           "Unit Testing",
           "Sentry",
-          "Cypress",
-          "HTML / CSS"
+          "Cypress"
         ]
       },
       {
@@ -729,7 +701,6 @@
           "Tailwind",
           "Nuxt.js",
           "Vuetify",
-          "HTML / CSS",
           "Team leading"
         ]
       },
@@ -784,12 +755,11 @@
     ],
     "proficiencies": [
       "Vue.js",
-      "JavaScript",
-      "SQL",
       "PostgreSQL",
       "Ruby",
       "Ruby on Rails",
       "TypeScript",
+      "SQL",
       "Java",
       "Vuex",
       "Backbone",
@@ -830,8 +800,7 @@
           "Angular.js",
           "React.js",
           "Ruby on Rails",
-          "Bootstrap",
-          "HTML / CSS"
+          "Bootstrap"
         ]
       },
       {
@@ -858,8 +827,7 @@
           "Bootstrap",
           "TypeScript",
           "Java",
-          "Backbone",
-          "HTML / CSS"
+          "Backbone"
         ]
       },
       {
@@ -882,8 +850,7 @@
           "MySQL",
           "Bootstrap",
           "TypeScript",
-          "Java",
-          "HTML / CSS"
+          "Java"
         ]
       },
       {
@@ -905,8 +872,7 @@
         "skills": [
           "Vue.js",
           "MongoDB",
-          "Node.js",
-          "HTML / CSS"
+          "Node.js"
         ]
       }
     ],
@@ -931,21 +897,19 @@
     ],
     "proficiencies": [
       "Vue.js",
-      "JavaScript",
-      "Tailwind",
       "Nuxt.js",
       "TypeScript",
       "Flutter",
+      "Node.js",
+      "Golang",
       "GraphQL",
       "React.js",
-      "Golang",
+      "JavaScript",
+      "Tailwind",
       "Dart",
       "Apollo",
       "Vuex",
       "Figma",
-      "Node.js",
-      "Agile",
-      "Jira",
       "Neo4j",
       "Vuetify",
       "Angular",
@@ -980,18 +944,12 @@
         ],
         "skills": [
           "Vue.js",
-          "HTML",
-          "CSS",
           "TypeScript",
           "Microservices",
           "Tailwind",
           "DevOps",
           "Angular",
-          "API",
-          "Jira",
-          "Agile",
           "VSCode",
-          "HTML / CSS",
           "Storybook",
           "Vuex"
         ]
@@ -1015,8 +973,6 @@
         "skills": [
           "React.js",
           "Vue.js",
-          "HTML",
-          "CSS",
           "TypeScript",
           "Node.js",
           "Flutter",
@@ -1029,12 +985,8 @@
           "Dart",
           "Neo4j",
           "MVVM",
-          "API",
-          "Jira",
-          "Agile",
           "Vuetify",
           "VSCode",
-          "HTML / CSS",
           "Chakra UI",
           "Vuex"
         ]
@@ -1058,19 +1010,13 @@
         ],
         "skills": [
           "Vue.js",
-          "HTML",
-          "CSS",
           "TypeScript",
           "GraphQL",
           "Microservices",
           "Tailwind",
           "Nuxt.js",
           "DevOps",
-          "API",
-          "Jira",
-          "Agile",
           "VSCode",
-          "HTML / CSS",
           "Apollo",
           "Vuex"
         ]
@@ -1098,8 +1044,6 @@
           "Laravel",
           "JavaScript",
           "Vue.js",
-          "HTML",
-          "CSS",
           "TypeScript",
           "Adobe Illustrator",
           "Node.js",
@@ -1112,11 +1056,8 @@
           "Dart",
           "Neo4j",
           "MVVM",
-          "API",
-          "Jira",
           "VSCode",
           "Fusion 360",
-          "HTML / CSS",
           "Storybook",
           "Vuex"
         ]
@@ -1142,15 +1083,15 @@
       "He has a proven track record of working with Proxify clients, delivering outstanding results with both high output and high code quality."
     ],
     "proficiencies": [
-      "JavaScript",
       "Vue.js",
       "Vuex",
       "Figma",
+      "Nuxt.js",
       "TypeScript",
       "Cypress",
       "Svelte",
-      "SvelteKit",
-      "Nuxt.js"
+      "JavaScript",
+      "SvelteKit"
     ],
     "compensations": {
       "partTime": "€4,024 /month (20 h per week)",
@@ -1182,8 +1123,7 @@
         "skills": [
           "Vue.js",
           "TypeScript",
-          "Svelte",
-          "Agile"
+          "Svelte"
         ]
       },
       {
@@ -1213,8 +1153,7 @@
           "Vue.js",
           "Node.js",
           "Express.js",
-          "Azure",
-          "Jira"
+          "Azure"
         ]
       },
       {
@@ -1245,7 +1184,6 @@
           "Docker",
           "Magento",
           "Linux",
-          "Git",
           "eCommerce"
         ]
       },
@@ -1274,9 +1212,7 @@
         "skills": [
           "PHP",
           "JavaScript",
-          "Angular.js",
-          "HTML",
-          "CSS"
+          "Angular"
         ]
       }
     ],
@@ -1300,24 +1236,17 @@
       "He has successfully collaborated with Proxify clients, consistently delivering timely results and maintaining high-quality standards. Eduard's ability to focus on engagement goals and deliver outstanding results makes him a valuable team member."
     ],
     "proficiencies": [
-      "JavaScript",
       "Vue.js",
-      "MySQL",
       "Vuex",
-      "WordPress",
-      "jQuery",
-      "Vuetify",
-      "Gulp",
       "Nuxt.js",
-      "PHP",
+      "Vanilla JavaScript",
       "TypeScript",
       "Jest",
-      "Adobe Illustrator",
       "Figma",
       "Vagrant",
       "Shopware",
+      "jQuery",
       "Storybook",
-      "Laravel"
     ],
     "compensations": {
       "partTime": "€3,436 /month (20 h per week)",
@@ -1348,12 +1277,8 @@
         "skills": [
           "JavaScript",
           "Vue.js",
-          "HTML",
-          "CSS",
           "TypeScript",
           "Nuxt.js",
-          "SASS",
-          "HTML / CSS",
           "Storybook",
           "Shopware"
         ]
@@ -1381,12 +1306,8 @@
         "skills": [
           "JavaScript",
           "Vue.js",
-          "HTML",
-          "CSS",
           "TypeScript",
-          "Vuetify",
-          "SASS",
-          "HTML / CSS"
+          "Vuetify"
         ]
       },
       {
@@ -1410,11 +1331,7 @@
         ],
         "skills": [
           "JavaScript",
-          "Vue.js",
-          "HTML",
-          "CSS",
-          "SASS",
-          "HTML / CSS"
+          "Vue.js"
         ]
       },
       {
@@ -1440,12 +1357,8 @@
           "JavaScript",
           "Angular.js",
           "Vue.js",
-          "HTML",
-          "CSS",
           "Less CSS",
-          "Angular",
-          "SASS",
-          "HTML / CSS"
+          "Angular"
         ]
       },
       {
@@ -1501,8 +1414,7 @@
           "HTML",
           "WordPress",
           "SQL",
-          "SASS",
-          "Gulp"
+          "SASS"
         ]
       },
       {
@@ -1524,11 +1436,8 @@
           }
         ],
         "skills": [
-          "HTML",
-          "CSS",
           "jQuery",
-          "Adobe Photoshop",
-          "HTML / CSS"
+          "Adobe Photoshop"
         ]
       },
       {
@@ -1713,8 +1622,6 @@
           "GraphQL",
           "Microservices",
           "Redux.js",
-          "Agile",
-          "HTML / CSS",
           "Team leading"
         ]
       },
@@ -1748,7 +1655,6 @@
           "Kubernetes",
           "Terraform",
           "Ansible",
-          "Git",
           "RabbitMQ",
           "AWS EC2",
           "Apollo",
@@ -1785,11 +1691,9 @@
           "UI",
           "Flutter",
           "GraphQL",
-          "Postman",
           "Firebase",
           "Nest.js",
-          "Nuxt.js",
-          "Agile"
+          "Nuxt.js"
         ]
       },
       {
@@ -1840,18 +1744,16 @@
     ],
     "proficiencies": [
       "Vue.js",
-      "JavaScript",
       "Vuex",
       "Nuxt.js",
-      "MySQL",
-      "React.js",
+      "Laravel", 
+      "Java",
       "Tailwind",
       "Jest",
+      "React.js",
       "Jenkins",
       "Storybook",
       "SonarQube",
-      "Java",
-      "Laravel",
       "Docker"
     ],
     "compensations": {
@@ -1942,8 +1844,6 @@
           "ES5/ES6",
           "Jenkins",
           "Nuxt.js",
-          "Git",
-          "REST API",
           "SonarQube"
         ]
       },
@@ -1973,8 +1873,6 @@
           "JavaScript",
           "Vue.js",
           "UI",
-          "Git",
-          "REST API",
           "Vuex"
         ]
       },
@@ -2030,7 +1928,6 @@
           "Vue.js",
           "ES5/ES6",
           "SCSS",
-          "HTML / CSS",
           "Vuex"
         ]
       }
