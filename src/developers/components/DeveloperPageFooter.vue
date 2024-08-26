@@ -24,11 +24,15 @@ const { logo, partnerName } = partnerConfig
         class="partner-footer__logo dark"
         :alt="`${partnerName} logo`"
         :src="getLogo(logo, true)"
+        width="135"
+        height="30"
       />
       <img
         class="partner-footer__logo"
         :alt="`${partnerConfig.partnerName} logo`"
         :src="getLogo(logo)"
+        width="135"
+        height="30"
       />
     </a>
 
