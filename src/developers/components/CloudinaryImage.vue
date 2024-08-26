@@ -1,29 +1,21 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-const props = defineProps<{
+const props = withDefaults(defineProps<{
   src: string,
   alt: string,
   width: number,
   height: number,
-  quality?: {
-    type: string,
-    default: 'q_auto:best',
-  },
-  crop?: {
-    type: string,
-    default: 'c_fit',
-  },
-  faceRecognition?: {
-    type: boolean,
-    default: false,
-  },
+  quality?: string,
+  crop?: string,
+  faceRecognition?: boolean,
   loading?: 'lazy' | 'eager',
-  className?: {
-    type: string,
-    default: '',
-  },
-}>()
+  className?: string,
+}>(), {
+  quality: 'q_auto:best',
+  crop: 'c_fit',
+  faceRecognition: false,
+});
 
 const cloudinaryUrl = 'https://res.cloudinary.com/proxify-io/image/upload'
 
@@ -51,7 +43,7 @@ const imageSrc = computed(() => {
     :width="width"
     :height="height"
     :loading="loading"
-    :class="['c-image', className]"
+    :class="['c-image', className || '']"
   />
 </template>
 
