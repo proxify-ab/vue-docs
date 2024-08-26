@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { DeveloperProfile } from './type'
 import { truncateTextFromArray } from './utils'
 import { VTIconMapPin } from '@vue/theme'
+import CloudinaryImage from './CloudinaryImage.vue'
 import DeveloperProficiencies from './DeveloperProficiencies.vue'
 import DeveloperCompensations from './DeveloperCompensations.vue'
 import { useRouter } from 'vitepress'
@@ -16,8 +17,7 @@ const props = defineProps<{
 
 const { id, alias, name, description, compensations, proficiencies, location } = props.data
 
-const profileImage = computed(() => `/images/developers/${id}.jpg`)
-
+const profileImage = computed(() => `/vue/developers/${id}.jpg`)
 const trimmedDescription = computed(() => truncateTextFromArray(description, 220))
 
 function openDeveloperPage() {
@@ -33,7 +33,16 @@ function openDeveloperPage() {
   >
     <div class="developer-card__header">
       <div v-if="!hero && profileImage" class="developer-card__avatar">
-        <img :src="profileImage" :alt="name" />
+        <CloudinaryImage
+          :src="profileImage"
+          :alt="name"
+          :width="120"
+          :height="120"
+          :faceRecognition="true"
+          crop="c_fill"
+          loading="lazy"
+          class="avatar"
+        />
       </div>
       <div class="developer-card__summary">
         <h3 class="developer-card__name">{{ name }}</h3>
@@ -64,7 +73,12 @@ function openDeveloperPage() {
     />
 
     <div v-if="hero && profileImage" class="developer-card__image">
-      <img :src="profileImage" :alt="name" />
+      <CloudinaryImage
+        :src="profileImage"
+        :alt="name"
+        :width="526"
+        :height="605"
+      />
     </div>
   </div>
 </template>

@@ -12,7 +12,7 @@
       "MongoDB",
       "Vue.js",
       "Express.js",
-      "Node.js",      
+      "Node.js",
       "TypeScript",
       "Nuxt.js",
       "Laravel",
@@ -1246,7 +1246,7 @@
       "Vagrant",
       "Shopware",
       "jQuery",
-      "Storybook",
+      "Storybook"
     ],
     "compensations": {
       "partTime": "€3,436 /month (20 h per week)",
@@ -1746,7 +1746,7 @@
       "Vue.js",
       "Vuex",
       "Nuxt.js",
-      "Laravel", 
+      "Laravel",
       "Java",
       "Tailwind",
       "Jest",

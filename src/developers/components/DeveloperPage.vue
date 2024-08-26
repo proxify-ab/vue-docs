@@ -5,6 +5,7 @@ import partnerConfig from '../partnerConfig.js'
 import { DeveloperProfiles } from './type'
 import { generateUTMUrl } from './utils'
 import { VTIconChevronLeft, VTIconMapPin } from '@vue/theme'
+import CloudinaryImage from './CloudinaryImage.vue'
 import DeveloperCompensations from './DeveloperCompensations.vue'
 import DeveloperProficiencies from './DeveloperProficiencies.vue'
 import DeveloperProfileDiagram from './DeveloperProfileDiagram.vue'
@@ -24,7 +25,7 @@ const developer = (data as DeveloperProfiles).find(
 
 const { id, name, location, description, compensations, proficiencies, experiences, education } = developer
 
-const profileImage = computed(() => `/images/developers/${id}.jpg`)
+const profileImage = computed(() => `/vue/developers/${id}.jpg`)
 
 const route = useRoute()
 const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, route.path))
@@ -41,7 +42,12 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
 
     <div class="developer-page__content">
       <div v-if="profileImage" class="developer-page__profile-image">
-        <img :src="profileImage" :alt="name" />
+        <CloudinaryImage
+          :src="profileImage"
+          :alt="name"
+          :width="592"
+          :height="680"
+        />
       </div>
 
       <div class="developer-page__main">
