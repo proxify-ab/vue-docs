@@ -5,7 +5,7 @@ export default {
     return {
       params: {
         developerId: developer.id,
-        developerSlug: `${developer.id}-${developer.alias.toLowerCase()}-freelance-developer`
+        developerSlug: developer.slug,
       }
     }
   })

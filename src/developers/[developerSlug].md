@@ -11,7 +11,7 @@ import developersData from './developers.json'
 import Page from './components/DeveloperPage.vue'
 
 const { page } = useData()
-const developer = ref(developersData.find(dev => dev.id === page.value.params.developerId) || {})
+const developer = ref(developersData.find(dev => dev.slug === page.value.params.developerSlug) || {})
 
 onMounted(() => {
   if (developer.value) {

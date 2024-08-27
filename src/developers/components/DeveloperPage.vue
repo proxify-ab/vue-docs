@@ -19,7 +19,7 @@ const props = defineProps<{
 
 const { id, name, location, description, compensations, proficiencies, experiences, education } = props.developer
 
-const profileImage = computed(() => `/vue/developers/${id}.jpg`)
+const profileImage = `/vue/developers/${id}.jpg`
 
 const route = useRoute()
 const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, route.path))
@@ -57,7 +57,7 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
           </p>
 
           <div v-if="description" class="developer-page__description">
-            <p v-for="desc in description" :key="desc">{{ desc }}</p>
+            <p v-for="(desc, key) in description" :key="`p-desc-${key}`">{{ desc }}</p>
           </div>
         </div>
 
