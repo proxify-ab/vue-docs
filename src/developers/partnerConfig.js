@@ -7,6 +7,7 @@ const websiteLabel = 'proxify.io'
 const websiteUrl = 'https://proxify.io/'
 const applyUrl = 'https://career.proxify.io/apply'
 const hireUrl = 'https://proxify.io/hire-vuejs'
+const cloudinaryUrl = 'https://res.cloudinary.com/proxify-io/image/upload'
 
 
 const partnerConfig = {
@@ -18,6 +19,9 @@ const partnerConfig = {
   // Partner website
   websiteUrl: websiteUrl,
   hireUsButtonUrl: hireUrl,
+
+  // Cloudinary storage URL
+  cloudinaryUrl: cloudinaryUrl,
 
   // Hero Section
   pageHeroBanner: {
