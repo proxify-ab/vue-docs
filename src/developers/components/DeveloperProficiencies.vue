@@ -37,11 +37,11 @@ const toggleShowAll = (event: Event) => {
   <div class="developer-proficiencies">
     <h4 v-if="title" class="developer-proficiencies__title">{{ title }}</h4>
     <div class="developer-proficiencies__list">
-      <span class="developer-proficiencies__item" v-for="p in visibleProficiencies" :key="p">{{ p }}</span>
+      <span class="developer-proficiencies__item" v-for="(p, key) in visibleProficiencies" :key="`prof-${key}`">{{ p }}</span>
       <button
         v-if="shouldShowButton"
-        @click.stop="toggleShowAll"
         class="developer-proficiencies__toggle"
+        @click.stop="toggleShowAll"
       >
         {{ showAll ? 'Show less' : 'Show all' }}
       </button>

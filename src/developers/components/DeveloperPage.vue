@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import data from '../developers.json'
 import partnerConfig from '../partnerConfig.js'
-import { DeveloperProfiles } from './type'
+import { DeveloperProfile } from './type'
 import { generateUTMUrl } from './utils'
 import { VTIconChevronLeft, VTIconMapPin } from '@vue/theme'
 import CloudinaryImage from './CloudinaryImage.vue'
@@ -15,17 +14,12 @@ import DeveloperPageFooter from './DeveloperPageFooter.vue'
 import { useRoute } from 'vitepress'
 
 const props = defineProps<{
-  developerId: number
-  developerSlug: string
+  developer: DeveloperProfile
 }>()
 
-const developer = (data as DeveloperProfiles).find(
-  (developer) => developer.id === props.developerId
-)!
+const { id, name, location, description, compensations, proficiencies, experiences, education } = props.developer
 
-const { id, name, location, description, compensations, proficiencies, experiences, education } = developer
-
-const profileImage = computed(() => `/vue/developers/${id}.jpg`)
+const profileImage = `/vue/developers/${id}.jpg`
 
 const route = useRoute()
 const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, route.path))
@@ -63,7 +57,7 @@ const hireUsLink = computed(() => generateUTMUrl(partnerConfig.hireUsButtonUrl, 
           </p>
 
           <div v-if="description" class="developer-page__description">
-            <p v-for="desc in description" :key="desc">{{ desc }}</p>
+            <p v-for="(desc, key) in description" :key="`p-desc-${key}`">{{ desc }}</p>
           </div>
         </div>
 

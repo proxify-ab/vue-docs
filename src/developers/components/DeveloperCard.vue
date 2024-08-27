@@ -1,35 +1,29 @@
 <script setup lang="ts">
-import { computed } from 'vue'
 import { DeveloperProfile } from './type'
 import { truncateTextFromArray } from './utils'
 import { VTIconMapPin } from '@vue/theme'
 import CloudinaryImage from './CloudinaryImage.vue'
 import DeveloperProficiencies from './DeveloperProficiencies.vue'
 import DeveloperCompensations from './DeveloperCompensations.vue'
-import { useRouter } from 'vitepress'
-
-const router = useRouter()
 
 const props = defineProps<{
   data: DeveloperProfile
   hero?: boolean
 }>()
 
-const { id, alias, name, description, compensations, proficiencies, location } = props.data
+const { id, slug, name, description, compensations, proficiencies, location } = props.data
 
-const profileImage = computed(() => `/vue/developers/${id}.jpg`)
-const trimmedDescription = computed(() => truncateTextFromArray(description, 220))
+const profileLink = `/developers/${slug}.html`
+const profileImage = `/vue/developers/${id}.jpg`
+const trimmedDescription = truncateTextFromArray(description, 220)
 
-function openDeveloperPage() {
-  router.go(`./developers/${id}-${alias.toLowerCase()}-freelance-developer.html`)
-}
 </script>
 
 <template>
-  <div
+  <a
     class="developer-card"
     :class="{ 'developer-card--hero': hero }"
-    @click="openDeveloperPage"
+    :href="profileLink"
   >
     <div class="developer-card__header">
       <div v-if="!hero && profileImage" class="developer-card__avatar">
@@ -80,7 +74,7 @@ function openDeveloperPage() {
         :height="605"
       />
     </div>
-  </div>
+  </a>
 </template>
 
 <style scoped>

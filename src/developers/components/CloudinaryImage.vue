@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue'
+import partnerConfig from '../partnerConfig.js'
+
+const { cloudinaryUrl } = partnerConfig
 
 const props = withDefaults(defineProps<{
   src: string,
@@ -16,8 +19,6 @@ const props = withDefaults(defineProps<{
   crop: 'c_fit',
   faceRecognition: false,
 });
-
-const cloudinaryUrl = 'https://res.cloudinary.com/proxify-io/image/upload'
 
 const imageSrc = computed(() => {
   const attributes = [
