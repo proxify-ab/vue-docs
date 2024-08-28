@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 import partnerConfig from '../partnerConfig.js'
 
-const { cloudinaryUrl } = partnerConfig
+const { imageStorageUrl } = partnerConfig
 
 const props = withDefaults(defineProps<{
   src: string
@@ -33,7 +33,7 @@ const imageSrc = computed(() => {
     .filter((item) => item !== '')
     .join(',')
 
-  return `${cloudinaryUrl}/${attributes}/v1/${props.src.replace(/^\/+/, '')}`
+  return `${imageStorageUrl}/${attributes}/v1/${props.src.replace(/^\/+/, '')}`
 })
 </script>
 

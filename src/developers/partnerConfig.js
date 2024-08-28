@@ -8,7 +8,7 @@ const websiteUrl = 'https://proxify.io/'
 const applyUrl = 'https://career.proxify.io/apply'
 const hireUrl = 'https://proxify.io/hire-vuejs'
 const vueLinkSEO = 'https://proxify.io/hire-vue-developers'
-const cloudinaryUrl = 'https://res.cloudinary.com/proxify-io/image/upload'
+const imageStorageUrl = 'https://res.cloudinary.com/proxify-io/image/upload'
 
 
 const partnerConfig = {
@@ -21,8 +21,8 @@ const partnerConfig = {
   websiteUrl: websiteUrl,
   hireUsButtonUrl: hireUrl,
 
-  // Cloudinary storage URL
-  cloudinaryUrl: cloudinaryUrl,
+  // Image storage URL
+  imageStorageUrl: imageStorageUrl,
 
   // Hero Section
   pageHeroBanner: {
