@@ -13,7 +13,7 @@ importers:
         version: 4.3.1
       '@vue/theme':
         specifier: github:proxify-ab/vue-theme#menu-badge
-        version: https://codeload.github.com/proxify-ab/vue-theme/tar.gz/a3a9785a4b08a6ecf496496ca4b6e9f48ce0e3e8(@algolia/client-search@4.23.3)(search-insights@2.14.0)(vitepress@1.3.4(@algolia/client-search@4.23.3)(@types/node@20.14.1)(postcss@8.4.41)(search-insights@2.14.0)(terser@5.31.0)(typescript@5.4.5))(vue@3.5.0-beta.2(typescript@5.4.5))
+        version: https://codeload.github.com/proxify-ab/vue-theme/tar.gz/e8a2a09fc0154f1dae56fd263da3ac3cb28d2fd1(@algolia/client-search@4.23.3)(search-insights@2.14.0)(vitepress@1.3.4(@algolia/client-search@4.23.3)(@types/node@20.14.1)(postcss@8.4.41)(search-insights@2.14.0)(terser@5.31.0)(typescript@5.4.5))(vue@3.5.0-beta.2(typescript@5.4.5))
       dynamics.js:
         specifier: ^1.1.5
         version: 1.1.5
@@ -531,8 +531,8 @@ packages:
   '@vue/shared@3.5.0-beta.2':
     resolution: {integrity: sha512-cexku/B2Ezno4tBTSfgNwaY+WUAF1rI3S3D9mOOYDn3gEpRn+HR5cLNW3bVC8yxoH4cNd4YMpbELuhMv67+/cw==}
 
-  '@vue/theme@https://codeload.github.com/proxify-ab/vue-theme/tar.gz/a3a9785a4b08a6ecf496496ca4b6e9f48ce0e3e8':
-    resolution: {tarball: https://codeload.github.com/proxify-ab/vue-theme/tar.gz/a3a9785a4b08a6ecf496496ca4b6e9f48ce0e3e8}
+  '@vue/theme@https://codeload.github.com/proxify-ab/vue-theme/tar.gz/e8a2a09fc0154f1dae56fd263da3ac3cb28d2fd1':
+    resolution: {tarball: https://codeload.github.com/proxify-ab/vue-theme/tar.gz/e8a2a09fc0154f1dae56fd263da3ac3cb28d2fd1}
     version: 2.2.12
     peerDependencies:
       vitepress: ^1.2.2
@@ -1359,7 +1359,7 @@ snapshots:
 
   '@vue/shared@3.5.0-beta.2': {}
 
-  '@vue/theme@https://codeload.github.com/proxify-ab/vue-theme/tar.gz/a3a9785a4b08a6ecf496496ca4b6e9f48ce0e3e8(@algolia/client-search@4.23.3)(search-insights@2.14.0)(vitepress@1.3.4(@algolia/client-search@4.23.3)(@types/node@20.14.1)(postcss@8.4.41)(search-insights@2.14.0)(terser@5.31.0)(typescript@5.4.5))(vue@3.5.0-beta.2(typescript@5.4.5))':
+  '@vue/theme@https://codeload.github.com/proxify-ab/vue-theme/tar.gz/e8a2a09fc0154f1dae56fd263da3ac3cb28d2fd1(@algolia/client-search@4.23.3)(search-insights@2.14.0)(vitepress@1.3.4(@algolia/client-search@4.23.3)(@types/node@20.14.1)(postcss@8.4.41)(search-insights@2.14.0)(terser@5.31.0)(typescript@5.4.5))(vue@3.5.0-beta.2(typescript@5.4.5))':
     dependencies:
       '@docsearch/css': 3.6.1
       '@docsearch/js': 3.6.1(@algolia/client-search@4.23.3)(search-insights@2.14.0)
