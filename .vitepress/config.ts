@@ -127,11 +127,11 @@ const nav: ThemeConfig['nav'] = [
   },
   {
     text: 'Experts',
-    badge: 'NEW',
+    badge: { text: 'NEW' },
     activeMatch: `^/(partners|developers)/`,
     items: [
       { text: 'Partners', link: '/partners/' },
-      { text: 'Developers', link: '/developers/', badge: 'NEW' }
+      { text: 'Developers', link: '/developers/', badge: { text: 'NEW' } }
     ]
   }
 ]

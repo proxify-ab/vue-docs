@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@vue/repl": "^4.3.1",
-    "@vue/theme": "github:proxify-ab/vue-theme#menu-badge",
+    "@vue/theme": "github:proxify-ab/vue-theme",
     "dynamics.js": "^1.1.5",
     "gsap": "^3.12.5",
     "vitepress": "^1.3.2",
