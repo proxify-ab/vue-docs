@@ -546,195 +546,178 @@
     ]
   },
   {
-    "id": 5486,
-    "name": "Abdulqudus Abubakre",
-    "slug": "abdulqudus-vue-frontend-developer",
-    "alias": "Abdulqudus",
+    "id": 2030,
+    "name": "Emre Demir",
+    "slug": "emre-vue-frontend-developer",
+    "alias": "Emre",
     "description": [
-      "Abdulqudus is a senior frontend developer with over six years of commercial experience. His main framework of choice is Vue.js. He has also worked with frameworks like Nuxt.js and Vuetify for over three years. He is a fan of TDD and uses Cypress as a main testing tool in all his projects.",
-      "Abdulqudus holds a Bachelor's degree in Computer Engineering from the Federal University of Technology and has worked for companies in various countries including Switzerland and the USA, in diverse industries, including fintech and healthcare."
+      "Emre is a talented frontend developer with over six years of commercial experience in IT services & solutions and design. Throughout his career, Emre has worked in various industries, including FinTech, banking, gaming, marketing automation, defense, and cybersecurity.",
+      "He is the most skilled in frontend programming languages like JS framework Vue.js, React.js, Typescript, and RxJs. Specializing in collaborating with product managers and designers to gather requirements, produce plans and improve designs for usability and functionality.",
+      "Emre is goal-oriented and brings a strong commitment to collaboration. He uses various web design packages to develop custom-crafted, customer-focused websites and designs."
     ],
     "proficiencies": [
       "Vue.js",
-      "Nuxt.js",
-      "Vuex",
-      "TypeScript",
-      "Golang",
-      "Tailwind",
-      "Cypress",
+      "JavaScript",
       "React.js",
-      "Chart.js",
-      "Storybook",
-      "Grafana",
-      "Apollo",
-      "GraphQL",
+      "Node.js",
+      "Nuxt.js",
+      "Java",
+      "AWS",
       "Figma",
-      "Sentry",
-      "Plotly"
+      "Jira",
+      "REST API"
     ],
     "compensations": {
-      "partTime": "€3,436 /month (20 h per week)",
-      "monthly": "€6,199 /month (40 h per week)"
+      "partTime": "€4,452 /month (20 h per week)",
+      "monthly": "€8,215 /month (40 h per week)"
     },
-    "location": "Nigeria",
-    "region": "GTM+1",
+    "location": "Turkey",
+    "region": "GTM+3",
     "experiences": [
       {
         "id": 1,
-        "role": "Frontend Developer",
-        "company": "CertifactionAg, Switzerland",
-        "startDate": "Aug 2021",
-        "endDate": "Oct 2023",
-        "period": "2 years 2 months",
+        "role": "Senior Front-end Developer",
+        "company": "A5 Labs",
+        "startDate": "Mar 2021",
+        "endDate": "Oct 2022",
+        "period": "1 year 7 months",
         "description": [
           {
             "isGrouped": true,
             "content": [
-              "Developed in-house PDF signing that allows users to process PDF documents directly within the browser using web assembly and Vuejs.",
-              "Built custom plugins and APIs tailored to clients' specifications, facilitating seamless integration into their web applications and Command Line Interfaces (CLIs).",
-              "Improved product quality and reduced risk of failure in production by setting up Cypress for code testing and Grafana for metrics monitoring.",
-              "Conducted performance enhancements through audits using Lighthouse and optimizing web application speed via advanced techniques like code splitting and lazy loading.",
-              "Worked on an e-prescription web app using Vue3, Typescript, and Bootstrap which allows medical personnel to ensure the authenticity of their prescriptions.",
-              "Collaborate with the design team to improve the user experience of the product by creating reusable components that conform to accessibility standards.",
-              "Perform regular peer programming and code reviews to evaluate the quality of the client and server-side code."
+              "Worked as a Front End Developer in the Back Office project of the WPTO Poker application. This project is responsible for CRUD operations such as reading BOT Detection results, locking accounts, locking withdrawal/deposit, etc...",
+              "Responsible for creating GraphQL contracts, and integrating them with the backend (GraphQL, Rest, Websocket).",
+              "Created UI library using MaterialUI.",
+              "Scheduled meetings with the designer and product manager to handle edge cases, improvements, and requirements."
             ]
           }
         ],
         "skills": [
+          "React.js",
           "Vue.js",
-          "Bootstrap",
-          "TypeScript",
-          "Golang",
+          "RxJs",
+          "GraphQL",
           "Figma",
-          "Tailwind",
-          "Grafana",
-          "Unit Testing",
-          "IntelliJ",
-          "Webstorm",
-          "Cypress",
-          "Storybook"
+          "API",
+          "Jira",
+          "Material-UI",
+          "REST API"
         ]
       },
       {
         "id": 2,
-        "role": "Senior Frontend Developer",
-        "company": "MyEtherWallet, USA",
-        "startDate": "May 2022",
-        "endDate": "Feb 2023",
-        "period": "9 months",
+        "role": "Senior Consultant",
+        "company": "Softtech",
+        "startDate": "Aug 2020",
+        "endDate": "Apr 2021",
+        "period": "8 months",
         "description": [
           {
-            "isGrouped": true,
-            "content": [
-              "Migrated the entire codebase for Ethereum dashboard explorer (ethvm.com) from Vue2 to Vue3 in just under 6 months.",
-              "Collaborate with stakeholders and the leadership team to build demo features for the Ethereum Devcon 2022 event in Columbia.",
-              "Provided support to the business development team with pre-sale activities, contributing to RFPs where appropriate and assisting in large pitches to potential clients where required.",
-              "Integrated OpenSea API with the web app to display up-to-date NFT data.",
-              "Setup GraphQL and Apollo client to help with integration with the new Nodejs API.",
-              "Improved data visualization by integrating ChartJS, enabling a comprehensive display of portfolio value details directly within the web."
-            ]
+            "isGrouped": false,
+            "content": "Worked as a Senior Consultant in banking and finance projects as a member of international Agile teams - (Delivery Hub - Remote) Vue.js, Amazon AWS"
           }
         ],
         "skills": [
-          "JavaScript",
           "Vue.js",
-          "TypeScript",
-          "Node.js",
-          "GraphQL",
-          "Figma",
-          "SCSS",
-          "Vuetify",
-          "Apollo",
-          "Chart.js"
+          "AWS",
+          "Agile"
         ]
       },
       {
         "id": 3,
-        "role": "Frontend Developer",
-        "company": "JamfSoftware, USA",
-        "startDate": "Nov 2021",
-        "endDate": "May 2022",
+        "role": "Senior Front-end Developer",
+        "company": "Insider",
+        "startDate": "Feb 2020",
+        "endDate": "Aug 2020",
         "period": "6 months",
         "description": [
           {
             "isGrouped": true,
             "content": [
-              "Implemented Sentry configuration to monitor and rectify recurring issues in production.",
-              "Enhanced test coverage of the web dashboard using Cypress and Vue Test Utils.",
-              "Worked with JamfProtect team on the admin web app of the JamfProtect application using Vuejs."
+              "Insider—one platform for individualized, cross-channel experiences—enables enterprise marketers to connect customer data across channels and systems, predict their future behavior with an AI intent engine and individualize customer experiences. Marketers use Insider’s platform to deliver experiences across channels like Web, App, Web Push, Email, SMS, and Messaging Apps (WhatsApp, Facebook Messenger, RCS).",
+              "Worked as a Lead Senior Frontend Developer, implemented the frontend part of a dashboard using Vue.js."
             ]
           }
         ],
         "skills": [
-          "JavaScript",
-          "Vue.js",
-          "Bootstrap",
-          "GraphQL",
-          "Figma",
-          "Unit Testing",
-          "Sentry",
-          "Cypress"
+          "Vue.js"
         ]
       },
       {
         "id": 4,
-        "role": "Software Developer & Team Lead",
-        "company": "Outsource Global",
-        "startDate": "Dec 2019",
-        "endDate": "Jun 2021",
-        "period": "1 year 6 months",
+        "role": "Expert Software Developer",
+        "company": "Comodo",
+        "startDate": "May 2018",
+        "endDate": "Dec 2019",
+        "period": "1 year 7 months",
         "description": [
           {
-            "isGrouped": true,
-            "content": [
-              "Led a team of backend and frontend developers to build an in-house HR system using Reactjs and Rails to track employee attendance, loans, and salary advances.",
-              "Handled communication between clients and team to better understand requirements and offered advice where necessary.",
-              "Collaborated with the design team to produce designs for client projects using Figma.",
-              "Oversaw the development of a central management system for the Federal Ministry of Humanitarian Affairs, Disaster Management, and Social Development Nigeria to keep track of the various social intervention schemes.",
-              "Built an online test portal with ReactJS and styled-components as part of the NASIMS program to provide a platform for assessing beneficiaries of the intervention schemes program."
-            ]
+            "isGrouped": false,
+            "content": "Worked in DNS-based Web filtering project, Dome Shield, and also worked in sub-projects, Dome Analytics, Comodo Threat Analysis, and NuEDUSec. Worked as a full-stack developer in all of the projects -  Dome Shield, Dome Analytics ,Comodo Threat Analysis and NuEDUSec"
           }
         ],
         "skills": [
-          "JavaScript",
-          "React.js",
           "Vue.js",
-          "Ruby on Rails",
+          "MySQL",
+          "MongoDB",
+          "AWS",
+          "Redis",
           "Node.js",
-          "Figma",
-          "Tailwind",
+          "Jenkins",
+          "AWS SQS",
+          "AWS Lambda",
           "Nuxt.js",
-          "Vuetify",
-          "Team leading"
+          "Angular"
         ]
       },
       {
         "id": 5,
-        "role": "Frontend Developer Intern",
-        "company": "eHealth4everyone",
-        "startDate": "Jun 2018",
-        "endDate": "Dec 2018",
-        "period": "6 months",
+        "role": "Software Developer",
+        "company": "Freelance",
+        "startDate": "Jul 2017",
+        "endDate": "May 201",
+        "period": "10 months",
         "description": [
           {
             "isGrouped": true,
             "content": [
-              "Developed a multi-source data analytics dashboard using VueJS.",
-              "Total rewrite of existing data visualization library Plotly to Highcharts.",
-              "Integrated map SVG data showing states with the ability to drill down to local governments, which helped local hospitals and clinics have a better idea of the health data in their community.",
-              "Used Google scripts to convert data gathered in Google Sheets to Firebase JSON objects to be used for data visualization on the web app.",
-              "Provided general IT support to office staff, ensuring the internet was running and all computers worked as expected."
+              "He quit his job because he accepted a master's degree at Berlin Technical University. He started freelance work to make some money before he went to Berlin. Some medical issues occurred, and he canceled his master's degree.",
+              "Worked in development, design, deployment, and ASO for Android and iOS games using Unity.",
+              "Created SPA using Vue.js and Node.js for customers that found me on upwork.com"
             ]
           }
         ],
         "skills": [
-          "JavaScript",
           "Vue.js",
-          "Firebase",
-          "Vuetify",
-          "JSON",
-          "Chart.js",
-          "Plotly"
+          "Node.js",
+          "Unity"
+        ]
+      },
+      {
+        "id": 6,
+        "role": "Research and Development Engineer",
+        "company": "Havelsan Teknoloji Radar(HTR)",
+        "startDate": "Sep 2016",
+        "endDate": "Jul 2017",
+        "period": "10 months",
+        "description": [
+          {
+            "isGrouped": true,
+            "content": [
+              "Designed and implemented Geographic Information System in Java and Android.",
+              "Built and managed a database system for both Java and Android versions of GIS using PostgreSql and Java.",
+              "Designed RabbitMQ messaging infrastructure for communicating with all system devices.",
+              "Integrated Radar, Sonars, Cameras, Cabins, and UPS to GIS using both RabbitMQ and PostgreSQL.",
+              "Displayed both live and recorded cameras using video encoder and decoder libraries.",
+              "This project is shown by Havelsan Teknoloji Radar A.Ş. at IDEF17 International Defence Industry Fair in İstanbul."
+            ]
+          }
+        ],
+        "skills": [
+          "PostgreSQL",
+          "Java",
+          "Android",
+          "RabbitMQ"
         ]
       }
     ],
@@ -742,9 +725,16 @@
       {
         "id": 1,
         "degree": "BSc. Computer Engineering",
-        "school": "Federal University Of Technology",
-        "startDate": "2014",
-        "endDate": "2020"
+        "school": "TOBB Ekonomi ve Teknoloji Üniversitesi",
+        "startDate": "2011",
+        "endDate": "2016"
+      },
+      {
+        "id": 2,
+        "degree": "BSc. Computer Engineering",
+        "school": "School name AGH University of Science and Technology (Exchange)",
+        "startDate": "2013",
+        "endDate": "2014"
       }
     ]
   },
