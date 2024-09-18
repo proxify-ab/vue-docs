@@ -12,8 +12,8 @@ importers:
         specifier: ^4.3.1
         version: 4.3.1
       '@vue/theme':
-        specifier: github:proxify-ab/vue-theme
-        version: https://codeload.github.com/proxify-ab/vue-theme/tar.gz/7f9c516eec603066a1bb3d7230ff05c77f201932(@algolia/client-search@4.23.3)(search-insights@2.14.0)(vitepress@1.3.4(@algolia/client-search@4.23.3)(@types/node@20.14.1)(postcss@8.4.41)(search-insights@2.14.0)(terser@5.31.0)(typescript@5.4.5))(vue@3.5.0-beta.2(typescript@5.4.5))
+        specifier: ^2.3.0
+        version: 2.3.0(@algolia/client-search@4.23.3)(search-insights@2.14.0)(vitepress@1.3.4(@algolia/client-search@4.23.3)(@types/node@20.14.1)(postcss@8.4.41)(search-insights@2.14.0)(terser@5.31.0)(typescript@5.4.5))(vue@3.5.0-beta.2(typescript@5.4.5))
       dynamics.js:
         specifier: ^1.1.5
         version: 1.1.5
@@ -531,9 +531,8 @@ packages:
   '@vue/shared@3.5.0-beta.2':
     resolution: {integrity: sha512-cexku/B2Ezno4tBTSfgNwaY+WUAF1rI3S3D9mOOYDn3gEpRn+HR5cLNW3bVC8yxoH4cNd4YMpbELuhMv67+/cw==}
 
-  '@vue/theme@https://codeload.github.com/proxify-ab/vue-theme/tar.gz/7f9c516eec603066a1bb3d7230ff05c77f201932':
-    resolution: {tarball: https://codeload.github.com/proxify-ab/vue-theme/tar.gz/7f9c516eec603066a1bb3d7230ff05c77f201932}
-    version: 2.2.12
+  '@vue/theme@2.3.0':
+    resolution: {integrity: sha512-eKd4ipY6i6P2XD2iRVgbxs936g7pesEY2AgNX24C/sjzcmCnm48J7uV8xKXI2du2qfA89/r5QQp7bqZVf2Tekw==}
     peerDependencies:
       vitepress: ^1.2.2
 
@@ -596,8 +595,8 @@ packages:
   '@vueuse/shared@11.0.3':
     resolution: {integrity: sha512-0rY2m6HS5t27n/Vp5cTDsKTlNnimCqsbh/fmT2LgE+aaU42EMfXo8+bNX91W9I7DDmxfuACXMmrd7d79JxkqWA==}
 
-  acorn@8.11.3:
-    resolution: {integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==}
+  acorn@8.12.1:
+    resolution: {integrity: sha512-tcpGyI9zbizT9JbV6oYE477V6mTlXvvi0T0G3SNIYE2apm/G5huBa1+K89VGeovbg+jycCrfhl3ADxErOuO6Jg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -1359,7 +1358,7 @@ snapshots:
 
   '@vue/shared@3.5.0-beta.2': {}
 
-  '@vue/theme@https://codeload.github.com/proxify-ab/vue-theme/tar.gz/7f9c516eec603066a1bb3d7230ff05c77f201932(@algolia/client-search@4.23.3)(search-insights@2.14.0)(vitepress@1.3.4(@algolia/client-search@4.23.3)(@types/node@20.14.1)(postcss@8.4.41)(search-insights@2.14.0)(terser@5.31.0)(typescript@5.4.5))(vue@3.5.0-beta.2(typescript@5.4.5))':
+  '@vue/theme@2.3.0(@algolia/client-search@4.23.3)(search-insights@2.14.0)(vitepress@1.3.4(@algolia/client-search@4.23.3)(@types/node@20.14.1)(postcss@8.4.41)(search-insights@2.14.0)(terser@5.31.0)(typescript@5.4.5))(vue@3.5.0-beta.2(typescript@5.4.5))':
     dependencies:
       '@docsearch/css': 3.6.1
       '@docsearch/js': 3.6.1(@algolia/client-search@4.23.3)(search-insights@2.14.0)
@@ -1426,7 +1425,7 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
-  acorn@8.11.3:
+  acorn@8.12.1:
     optional: true
 
   algoliasearch@4.23.3:
@@ -1609,7 +1608,7 @@ snapshots:
   terser@5.31.0:
     dependencies:
       '@jridgewell/source-map': 0.3.6
-      acorn: 8.11.3
+      acorn: 8.12.1
       commander: 2.20.3
       source-map-support: 0.5.21
     optional: true
